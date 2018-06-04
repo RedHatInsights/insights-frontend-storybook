@@ -15,7 +15,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -s .storybook"
+    "build-storybook": "npm install && build-storybook -s .storybook"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.6",
