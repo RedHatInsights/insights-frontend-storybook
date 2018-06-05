@@ -4,6 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import chaptersAddon from 'react-storybook-addon-chapters';
 
 // Styling
 import '@patternfly/patternfly-next/patternfly.css';
@@ -11,6 +12,10 @@ import '../stories.scss';
 
 // Component
 import { Button } from '@red-hat-insights/insights-frontend-components';
+
+// README
+import ButtonReadme from '../docs/Button/README.md';
+import { withReadme, withDocs }  from 'storybook-readme';
 
 storiesOf('Buttons', module)
     .addWithChapters(
@@ -23,20 +28,14 @@ storiesOf('Buttons', module)
                     sections: [
                         {
                             title: 'Preview',
-                            sectionFn: () => (
+                            sectionFn: withReadme(ButtonReadme, () => (
                                 <React.Fragment>
                                     <Button type='primary'> Primary Button </Button>
                                     <Button type='secondary'> Secondary Button </Button>
                                     <Button type='tertiary'> Tertiary Button </Button>
                                     <Button type='danger'> Danger Button </Button>
                                 </React.Fragment>
-                            ),
-                            options: {
-                                showSource: false,
-                                allowSourceToggling: false,
-                                showPropTables: false,
-                                allowPropTablesToggling: false,
-                            },
+                            ))
                         },
                     ],
                 },
@@ -49,8 +48,11 @@ storiesOf('Buttons', module)
             subtitle: 'Primary Button Example',
             chapters: [ {
                 sections: [ {
-                    title: 'Primary',
-                    sectionFn: () => (<Button type='primary'> Primary Button </Button>)
+                    title: 'Preview',
+                    sectionFn: withReadme(ButtonReadme, () => (<Button type='primary'> Primary Button </Button>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }
@@ -61,8 +63,11 @@ storiesOf('Buttons', module)
             subtitle: 'Secondary Button Example',
             chapters: [ {
                 sections: [ {
-                    title: 'Secondary',
-                    sectionFn: () => (<Button type='secondary'> Secondary Button </Button>)
+                    title: 'Preview',
+                    sectionFn: withReadme(ButtonReadme, () => (<Button type='secondary'> Secondary Button </Button>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }
@@ -73,8 +78,11 @@ storiesOf('Buttons', module)
             subtitle: 'Tertiary Button Example',
             chapters: [ {
                 sections: [ {
-                    title: 'Tertiary',
-                    sectionFn: () => (<Button type='tertiary'> Tertiary Button </Button>)
+                    title: 'Preview',
+                    sectionFn: withReadme(ButtonReadme, () => (<Button type='tertiary'> Tertiary Button </Button>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }
@@ -85,8 +93,11 @@ storiesOf('Buttons', module)
             subtitle: 'Danger Button Example',
             chapters: [ {
                 sections: [ {
-                    title: 'Danger',
-                    sectionFn: () => (<Button type='danger'> Danger Button </Button>)
+                    title: 'Preview',
+                    sectionFn: withReadme(ButtonReadme, () => (<Button type='danger'> Danger Button </Button>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }

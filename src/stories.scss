@@ -1,6 +1,3 @@
-@import 'Components/Preview/preview.scss';
-@import 'Components/Example/example.scss';
-
 a {
     color: initial;
 }
@@ -11,6 +8,10 @@ a {
 
 .pf-c-alert {
     margin: 5px 0;
+}
+
+.wrapper {
+    display: none;
 }
 
 // Storybook Styling

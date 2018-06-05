@@ -4,6 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import chaptersAddon from 'react-storybook-addon-chapters';
 
 // Styling
 import '@patternfly/patternfly-next/patternfly.css';
@@ -11,6 +12,10 @@ import '../stories.scss';
 
 // Component
 import { Alert } from '@red-hat-insights/insights-frontend-components';
+
+// README
+import ButtonReadme from '../docs/Alert/README.md';
+import { withReadme, withDocs }  from 'storybook-readme';
 
 storiesOf('Alerts', module)
     .addWithChapters(
@@ -23,20 +28,14 @@ storiesOf('Alerts', module)
                     sections: [
                         {
                             title: 'Preview',
-                            sectionFn: () => (
+                            sectionFn: withReadme(ButtonReadme, () => (
                                 <React.Fragment>
                                     <Alert type='success'> Success Alert </Alert>
                                     <Alert type='danger'> Danger Alert </Alert>
                                     <Alert type='warning'> Warning Alert </Alert>
                                     <Alert type='info'> Info Alert </Alert>
                                 </React.Fragment>
-                            ),
-                            options: {
-                                showSource: false,
-                                allowSourceToggling: false,
-                                showPropTables: false,
-                                allowPropTablesToggling: false,
-                            },
+                            ))
                         },
                     ],
                 },
@@ -50,7 +49,10 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Success',
-                    sectionFn: () => (<Alert type='success'> Success Alert </Alert>)
+                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='success'> Success Alert </Alert>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }
@@ -62,7 +64,10 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Danger',
-                    sectionFn: () => (<Alert type='danger'> Danger Alert </Alert>)
+                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='danger'> Danger Alert </Alert>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }
@@ -74,7 +79,10 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Warning',
-                    sectionFn: () => (<Alert type='warning'> Warning Alert </Alert>)
+                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='warning'> Warning Alert </Alert>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }
@@ -86,7 +94,10 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Info',
-                    sectionFn: () => (<Alert type='info'> Info Alert </Alert>)
+                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='info'> Info Alert </Alert>)),
+                    options: {
+                        showSource: true
+                    },
                 }, ],
             }, ]
         }

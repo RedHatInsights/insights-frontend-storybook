@@ -8,7 +8,13 @@ import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
 const req = require.context('../src/stories', true, /\.stories\.js$/)
 
 setDefaults({
-  sectionOptions: {useTheme: false}
+  sectionOptions: {
+    useTheme: false,
+    showSource: false,
+    allowSourceToggling: false,
+    showPropTables: false,
+    allowPropTablesToggling: false
+  }
 });
 setAddon(chaptersAddon);
 
@@ -16,6 +22,7 @@ setAddon(chaptersAddon);
 setOptions({
   name: 'Red Hat Insights', // Name in top left Corner
   url: 'prod.foo.redhat.com:1337/insights/', // URL
+  addonPanelInRight: true
 });
 
 //adding global decorators
