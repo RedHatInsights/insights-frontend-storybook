@@ -1,2 +1,14 @@
 @import 'Components/Preview/preview.scss';
 @import 'Components/Example/example.scss';
+
+a {
+    color: initial;
+}
+
+.pf-c-button {
+    margin-right: 10px;
+}
+
+.pf-c-alert {
+    margin: 5px 0;
+}

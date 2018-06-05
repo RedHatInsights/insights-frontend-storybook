@@ -13,7 +13,7 @@ import Example from '../Components/Example/example.js';
 import { Alert } from '@red-hat-insights/insights-frontend-components';
 
 storiesOf('Alert', module)
-    .add('Kitchen Sink',
+    .add('Kitchen Sink', 
         withInfo ( `
             ~~~html
             <Alert type='success'> Primary Alert </Alert>
@@ -24,13 +24,13 @@ storiesOf('Alert', module)
     `)(() =>
         <React.Fragment>
             <LinkTo story="Success">
-                <Alert type='success'> Primary Alert </Alert>
+                <Alert type='success'> Success Alert </Alert>
             </LinkTo>
             <LinkTo story="Danger">
-                <Alert type='danger'> Secondary Alert </Alert>
+                <Alert type='danger'> Danger Alert </Alert>
             </LinkTo>
             <LinkTo story="Warning">
-                <Alert type='warning'> Tertiary Alert </Alert>
+                <Alert type='warning'> Warning Alert </Alert>
             </LinkTo>
             <LinkTo story="Info">
                 <Alert type='info'> Info Alert </Alert>
