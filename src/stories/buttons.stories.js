@@ -1,75 +1,93 @@
 import React from 'react';
+
+// Libraries
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withInfo } from '@storybook/addon-info';
-import LinkTo from '@storybook/addon-links/react';
+import { linkTo } from '@storybook/addon-links';
 
+// Styling
 import '@patternfly/patternfly-next/patternfly.css';
 import '../stories.scss';
 
-import Preview from '../Components/Preview/preview.js';
-import Example from '../Components/Example/example.js';
-
+// Component
 import { Button } from '@red-hat-insights/insights-frontend-components';
 
 storiesOf('Buttons', module)
-    .add('Kitchen Sink',
-        withInfo ( `
-            ~~~html
-            <Button type='primary'> Primary Button </Button>
-            <Button type='secondary'> Secondary Button </Button>
-            <Button type='tertiary'> Tertiary Button </Button>
-            <Button type='danger'> Danger Button </Button>
-            ~~~
-    `)(() =>
-        <React.Fragment>
-            <LinkTo story="Primary">
-                <Button type='primary'> Primary Button </Button>
-            </LinkTo>
-            <LinkTo story="Secondary">
-                <Button type='secondary'> Secondary Button </Button>
-            </LinkTo>
-            <LinkTo story="Tertiary">
-                <Button type='tertiary'> Tertiary Button </Button>
-            </LinkTo>
-            <LinkTo story="Danger">
-                <Button type='danger'> Danger Button </Button>
-            </LinkTo>
-        </React.Fragment>
-    ))
+    .addWithChapters(
+        'Overview',
+        {
+            subtitle: 'Button styling overview',
+            chapters: [
+                {
+                    title: 'Button Types',
+                    sections: [
+                        {
+                            title: 'Preview',
+                            sectionFn: () => (
+                                <React.Fragment>
+                                    <Button type='primary'> Primary Button </Button>
+                                    <Button type='secondary'> Secondary Button </Button>
+                                    <Button type='tertiary'> Tertiary Button </Button>
+                                    <Button type='danger'> Danger Button </Button>
+                                </React.Fragment>
+                            ),
+                            options: {
+                                showSource: false,
+                                allowSourceToggling: false,
+                                showPropTables: false,
+                                allowPropTablesToggling: false,
+                            },
+                        },
+                    ],
+                },
+            ]
+        }
+    )
 
-    .add('Primary',
-        withInfo ( `
-            ~~~html
-            <Button type='primary'> Primary Button </Button>
-            ~~~
-    `)(() =>
-        <Button type='primary'> Primary Button </Button>
-    ))
+    .addWithChapters(
+        'Primary', {
+            subtitle: 'Primary Button Example',
+            chapters: [ {
+                sections: [ {
+                    title: 'Primary',
+                    sectionFn: () => (<Button type='primary'> Primary Button </Button>)
+                }, ],
+            }, ]
+        }
+    )
 
-    .add('Secondary',
-        withInfo ( `
-            ~~~html
-            <Button type='secondary'> Secondary Button </Button>
-            ~~~
-    `)(() =>
-        <Button type='secondary'> Secondary Button </Button>
-    ))
+    .addWithChapters(
+        'Secondary', {
+            subtitle: 'Secondary Button Example',
+            chapters: [ {
+                sections: [ {
+                    title: 'Secondary',
+                    sectionFn: () => (<Button type='secondary'> Secondary Button </Button>)
+                }, ],
+            }, ]
+        }
+    )
 
-    .add('Tertiary',
-        withInfo ( `
-            ~~~html
-            <Button type='tertiary'> Tertiary Button </Button>
-            ~~~
-    `)(() =>
-        <Button type='tertiary'> Tertiary Button </Button>
-    ))
+    .addWithChapters(
+        'Tertiary', {
+            subtitle: 'Tertiary Button Example',
+            chapters: [ {
+                sections: [ {
+                    title: 'Tertiary',
+                    sectionFn: () => (<Button type='tertiary'> Tertiary Button </Button>)
+                }, ],
+            }, ]
+        }
+    )
 
-    .add('Danger',
-        withInfo ( `
-            ~~~html
-            <Button type='danger'> Danger Button </Button>
-            ~~~
-    `)(() =>
-        <Button type='danger'> Danger Button </Button>
-    ));
+    .addWithChapters(
+        'Danger', {
+            subtitle: 'Danger Button Example',
+            chapters: [ {
+                sections: [ {
+                    title: 'Danger',
+                    sectionFn: () => (<Button type='danger'> Danger Button </Button>)
+                }, ],
+            }, ]
+        }
+    )

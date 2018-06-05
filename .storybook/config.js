@@ -1,15 +1,13 @@
 // config.js
 import React from 'react';
-import { configure, addDecorator } from '@storybook/react';
-import { setDefaults } from '@storybook/addon-info';
+import { configure, addDecorator, setAddon } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
+
+import chaptersAddon from 'react-storybook-addon-chapters';
 
 const req = require.context('../src/stories', true, /\.stories\.js$/)
 
-// addon-info
-setDefaults({
-  inline: true // Displays info inline vs click button to view
-});
+setAddon(chaptersAddon);
 
 // addon-options
 setOptions({
