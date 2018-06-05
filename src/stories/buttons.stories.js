@@ -5,16 +5,12 @@ import { withInfo } from '@storybook/addon-info';
 import LinkTo from '@storybook/addon-links/react';
 
 import '@patternfly/patternfly-next/patternfly.css';
-import './stories.scss';
+import '../stories.scss';
 
-import Preview from './Components/Preview/preview.js';
-import Example from './Components/Example/example.js';
+import Preview from '../Components/Preview/preview.js';
+import Example from '../Components/Example/example.js';
 
-import { Button, PF3Button,
-        Card, CardContent, CardFooter, CardHeader,
-        PageHeader, PageHeaderTitle,
-        Section,
-        Tabs, TabPane } from '@red-hat-insights/insights-frontend-components';
+import { Button } from '@red-hat-insights/insights-frontend-components';
 
 storiesOf('Buttons', module)
     .add('Kitchen Sink',
