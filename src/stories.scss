@@ -5,13 +5,58 @@ a {
     color: initial;
 }
 
-h1 { margin: 0; font-size: 35px; }
-h3 { margin-top: 40px;}
-
 .pf-c-button {
     margin-right: 10px;
 }
 
 .pf-c-alert {
     margin: 5px 0;
+}
+
+// Storybook Styling
+.story {
+    &-header {
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    &-title { font-size: 35px; }
+    &-subtitle { font-size: 20px; }
+}
+
+.chapter{
+    &-header { 
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+.section {
+    &-container{
+        display: inline-block;
+        width: 100%;
+        padding: 20px 15px 15px 15px;
+        margin: 15px 0;
+        border: 1px solid #eaeaea;
+        position: relative;
+    }
+    &-header {
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        background: #fff;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    &-button-container {
+        position: absolute;
+        top: -15px;
+        right: 15px;
+        button { background-color: #fff !important; }
+        button.button-active { 
+            background-color: #00b9e4 !important;
+            color: #fff !important;
+        }
+    }
+    &-subsection { margin-top: 20px; }
 }
