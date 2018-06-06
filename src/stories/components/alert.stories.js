@@ -9,16 +9,16 @@ import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 // Styling
 import '@patternfly/patternfly-next/patternfly.css';
-import '../stories.scss';
+import '../../stories.scss';
 
 // Component
 import { Alert } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import AlertReadme from '../docs/Alert/README.md';
+import AlertReadme from '../../docs/Alert/README.md';
 import { withReadme, withDocs }  from 'storybook-readme';
 
-storiesOf('Alerts', module)
+storiesOf('Components/Alert', module)
     .addDecorator(withKnobs)
     .addWithChapters(
         'Overview',
@@ -72,7 +72,12 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Success',
-                    sectionFn: withReadme(AlertReadme, () => (<Alert type='success'> Success Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Alert type='success'> {label} </Alert>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },
@@ -87,7 +92,12 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Danger',
-                    sectionFn: withReadme(AlertReadme, () => (<Alert type='danger'> Danger Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Alert type='danger'> {label} </Alert>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },
@@ -102,7 +112,12 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Warning',
-                    sectionFn: withReadme(AlertReadme, () => (<Alert type='warning'> Warning Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Alert type='warning'> {label} </Alert>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },
@@ -117,7 +132,12 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Info',
-                    sectionFn: withReadme(AlertReadme, () => (<Alert type='info'> Info Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Alert type='info'> {label} </Alert>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },

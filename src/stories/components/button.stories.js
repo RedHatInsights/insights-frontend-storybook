@@ -9,16 +9,16 @@ import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 // Styling
 import '@patternfly/patternfly-next/patternfly.css';
-import '../stories.scss';
+import '../../stories.scss';
 
 // Component
 import { Button } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import ButtonReadme from '../docs/Button/README.md';
+import ButtonReadme from '../../docs/Button/README.md';
 import { withReadme, withDocs }  from 'storybook-readme';
 
-storiesOf('Buttons', module)
+storiesOf('Components/Button', module)
     .addDecorator(withKnobs)
     .addWithChapters(
         'Overview',

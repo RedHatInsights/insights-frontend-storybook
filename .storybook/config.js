@@ -5,7 +5,7 @@ import { setOptions } from '@storybook/addon-options';
 
 import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
 
-const req = require.context('../src/stories', true, /\.stories\.js$/)
+const req = require.context('../src/stories/', true, /stories\.js$/)
 
 setDefaults({
   sectionOptions: {
@@ -22,7 +22,8 @@ setAddon(chaptersAddon);
 setOptions({
   name: 'Red Hat Insights', // Name in top left Corner
   url: 'prod.foo.redhat.com:1337/insights/', // URL
-  addonPanelInRight: true
+  addonPanelInRight: true,
+  sortStoriesByKind: true
 });
 
 //adding global decorators
@@ -33,7 +34,7 @@ addDecorator(story => (
 ));
 
 function loadStories() {
-  req.keys().forEach((filename) => req(filename))
+  req.keys().forEach(req)
 }
 
 configure(loadStories, module);
