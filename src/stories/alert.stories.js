@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import chaptersAddon from 'react-storybook-addon-chapters';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 // Styling
 import '@patternfly/patternfly-next/patternfly.css';
@@ -14,21 +15,43 @@ import '../stories.scss';
 import { Alert } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import ButtonReadme from '../docs/Alert/README.md';
+import AlertReadme from '../docs/Alert/README.md';
 import { withReadme, withDocs }  from 'storybook-readme';
 
 storiesOf('Alerts', module)
+    .addDecorator(withKnobs)
     .addWithChapters(
         'Overview',
         {
             subtitle: 'Alert styling overview',
             chapters: [
                 {
+                    title: 'Demo',
+                    sections: [
+                        {
+                            title: 'Interactive Preview',
+                            sectionFn: withReadme(AlertReadme, () => {
+                                const label = text('Label', 'Hello World!');
+                                const types = {
+                                    success: 'Success',
+                                    danger: 'Danger',
+                                    warning: 'Warning',
+                                    info: 'Info',
+                                };
+                                const typeSelector = select('Type', types);
+                                return(
+                                    <Alert type={typeSelector}> {label} </Alert>
+                                )
+                            })
+                        },
+                    ],
+                },
+                {
                     title: 'Alert Types',
                     sections: [
                         {
                             title: 'Preview',
-                            sectionFn: withReadme(ButtonReadme, () => (
+                            sectionFn: withReadme(AlertReadme, () => (
                                 <React.Fragment>
                                     <Alert type='success'> Success Alert </Alert>
                                     <Alert type='danger'> Danger Alert </Alert>
@@ -49,7 +72,7 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Success',
-                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='success'> Success Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => (<Alert type='success'> Success Alert </Alert>)),
                     options: {
                         showSource: true
                     },
@@ -64,7 +87,7 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Danger',
-                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='danger'> Danger Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => (<Alert type='danger'> Danger Alert </Alert>)),
                     options: {
                         showSource: true
                     },
@@ -79,7 +102,7 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Warning',
-                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='warning'> Warning Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => (<Alert type='warning'> Warning Alert </Alert>)),
                     options: {
                         showSource: true
                     },
@@ -94,7 +117,7 @@ storiesOf('Alerts', module)
             chapters: [ {
                 sections: [ {
                     title: 'Info',
-                    sectionFn: withReadme(ButtonReadme, () => (<Alert type='info'> Info Alert </Alert>)),
+                    sectionFn: withReadme(AlertReadme, () => (<Alert type='info'> Info Alert </Alert>)),
                     options: {
                         showSource: true
                     },

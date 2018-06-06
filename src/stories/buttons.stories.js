@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import chaptersAddon from 'react-storybook-addon-chapters';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 // Styling
 import '@patternfly/patternfly-next/patternfly.css';
@@ -18,11 +19,41 @@ import ButtonReadme from '../docs/Button/README.md';
 import { withReadme, withDocs }  from 'storybook-readme';
 
 storiesOf('Buttons', module)
+    .addDecorator(withKnobs)
     .addWithChapters(
         'Overview',
         {
             subtitle: 'Button styling overview',
             chapters: [
+                {
+                    title: 'Demo',
+                    sections: [
+                        {
+                            title: 'Interactive Preview',
+                            sectionFn: withReadme(ButtonReadme, () => {
+                                const label = text('Label', 'Hello World!');
+                                const types = {
+                                    null: 'none',
+                                    primary: 'Primary',
+                                    secondary: 'Secondary',
+                                    tertiary: 'Tertiary',
+                                    danger: 'Danger',
+                                };
+                                const typeSelector = select('Type', types);
+                                const states = {
+                                    null: 'none',
+                                    focused: 'focus',
+                                    active: 'active',
+                                    disabled: 'disabled',
+                                };
+                                const stateSelector = select('State', states);
+                                return(
+                                    <Button type={typeSelector} state={stateSelector}> {label} </Button>
+                                )
+                            })
+                        },
+                    ],
+                },
                 {
                     title: 'Button Types',
                     sections: [
@@ -49,7 +80,13 @@ storiesOf('Buttons', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () => (<Button type='primary'> Primary Button </Button>)),
+                    sectionFn: withReadme(ButtonReadme, () =>
+                    {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Button type='primary'> {label} </Button>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },
@@ -64,7 +101,13 @@ storiesOf('Buttons', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () => (<Button type='secondary'> Secondary Button </Button>)),
+                    sectionFn: withReadme(ButtonReadme, () =>
+                    {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Button type='secondary'> {label} </Button>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },
@@ -79,7 +122,13 @@ storiesOf('Buttons', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () => (<Button type='tertiary'> Tertiary Button </Button>)),
+                    sectionFn: withReadme(ButtonReadme, () =>
+                    {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Button type='tertiary'> {label} </Button>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },
@@ -94,7 +143,13 @@ storiesOf('Buttons', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () => (<Button type='danger'> Danger Button </Button>)),
+                    sectionFn: withReadme(ButtonReadme, () =>
+                    {
+                        const label = text('Label', 'Hello World!');
+                        return(
+                            <Button type='danger'> {label} </Button>
+                        )
+                    }),
                     options: {
                         showSource: true
                     },
