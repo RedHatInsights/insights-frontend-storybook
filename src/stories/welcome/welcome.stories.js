@@ -12,14 +12,11 @@ import '@patternfly/patternfly-next/patternfly.css';
 import '../../stories.scss';
 
 // README
-import ChromeDoc from '../../docs/Dev/Chrome/DOC.md';
-import ProxyDoc from '../../docs/Dev/Proxy/DOC.md';
-import StarterAppDoc from '../../docs/Dev/StarterApp/DOC.md';
+import WelcomeDoc from '../../docs/Welcome/DOC.md';
+import WelcomeReadme from '../../docs/Welcome/README.md';
+import { doc, withDocs, withReadme }  from 'storybook-readme';
 
-
-import { withDocs, withReadme, doc }  from 'storybook-readme';
-
-storiesOf('.Welcome/Application Development', module)
-    .add('Chrome', doc(ChromeDoc))
-    .add('Proxy', doc(ProxyDoc))
-    .add('Starter App', doc(StarterAppDoc));
+storiesOf('.Welcome', module)
+    .addDecorator(doc(WelcomeDoc))
+    .addDecorator(withReadme(WelcomeReadme))
+    .add('Getting Started')
