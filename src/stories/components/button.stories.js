@@ -70,6 +70,21 @@ storiesOf('Components/Button', module)
                         },
                     ],
                 },
+                {
+                    title: 'Button States',
+                    sections: [
+                        {
+                            title: 'Preview',
+                            sectionFn: withReadme(ButtonReadme, () => (
+                                <React.Fragment>
+                                    <Button state='focus'> Focused Button </Button>
+                                    <Button state='active'> Active Button </Button>
+                                    <Button state='disabled'> Disabled Button </Button>
+                                </React.Fragment>
+                            ))
+                        },
+                    ],
+                },
             ]
         }
     )

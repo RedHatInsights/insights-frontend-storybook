@@ -16,10 +16,9 @@ import ChromeDoc from '../../docs/Dev/Chrome/DOC.md';
 import ProxyDoc from '../../docs/Dev/Proxy/DOC.md';
 import StarterAppDoc from '../../docs/Dev/StarterApp/DOC.md';
 
-
 import { withDocs, withReadme, doc }  from 'storybook-readme';
 
 storiesOf('.Welcome/Application Development', module)
+    .add('Starter App', doc(StarterAppDoc))
     .add('Chrome', doc(ChromeDoc))
-    .add('Proxy', doc(ProxyDoc))
-    .add('Starter App', doc(StarterAppDoc));
+    .add('Proxy', doc(ProxyDoc));
