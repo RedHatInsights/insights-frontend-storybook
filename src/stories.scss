@@ -2,11 +2,11 @@ a {
     color: initial;
 }
 
-.pf-c-button {
-    margin-right: 10px;
+.pf-c-button + .pf-c-button {
+    margin-left: 5px;
 }
 
-.pf-c-alert {
+.pf-c-alert + .pf-c-alert {
     margin: 5px 0;
 }
 

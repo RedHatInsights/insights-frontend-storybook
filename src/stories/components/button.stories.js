@@ -27,10 +27,10 @@ storiesOf('Components/Button', module)
             chapters: [
                 {
                     title: 'Demo',
+                    subtitle: 'Use the "Knobs" tab in the addon panel to use interactive preview',
                     sections: [
                         {
                             title: 'Interactive Preview',
-                            subtitle: 'Use the "Knobs" tab in the addon panel to use interactive preview',
                             sectionFn: ('', () => {
                                 const label = text('Label', 'Hello World!');
                                 const types = {
@@ -49,7 +49,7 @@ storiesOf('Components/Button', module)
                                 };
                                 const stateSelector = select('State', states);
                                 return(
-                                    <Button type={typeSelector} state={stateSelector}> {label} </Button>
+                                    <Button type={typeSelector} state={stateSelector}>{label}</Button>
                                 )
                             })
                         },
@@ -100,7 +100,7 @@ storiesOf('Components/Button', module)
                     {
                         const label = text('Label', 'Hello World!');
                         return(
-                            <Button type='primary'> {label} </Button>
+                            <Button type='primary'>{label}</Button>
                         )
                     }),
                     options: {
