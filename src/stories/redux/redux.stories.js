@@ -11,7 +11,7 @@ import { doc }  from 'storybook-readme';
 import '../../stories.scss';
 
 // README
-import ReduxDoc from '../../Docs/Redux/DOC.md';
+import ReduxDoc from '../../docs/redux/DOC.md';
 
 storiesOf('Redux', module)
     .add('Overview', doc(ReduxDoc))
