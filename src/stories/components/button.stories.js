@@ -30,6 +30,7 @@ storiesOf('Components/Button', module)
                     sections: [
                         {
                             title: 'Interactive Preview',
+                            subtitle: 'Use the "Knobs" tab in the addon panel to use interactive preview',
                             sectionFn: ('', () => {
                                 const label = text('Label', 'Hello World!');
                                 const types = {

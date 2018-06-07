@@ -30,6 +30,11 @@ a {
         font-size: 18px;
         margin-top: 15px;
     }
+    &-subtitle {
+        display: block;
+        margin-bottom: 15px;
+        & + hr { display: none; }
+    }
 }
 
 .section {
