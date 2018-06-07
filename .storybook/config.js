@@ -5,7 +5,7 @@ import { setOptions } from '@storybook/addon-options';
 
 import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
 
-const req = require.context('../src/Stories/', true, /stories\.js$/)
+const req = require.context('../src/stories/', true, /stories\.js$/)
 
 setDefaults({
   sectionOptions: {

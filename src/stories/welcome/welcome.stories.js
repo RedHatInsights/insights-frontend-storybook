@@ -13,9 +13,9 @@ import '@patternfly/patternfly-next/patternfly.css';
 import '../../stories.scss';
 
 // README
-import WelcomeDoc from '../../Docs/Welcome/GettingStarted/DOC.md';
-import WelcomeReadme from '../../Docs/Welcome/GettingStarted/README.md';
-import QuickStartDoc from '../../Docs/Welcome/QuickStart/DOC.md';
+import WelcomeDoc from '../../docs/welcome/gettingStarted/DOC.md';
+import WelcomeReadme from '../../docs/welcome/gettingStarted/README.md';
+import QuickStartDoc from '../../docs/welcome/quickStart/DOC.md';
 
 storiesOf('.Welcome', module)
     .addDecorator(withReadme(WelcomeReadme))

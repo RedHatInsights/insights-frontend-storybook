@@ -11,8 +11,8 @@ import { doc }  from 'storybook-readme';
 import '../../stories.scss';
 
 // README
-import APIOverviewDoc from '../../Docs/API/Overview/DOC.md';
-import ChromeAPIDoc from '../../Docs/API/Chrome/DOC.md';
+import APIOverviewDoc from '../../docs/api/overview/DOC.md';
+import ChromeAPIDoc from '../../docs/api/chrome/DOC.md';
 
 storiesOf('API', module)
     .add('Overview', doc(APIOverviewDoc))
