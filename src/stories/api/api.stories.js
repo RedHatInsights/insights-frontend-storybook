@@ -11,7 +11,9 @@ import { doc }  from 'storybook-readme';
 import '../../stories.scss';
 
 // README
-import ReduxDoc from '../../Docs/Redux/DOC.md';
+import APIOverviewDoc from '../../Docs/API/Overview/DOC.md';
+import ChromeAPIDoc from '../../Docs/API/Chrome/DOC.md';
 
-storiesOf('Redux', module)
-    .add('Overview', doc(ReduxDoc))
+storiesOf('API', module)
+    .add('Overview', doc(APIOverviewDoc))
+    .add('Chrome', doc(ChromeAPIDoc))

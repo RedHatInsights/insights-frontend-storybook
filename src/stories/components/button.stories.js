@@ -3,7 +3,6 @@ import React from 'react';
 // Libraries
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
 import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 
@@ -15,10 +14,11 @@ import '../../stories.scss';
 import { Button } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import ButtonReadme from '../../docs/Button/README.md';
+import ButtonReadme from '../../Docs/Components/Button/README.md';
 import { withReadme, withDocs }  from 'storybook-readme';
 
 storiesOf('Components/Button', module)
+    .addDecorator(withReadme(ButtonReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
         'Overview',
@@ -30,7 +30,7 @@ storiesOf('Components/Button', module)
                     sections: [
                         {
                             title: 'Interactive Preview',
-                            sectionFn: withReadme(ButtonReadme, () => {
+                            sectionFn: ('', () => {
                                 const label = text('Label', 'Hello World!');
                                 const types = {
                                     null: 'none',
@@ -59,7 +59,7 @@ storiesOf('Components/Button', module)
                     sections: [
                         {
                             title: 'Preview',
-                            sectionFn: withReadme(ButtonReadme, () => (
+                            sectionFn: ('', () => (
                                 <React.Fragment>
                                     <Button type='primary'> Primary Button </Button>
                                     <Button type='secondary'> Secondary Button </Button>
@@ -75,7 +75,7 @@ storiesOf('Components/Button', module)
                     sections: [
                         {
                             title: 'Preview',
-                            sectionFn: withReadme(ButtonReadme, () => (
+                            sectionFn: ('', () => (
                                 <React.Fragment>
                                     <Button state='focus'> Focused Button </Button>
                                     <Button state='active'> Active Button </Button>
@@ -95,7 +95,7 @@ storiesOf('Components/Button', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () =>
+                    sectionFn: ('', () =>
                     {
                         const label = text('Label', 'Hello World!');
                         return(
@@ -116,7 +116,7 @@ storiesOf('Components/Button', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () =>
+                    sectionFn: ('', () =>
                     {
                         const label = text('Label', 'Hello World!');
                         return(
@@ -137,7 +137,7 @@ storiesOf('Components/Button', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () =>
+                    sectionFn: ('', () =>
                     {
                         const label = text('Label', 'Hello World!');
                         return(
@@ -158,7 +158,7 @@ storiesOf('Components/Button', module)
             chapters: [ {
                 sections: [ {
                     title: 'Preview',
-                    sectionFn: withReadme(ButtonReadme, () =>
+                    sectionFn: ('', () =>
                     {
                         const label = text('Label', 'Hello World!');
                         return(

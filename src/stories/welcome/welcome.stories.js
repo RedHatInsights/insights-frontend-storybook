@@ -13,12 +13,11 @@ import '@patternfly/patternfly-next/patternfly.css';
 import '../../stories.scss';
 
 // README
-import WelcomeDoc from '../../docs/Welcome/DOC.md';
-import WelcomeReadme from '../../docs/Welcome/README.md';
-import QuickStartDoc from '../../docs/Dev/QuickStart/DOC.md';
+import WelcomeDoc from '../../Docs/Welcome/GettingStarted/DOC.md';
+import WelcomeReadme from '../../Docs/Welcome/GettingStarted/README.md';
+import QuickStartDoc from '../../Docs/Welcome/QuickStart/DOC.md';
 
 storiesOf('.Welcome', module)
-    // .addDecorator(doc(WelcomeDoc))
-    // .addDecorator(withReadme(WelcomeReadme))
-    .add('Getting Started', doc(WelcomeDoc), withReadme(WelcomeReadme))
+    .addDecorator(withReadme(WelcomeReadme))
+    .add('Getting Started', doc(WelcomeDoc))
     .add('Quick Start Guide', doc(QuickStartDoc))

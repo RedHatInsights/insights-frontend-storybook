@@ -3,7 +3,6 @@ import React from 'react';
 // Libraries
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
 import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 
@@ -15,10 +14,11 @@ import '../../stories.scss';
 import { Alert } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import AlertReadme from '../../docs/Alert/README.md';
-import { withReadme, withDocs }  from 'storybook-readme';
+import AlertReadme from '../../Docs/Components/Alert/README.md';
+import { withReadme }  from 'storybook-readme';
 
 storiesOf('Components/Alert', module)
+    .addDecorator(withReadme(AlertReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
         'Overview',
@@ -30,7 +30,7 @@ storiesOf('Components/Alert', module)
                     sections: [
                         {
                             title: 'Interactive Preview',
-                            sectionFn: withReadme(AlertReadme, () => {
+                            sectionFn: ('', () => {
                                 const label = text('Label', 'Hello World!');
                                 const types = {
                                     success: 'Success',
@@ -51,7 +51,7 @@ storiesOf('Components/Alert', module)
                     sections: [
                         {
                             title: 'Preview',
-                            sectionFn: withReadme(AlertReadme, () => (
+                            sectionFn: ('', () => (
                                 <React.Fragment>
                                     <Alert type='success'> Success Alert </Alert>
                                     <Alert type='danger'> Danger Alert </Alert>
@@ -72,7 +72,7 @@ storiesOf('Components/Alert', module)
             chapters: [ {
                 sections: [ {
                     title: 'Success',
-                    sectionFn: withReadme(AlertReadme, () => {
+                    sectionFn: ('', () => {
                         const label = text('Label', 'Hello World!');
                         return(
                             <Alert type='success'> {label} </Alert>
@@ -92,7 +92,7 @@ storiesOf('Components/Alert', module)
             chapters: [ {
                 sections: [ {
                     title: 'Danger',
-                    sectionFn: withReadme(AlertReadme, () => {
+                    sectionFn: ('', () => {
                         const label = text('Label', 'Hello World!');
                         return(
                             <Alert type='danger'> {label} </Alert>
@@ -112,7 +112,7 @@ storiesOf('Components/Alert', module)
             chapters: [ {
                 sections: [ {
                     title: 'Warning',
-                    sectionFn: withReadme(AlertReadme, () => {
+                    sectionFn: ('', () => {
                         const label = text('Label', 'Hello World!');
                         return(
                             <Alert type='warning'> {label} </Alert>
@@ -132,7 +132,7 @@ storiesOf('Components/Alert', module)
             chapters: [ {
                 sections: [ {
                     title: 'Info',
-                    sectionFn: withReadme(AlertReadme, () => {
+                    sectionFn: ('', () => {
                         const label = text('Label', 'Hello World!');
                         return(
                             <Alert type='info'> {label} </Alert>
