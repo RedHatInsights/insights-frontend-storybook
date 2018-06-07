@@ -23,7 +23,7 @@ setOptions({
   name: 'Red Hat Insights', // Name in top left Corner
   url: 'prod.foo.redhat.com:1337/insights/', // URL
   addonPanelInRight: true,
-  sortStoriesByKind: true,
+  sortStoriesByKind: true
 });
 
 //adding global decorators
