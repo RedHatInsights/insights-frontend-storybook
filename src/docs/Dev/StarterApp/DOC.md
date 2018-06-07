@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/RedHatInsights/insights-frontend-starter-app.svg?branch=master)](https://travis-ci.org/RedHatInsights/insights-frontend-starter-app)
 
-# [Insights Frontend Starter App](https://github.com/RedHatInsights/insights-frontend-starter-app)
+# [Insights Frontend Starter App](https://github.com/RedHatInsights/insights-frontend-starter-appg)
 React.js starter app for Red Hat Insights products that includes Patternfly 3 and Patternfly Next.
 
 # Build app
