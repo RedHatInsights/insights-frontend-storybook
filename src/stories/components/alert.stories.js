@@ -14,7 +14,7 @@ import '../../stories.scss';
 import { Alert } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import AlertReadme from '../../docs/components/Alert/README.md';
+import AlertReadme from '../../docs/components/alert/README.md';
 import { withReadme }  from 'storybook-readme';
 
 storiesOf('Components/Alert', module)

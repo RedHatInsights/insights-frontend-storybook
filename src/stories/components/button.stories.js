@@ -14,7 +14,7 @@ import '../../stories.scss';
 import { Button } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import ButtonReadme from '../../docs/components/Button/README.md';
+import ButtonReadme from '../../docs/components/button/README.md';
 import { withReadme, withDocs }  from 'storybook-readme';
 
 storiesOf('Components/Button', module)

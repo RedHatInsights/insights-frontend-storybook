@@ -9,9 +9,9 @@ import chaptersAddon from 'react-storybook-addon-chapters';
 import '../../stories.scss';
 
 // README
-import ChromeDoc from '../../docs/repos/Chrome/DOC.md';
-import ProxyDoc from '../../docs/repos/Proxy/DOC.md';
-import StarterAppDoc from '../../docs/repos/StarterApp/DOC.md';
+import ChromeDoc from '../../docs/repos/chrome/DOC.md';
+import ProxyDoc from '../../docs/repos/proxy/DOC.md';
+import StarterAppDoc from '../../docs/repos/starterApp/DOC.md';
 import { doc }  from 'storybook-readme';
 
 storiesOf('Repos', module)
