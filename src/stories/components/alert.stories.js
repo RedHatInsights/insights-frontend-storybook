@@ -7,7 +7,6 @@ import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 // Styling
-import '@patternfly/patternfly-next/patternfly.css';
 import '../../stories.scss';
 
 // Component

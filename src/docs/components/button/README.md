@@ -3,7 +3,7 @@
 ### Usage
 
 ```js
-import { Button } from '@red-hat-insights/insights-frontend-components';
+import { Button } from '@patternfly/react-core';
 ```
 
 
@@ -11,22 +11,29 @@ import { Button } from '@red-hat-insights/insights-frontend-components';
 
 ### Properties
 
-* `type` - 'theme' of the button: `type='foo'`
+* `variant`, string - 'theme' of the button: `variant='foo'`
   * primary
   * secondary
   * tertiary
   * danger
-  * alt - used for alternate secondary styles
-* `state` - pseudo tags: `state='foo'`
-  * focus - forces `:focus`
-  * active - forces `:active`
-  * hover - forces `:hover`
-  * disabled - disabled button, non clickable, sets `disabled='true'`
-* `block` - ability to create block level button: `block='true'` or simply `block`
+  * link
+  * action
+* `state`, booleans - pseudo tags: `state='foo'`
+  * isFocus - `:focus`
+  * isActive - `:active`
+  * isHover - `:hover`
+  * isDisabled - disabled button
+* `block` - ability to create block level button: `isBlock='true'`
 
 | propName | propType | defaultValue | isRequired |
 | -------- | -------- | ------------ | ---------- |
-| type     | string   | 'primary'    | -          |
-| state    | string   | -            | -          |
-| disabled | boolean  | false        | -          |
-| block    | boolean  | false        | -          |
+| children | node     | ''           | -          |
+| className| string   | ''           | -          |
+| label    | string   | ''           | -          |
+| variant  | string   | 'primary'    | -          |
+| type     | string   | 'button'     | -          |
+| isActive | boolean  | false        | -          |
+| isBlock  | boolean  | false        | -          |
+| isDisabled| boolean  | false        | -          |
+| isFocus | boolean  | false        | -          |
+| isHover | boolean  | false        | -          |

@@ -1,0 +1,74 @@
+a {
+    color: initial;
+}
+
+.pf-c-button + .pf-c-button {
+    margin-left: 5px;
+}
+
+.pf-c-alert + .pf-c-alert {
+    margin: 5px 0;
+}
+
+.wrapper {
+    display: none;
+}
+
+// Storybook Styling
+.story {
+    &-header {
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    &-title { font-size: 35px; }
+    &-subtitle { font-size: 20px; }
+}
+
+.chapter{
+    &-header { 
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    &-subtitle {
+        display: block;
+        margin-bottom: 15px;
+        & + hr { display: none; }
+    }
+}
+
+.section {
+    &-container{
+        display: inline-block;
+        width: 100%;
+        padding: 20px 15px 15px 15px;
+        margin: 15px 0;
+        border: 1px solid #eaeaea;
+        position: relative;
+    }
+    &-header {
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        background: #fff;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    &-button-container {
+        position: absolute;
+        top: -15px;
+        right: 15px;
+        button { background-color: #fff !important; }
+        button.button-active { 
+            background-color: #00b9e4 !important;
+            color: #fff !important;
+        }
+    }
+    &-subsection { margin-top: 20px; }
+}
+
+// Markdown Styling
+ul li {
+    list-style-type: disc;
+    ul li { list-style-type: circle; }
+}
