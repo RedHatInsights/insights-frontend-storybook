@@ -9,7 +9,6 @@ import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { doc, withDocs, withReadme }  from 'storybook-readme';
 
 // Styling
-import '@patternfly/patternfly-next/patternfly.css';
 import '../../stories.scss';
 
 // README

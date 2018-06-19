@@ -4,14 +4,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 
 // Styling
-import '@patternfly/patternfly-next/patternfly.css';
 import '../../stories.scss';
 
 // Component
-import { Button } from '@red-hat-insights/insights-frontend-components';
+import { Button } from '@patternfly/react-core';
 
 // README
 import ButtonReadme from '../../docs/components/button/README.md';
@@ -33,39 +32,51 @@ storiesOf('Components/Button', module)
                             title: 'Interactive Preview',
                             sectionFn: ('', () => {
                                 const label = text('Label', 'Hello World!');
-                                const types = {
-                                    null: 'none',
+                                const variant = {
                                     primary: 'Primary',
                                     secondary: 'Secondary',
                                     tertiary: 'Tertiary',
                                     danger: 'Danger',
+                                    link: 'Link',
+                                    action: 'Action'
                                 };
-                                const typeSelector = select('Type', types);
-                                const states = {
-                                    null: 'none',
-                                    focused: 'focus',
-                                    active: 'active',
-                                    disabled: 'disabled',
+                                const variantSelector = select('Variant', variant);
+                                const type = {
+                                    button: 'Button',
+                                    submit: 'Submit'
                                 };
-                                const stateSelector = select('State', states);
+                                const typeSelector = select('Type', type);
                                 return(
-                                    <Button type={typeSelector} state={stateSelector}>{label}</Button>
+                                    <Button variant={variantSelector}
+                                            type={typeSelector}
+                                            isActive={boolean('Active', false)}
+                                            isBlock={boolean('Block', false)}
+                                            isDisabled={boolean('Disabled', false)}
+                                            isFocus={boolean('Focus', false)}
+                                            isHover={boolean('Hover', false)}>
+                                        {label}
+                                    </Button>
                                 )
-                            })
+                            }),
+                            options: {
+                                showSource: true
+                            },
                         },
                     ],
                 },
                 {
-                    title: 'Button Types',
+                    title: 'Button Variants',
                     sections: [
                         {
                             title: 'Preview',
                             sectionFn: ('', () => (
                                 <React.Fragment>
-                                    <Button type='primary'> Primary Button </Button>
-                                    <Button type='secondary'> Secondary Button </Button>
-                                    <Button type='tertiary'> Tertiary Button </Button>
-                                    <Button type='danger'> Danger Button </Button>
+                                    <Button variant='primary'> Primary Button </Button>
+                                    <Button variant='secondary'> Secondary Button </Button>
+                                    <Button variant='tertiary'> Tertiary Button </Button>
+                                    <Button variant='danger'> Danger Button </Button>
+                                    <Button variant='link'> Link Button </Button>
+                                    <Button variant='action'> Action Button </Button>
                                 </React.Fragment>
                             ))
                         },
@@ -78,98 +89,26 @@ storiesOf('Components/Button', module)
                             title: 'Preview',
                             sectionFn: ('', () => (
                                 <React.Fragment>
-                                    <Button state='focus'> Focused Button </Button>
-                                    <Button state='active'> Active Button </Button>
-                                    <Button state='disabled'> Disabled Button </Button>
+                                    <Button isActive='true'> Active Button </Button>
+                                    <Button isDisabled='tue'> Disabled Button </Button>
+                                    <Button isFocus='true'> Focus Button </Button>
+                                    <Button isHover='true'> Hover Button </Button>
                                 </React.Fragment>
                             ))
                         },
                     ],
                 },
+                {
+                    title: 'Button Block',
+                    sections: [
+                        {
+                            title: 'Preview',
+                            sectionFn: ('', () => (
+                                <Button isBlock='true'> Block Button </Button>
+                            ))
+                        },
+                    ],
+                },
             ]
-        }
-    )
-
-    .addWithChapters(
-        'Primary', {
-            subtitle: 'Primary Button Example',
-            chapters: [ {
-                sections: [ {
-                    title: 'Preview',
-                    sectionFn: ('', () =>
-                    {
-                        const label = text('Label', 'Hello World!');
-                        return(
-                            <Button type='primary'>{label}</Button>
-                        )
-                    }),
-                    options: {
-                        showSource: true
-                    },
-                }, ],
-            }, ]
-        }
-    )
-
-    .addWithChapters(
-        'Secondary', {
-            subtitle: 'Secondary Button Example',
-            chapters: [ {
-                sections: [ {
-                    title: 'Preview',
-                    sectionFn: ('', () =>
-                    {
-                        const label = text('Label', 'Hello World!');
-                        return(
-                            <Button type='secondary'> {label} </Button>
-                        )
-                    }),
-                    options: {
-                        showSource: true
-                    },
-                }, ],
-            }, ]
-        }
-    )
-
-    .addWithChapters(
-        'Tertiary', {
-            subtitle: 'Tertiary Button Example',
-            chapters: [ {
-                sections: [ {
-                    title: 'Preview',
-                    sectionFn: ('', () =>
-                    {
-                        const label = text('Label', 'Hello World!');
-                        return(
-                            <Button type='tertiary'> {label} </Button>
-                        )
-                    }),
-                    options: {
-                        showSource: true
-                    },
-                }, ],
-            }, ]
-        }
-    )
-
-    .addWithChapters(
-        'Danger', {
-            subtitle: 'Danger Button Example',
-            chapters: [ {
-                sections: [ {
-                    title: 'Preview',
-                    sectionFn: ('', () =>
-                    {
-                        const label = text('Label', 'Hello World!');
-                        return(
-                            <Button type='danger'> {label} </Button>
-                        )
-                    }),
-                    options: {
-                        showSource: true
-                    },
-                }, ],
-            }, ]
         }
     )
