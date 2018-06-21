@@ -12,8 +12,6 @@ import '../../stories.scss';
 
 // README
 import APIOverviewDoc from '../../docs/api/overview/DOC.md';
-import ChromeAPIDoc from '../../docs/api/chrome/DOC.md';
 
 storiesOf('API', module)
     .add('Overview', doc(APIOverviewDoc))
-    .add('Chrome', doc(ChromeAPIDoc))
