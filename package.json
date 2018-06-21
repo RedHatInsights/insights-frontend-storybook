@@ -24,6 +24,7 @@
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "glob": "^7.1.2",
+    "http-proxy-middleware": "^0.18.0",
     "node-sass": "^4.9.0",
     "open-browser-webpack-plugin": "0.0.5",
     "react-dom": "^16.4.0",
