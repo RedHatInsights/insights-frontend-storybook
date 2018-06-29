@@ -7,7 +7,7 @@ This project uses [Docker](https://www.docker.com/get-docker) for development. Y
 
 **You can curl a script to bypass the downloading. You will still have to run each application yourself as noted in the "Running and Developing" section below**
 ``` bash
-curl https://gist.githubusercontent.com/ryelo/efdf27b0b5a6d9c70f8e63b0abc1deaa/raw/8f0491c9113ebf0408c8f7da70a1be980faebc2f/download.sh | sh
+sh <(curl https://gist.githubusercontent.com/ryelo/efdf27b0b5a6d9c70f8e63b0abc1deaa/raw/f21dbc04443a61cf21d28a3d47467b4e072321bc/red-hat-insights-env.sh)
 ```
 
 ### Proxy
@@ -75,7 +75,7 @@ If you used the download script, pick back up here.
 
 1. Using it with Chrome
     ```bash
-    $ cd ~/path/to/chrome/directory
+    $ cd ~/path/to/insights-chrome/build
     $ LOCAL_CHROME=true bash ~/path/to/insights-proxy/scripts/run.sh
     ```
 
