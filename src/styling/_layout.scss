@@ -6,10 +6,6 @@ a {
     margin-left: 5px;
 }
 
-.pf-c-alert + .pf-c-alert {
-    margin: 5px 0;
-}
-
 .wrapper {
     display: none;
 }
@@ -71,4 +67,11 @@ a {
 ul li {
     list-style-type: disc;
     ul li { list-style-type: circle; }
+}
+
+// Dots
+.section-component-container {
+    section[class^="ins-l-"], section[class^="ins-l-"] > * {
+        border: 1px dashed;
+    }
 }
