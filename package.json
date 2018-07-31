@@ -11,8 +11,10 @@
     "react": "^16.4.0"
   },
   "scripts": {
+    "start": "npm run storybook",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "npm install && build-storybook -s .storybook"
+    "watch": "npm run storybook -- -w",
+    "build": "npm install && build-storybook -s .storybook -o dist/"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.6",
@@ -25,8 +27,7 @@
     "babel-runtime": "^6.26.0",
     "glob": "^7.1.2",
     "http-proxy-middleware": "^0.18.0",
-    "node-sass": "^4.9.0",
-    "open-browser-webpack-plugin": "0.0.5",
+    "node-sass": "^4.9.2",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
     "react-storybook-addon-chapters": "^2.1.5",
