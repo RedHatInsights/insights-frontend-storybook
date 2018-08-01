@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 echo "deploying Storybook"
-npm run-script build
+npm run build
 ls
 
 cd dist
