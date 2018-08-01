@@ -11,7 +11,6 @@ def wrapStep(String stepName, Closure step) {
 node {
   if (env.BRANCH_NAME == 'master') {
     wrapStep('clone', { name -> stage(name) { checkout scm } })
-    wrapStep('build', { name -> stage(name) { sh 'npm install' } })
-    wrapStep('deploy_storybook', { name -> stage(name) { sh 'rsync -arv -e "ssh -2" dist/* sshacs@unprotected.upload.akamai.com:/114034/insights/platform/storybook/' } })
+    wrapStep('build', { name -> stage(name) { sh './jenkins/deploy.sh' } })
   }
 }
