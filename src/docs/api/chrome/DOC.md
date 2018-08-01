@@ -36,4 +36,5 @@ Insights Chrome comes with a Javacript API that allows applications to control n
 ```
 
 The following events can be observed:
+
 * `APP_NAVIGATION` - fired when the application navigation option is selected. `event.navId` can be used to access the id of the navigation option

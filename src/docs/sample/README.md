@@ -1,6 +1,6 @@
 # Button
 
-### Usage
+## Usage
 
 ```js
 import Component from '@red-hat-insights/insights-frontend-components';
@@ -8,7 +8,7 @@ import Component from '@red-hat-insights/insights-frontend-components';
 
 <!-- STORY -->
 
-### Properties
+## Properties
 
 * `onFoo` - foo
 * `bar` -  bar
@@ -19,7 +19,7 @@ import Component from '@red-hat-insights/insights-frontend-components';
 | bar      | string   | -            | +          |
 | bool     | boolean  | false        | -          |
 
-### Roadmap ( If needed )
+## Roadmap ( If needed )
 
 ```js
 import Component from '@red-hat-insights/insights-frontend-components';

@@ -1,9 +1,11 @@
 # Dropdown
+
 Implementation of custom dropdown component which allows you to group clickable items under one button.
 
 Later it will be possible to filter trough options, right now only button is rendered and clicking on it will reveal clickable item list.
 
-### Usage
+## Usage
+
 Import Dropdown, its item and styles from this package. Then use them wherever you want (table, toolbar, forms, etc.)
 
 ```JSX
@@ -61,6 +63,7 @@ class YourCmp extends React.Component {
 ```
 
 ### Dropdown API
+
 * To reveal drop items change `isCollapsed` to true
 
 * Prop `isKebab` set to true will show kebab dropdown
@@ -71,10 +74,10 @@ class YourCmp extends React.Component {
 
 * When clicked on item `onSelect` event is triggered
 
+## Props
 
-### Props
+1. Dropdown
 
-1) Dropdown
 ```javascript
 {
   position: PropTypes.oneOf(['left', 'right']),
@@ -91,7 +94,8 @@ class YourCmp extends React.Component {
 }
 ```
 
-1) DropdownItem
+1. DropdownItem
+
 ```javascript
 {
   children: PropTypes.node,

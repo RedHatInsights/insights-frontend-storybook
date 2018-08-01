@@ -1,10 +1,13 @@
 # Table
+
 To use simple implementation of table component with basic styling use Table component. Please note that this table has
 limited range of functions - select, sort, pagination.
 
-### Usage
+## Usage
+
 To use this component simply import it and pass header, rows and if you want footer as well. Any of these props can be
 omitted.
+
 ```javascript
 import React from 'react';
 import { Table, Pagination } from '@red-hat-insight/insights-frontend-components';
@@ -23,7 +26,8 @@ export default () => (
 
 ```
 
-### Props
+## Props
+
 ```javascript
 {
   hasCheckbox: PropTypes.bool, // show/hide checkbox in first cell
