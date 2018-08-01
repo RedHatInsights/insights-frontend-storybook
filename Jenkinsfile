@@ -13,6 +13,6 @@ node {
     wrapStep('clone', { name -> stage(name) { checkout scm } })
     wrapStep('build_packages', {name -> stage(name) { npm ci } })
     wrapStep('build_project', {name -> stage(name) { npm run build } })
-    wrapStep('deploy_dashboard', { name -> stage(name) { sh 'rsync -arv -e "ssh -2" dist/* sshacs@unprotected.upload.akamai.com:/114034/insightsbeta/platform/dashboard/' } })
+    wrapStep('deploy_dashboard', { name -> stage(name) { sh 'rsync -arv -e "ssh -2" dist/* sshacs@unprotected.upload.akamai.com:/114034/insightsbeta/platform/storybook/' } })
   }
 }
