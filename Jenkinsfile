@@ -11,6 +11,6 @@ def wrapStep(String stepName, Closure step) {
 node {
   if (env.BRANCH_NAME == 'master') {
     wrapStep('clone', { name -> stage(name) { checkout scm } })
-    wrapStep('deploy_dashboard', { name -> stage(name) { sh 'rsync -arv -e "ssh -2" dist/* sshacs@unprotected.upload.akamai.com:/114034/insightsbeta/platform/storybook/' } })
+    wrapStep('deploy_dashboard', { name -> stage(name) { sh 'rsync -arv -e "ssh -2" package.json sshacs@unprotected.upload.akamai.com:/114034/insightsbeta/platform/storybook/' } })
   }
 }
