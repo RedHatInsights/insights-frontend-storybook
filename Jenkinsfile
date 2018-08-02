@@ -18,8 +18,12 @@ node {
         withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'insightsbot',
                                                      keyFileVariable: 'insightsbot',
                                                      passphraseVariable: '',
-                                                     usernameVariable: 'insightsbot')]) {
-            sh './jenkins/deploy.sh'
+                                                     usernameVariable: '')]) {
+            sh '''
+                set +x
+                ssh-add insightsbot
+                ./jenkins/deploy.sh
+            '''
         }
     }
 }
