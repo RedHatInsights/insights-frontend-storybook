@@ -15,6 +15,11 @@ node {
     checkout scm
 
     stage('deploy') {
-        sh './jenkins/deploy.sh'
+        withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'jenkins-ssh-key-for-abc', \
+                                             keyFileVariable: 'SSH_KEY_FOR_ABC', \
+                                             passphraseVariable: '', \
+                                             usernameVariable: '')]) {
+            sh './jenkins/deploy.sh'
+        }
     }
 }
