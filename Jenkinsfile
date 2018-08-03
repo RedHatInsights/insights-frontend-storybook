@@ -20,7 +20,7 @@ node {
                                                      passphraseVariable: '',
                                                      usernameVariable: '')]) {
             sh '''
-                eval `ssh-agent -s`
+                eval `ssh-agent`
                 ssh-add insightsbot
                 ./jenkins/deploy.sh
             '''
