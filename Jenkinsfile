@@ -21,7 +21,7 @@ node {
                                                      usernameVariable: '')]) {
             sh '''
                 eval `ssh-agent`
-                ssh-add insightsbot
+                ssh-add "$insightsbot"
                 ./jenkins/deploy.sh
             '''
         }
