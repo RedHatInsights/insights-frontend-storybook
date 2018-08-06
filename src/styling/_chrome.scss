@@ -2,5 +2,10 @@ nav.sidenav { width: min-content; }
 
 html, body {
     display: block !important;
-    background: #fff !important;
 }
+
+#root { background: #fff !important; }
+
+ul.navigation { background: #fff; }
+
+.pf-c-vertical-nav__item, navigation-secondary li { list-style-type: none; }
