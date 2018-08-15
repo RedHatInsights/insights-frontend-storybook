@@ -7,9 +7,9 @@ if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
     exit 0;
 else
     openssl aes-256-cbc -K $encrypted_d52b22cc2d59_key -iv $encrypted_d52b22cc2d59_iv -in storybook.enc -out storybook -d
-    chmod 600 deploy_key
+    chmod 600 storybook
     eval `ssh-agent -s`
-    ssh-add deploy_key
+    ssh-add storybook
 fi
 
 # If current dev branch is master, push to build repo master
