@@ -64,7 +64,27 @@ a {
             color: #fff !important;
         }
     }
-    &-subsection { margin-top: 20px; }
+    &-subsection { 
+        margin-top: 20px;
+    }
+    &-subsection .section-subsection-title {
+        font-weight: 700;
+    }
+
+    &-subsection table.propTable {
+        text-align: left;
+        line-height: 40px;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 75%;
+        margin: 15px 0;
+        border-radius: .25rem;
+        td, th { padding: 0 30px; }
+        thead {
+            background: #fafafa;
+
+        }
+    }
 }
 
 // Markdown Styling

@@ -16,13 +16,12 @@ import { PageHeader, PageHeaderTitle, Battery } from '@red-hat-insights/insights
 import PageHeaderReadme from '../../docs/components/battery/README.md';
 import { withReadme }  from 'storybook-readme';
 
-storiesOf('Components/Battery', module)
+storiesOf('Components', module)
     .addDecorator(withReadme(PageHeaderReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
-        'Overview',
+        'Battery',
         {
-            subtitle: 'Battery styling overview',
             chapters: [
                 {
                     title: 'Demo',
