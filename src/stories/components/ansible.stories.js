@@ -16,13 +16,12 @@ import { Ansible } from '@red-hat-insights/insights-frontend-components';
 import PageHeaderReadme from '../../docs/components/ansible/README.md';
 import { withReadme }  from 'storybook-readme';
 
-storiesOf('Components/Ansible Icon', module)
+storiesOf('Components', module)
     .addDecorator(withReadme(PageHeaderReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
-        'Overview',
+        'Ansible Icon',
         {
-            subtitle: 'Ansible styling overview',
             chapters: [
                 {
                     title: 'Demo',

@@ -16,13 +16,12 @@ import { PageHeader, PageHeaderTitle } from '@red-hat-insights/insights-frontend
 import PageHeaderReadme from '../../docs/components/pageHeader/README.md';
 import { withReadme }  from 'storybook-readme';
 
-storiesOf('Components/PageHeader', module)
+storiesOf('Components', module)
     .addDecorator(withReadme(PageHeaderReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
-        'Overview',
+        'Page Header',
         {
-            subtitle: 'PageHeader styling overview',
             chapters: [
                 {
                     title: 'Demo',

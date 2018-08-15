@@ -17,13 +17,12 @@ import { Button } from '@patternfly/react-core'
 import SectionReadme from '../../docs/components/section/README.md';
 import { withReadme }  from 'storybook-readme';
 
-storiesOf('Components/Section', module)
+storiesOf('Components', module)
     .addDecorator(withReadme(SectionReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
-        'Overview',
+        'Section',
         {
-            subtitle: 'Section styling overview',
             chapters: [
                 {
                     title: 'Demo',
