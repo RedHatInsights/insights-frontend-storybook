@@ -5,12 +5,12 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
-
+import { withInfo } from '@storybook/addon-info';
 // Styling
 import '../../stories.scss';
 
 // Component
-import { Section } from '@red-hat-insights/insights-frontend-components';
+import { Section, Battery } from '@red-hat-insights/insights-frontend-components';
 import { Button } from '@patternfly/react-core'
 
 // README
@@ -19,41 +19,60 @@ import { withReadme }  from 'storybook-readme';
 
 storiesOf('Components', module)
     .addDecorator(withReadme(SectionReadme))
-    .addDecorator(withKnobs)
     .addWithChapters(
         'Section',
         {
             chapters: [
                 {
-                    title: 'Demo',
-                    subtitle: 'Use the "Knobs" tab in the addon panel to use interactive preview',
+                    title: 'There are multiple ways to display layouts',
                     sections: [
                         {
-                            title: 'Interactive Preview',
+                            title: 'Content',
                             sectionFn: ('', () => {
-                                const type = {
-                                    content: 'Content',
-                                    ['button-group']: 'Button Group'
-                                };
-                                const typeSelector = select('Type', type);
-                                switch (typeSelector) {
-                                    case 'content':
-                                        return(
-                                            <Section type = {typeSelector}>
-                                                <p> Content </p>
-                                            </Section>
-                                        );
-                                    case 'button-group':
-                                        return(
-                                            <Section type = {typeSelector}>
-                                                <Button> Button 1 </Button>
-                                                <Button> Button 1 </Button>
-                                                <Button> Button 1 </Button>
-                                            </Section>
-                                        );
-                                }
+                                return (
+                                    <Section type = 'content'>
+                                        <p> Content </p>
+                                    </Section>
+                                )
                             })
                         },
+                        {
+                            title: 'Button Group',
+                            sectionFn: ('', () => {
+                                return (
+                                    <Section type = 'button-group'>
+                                        <Button> Content </Button>
+                                        <Button> Content </Button>
+                                        <Button> Content </Button>
+                                    </Section>
+                                )
+                            })
+                        },
+                        {
+                            title: 'Icon Group',
+                            sectionFn: ('', () => {
+                                return (
+                                    <Section type = 'icon-group'>
+                                        <Battery severity='critical' label='First'/>
+                                        <Battery severity='medium' label='Second'/>
+                                        <Battery severity='low' label='Third'/>
+                                    </Section>
+                                )
+                            })
+                        },
+                        {
+                            title: 'Icon Group with distinguished value',
+                            sectionFn: ('', () => {
+                                return (
+                                    <Section type = 'icon-group__with-major'>
+                                        <Battery severity='critical' label='First'/>
+                                        <Battery severity='medium' label='Second'/>
+                                        <Battery severity='low' label='Third'/>
+                                        <Battery severity='high' label='This is the distinguished value'/>
+                                    </Section>
+                                )
+                            })
+                        }
                     ],
                 }
             ]

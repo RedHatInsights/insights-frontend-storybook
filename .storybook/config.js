@@ -2,18 +2,21 @@
 import React from 'react';
 import { configure, addDecorator, setAddon } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
+import { withInfo } from '@storybook/addon-info';
 
 import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
+
+import { Button } from '@patternfly/react-core';
 
 const req = require.context('../src/stories/', true, /stories\.js$/)
 
 setDefaults({
   sectionOptions: {
     useTheme: false,
-    showSource: false,
+    showSource: true,
     allowSourceToggling: false,
     showPropTables: false,
-    allowPropTablesToggling: false
+    allowPropTablesToggling: true
   }
 });
 setAddon(chaptersAddon);
