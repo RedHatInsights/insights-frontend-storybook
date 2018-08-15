@@ -1,13 +1,16 @@
 language: node_js
 sudo: required
-cache:
-  directories:
-  - node_modules
 notifications:
-  email: false
+    email: false
 node_js:
 - '10'
 install:
-  - npm ci
+- npm ci
 script:
-  - npm run build
+- npm run build
+after_success:
+- .travis/after_success.sh
+env:
+    global:
+    - REPO="git@github.com:RedHatInsights/insights-frontend-storybook-build"
+    - REPO_DIR="insights-frontend-storybook-build"
