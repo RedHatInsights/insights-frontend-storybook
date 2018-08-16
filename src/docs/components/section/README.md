@@ -12,6 +12,10 @@ Import Section component and its styles.
 
 `type='button-group'` = `ins-l-button-group`
 
+`type='icon-group'` = `ins-l-icon-group`
+
+`type='icon-group__with-major'` = `ins-l-icon-group__with-major`
+
 ```javascript
 
 import { Section } from '@redhat-insights/insights-frontend-components/components/Section';

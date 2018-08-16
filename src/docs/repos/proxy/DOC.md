@@ -1,4 +1,6 @@
-# [Insights Proxy](https://github.com/RedHatInsights/insights-proxy)
+# Insights Proxy
+
+[Github](https://github.com/RedHatInsights/insights-proxy)
 
 Proxy for the insightsfrontend container
 

@@ -1,4 +1,6 @@
-# [Insights Chrome](https://github.com/RedHatInsights/insights-chrome)
+# Insights Chrome
+
+[Github](https://github.com/RedHatInsights/insights-chrome)
 
 The "wrapper" around your application!
 
