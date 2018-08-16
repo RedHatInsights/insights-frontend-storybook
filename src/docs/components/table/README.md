@@ -15,12 +15,12 @@ import { Table, Pagination } from '@red-hat-insight/insights-frontend-components
 export default () => (
   <Table 
     header={['First', 'Second', 'Third']}
-    rows={{
-      cells: ['1-1', '1-2', '1-3'],
-      cells: ['2-1', '2-2', '2-3'],
-      cells: ['3-1', '3-2', '3-3']
-    }}
-    footer={<Pagination numberOfItems={3} />
+    rows={[
+      {cells: ['1-1', '1-2', '1-3']},
+      {cells: ['2-1', '2-2', '2-3']},
+      {cells: ['3-1', '3-2', '3-3']}
+    ]}
+    footer={<Pagination numberOfItems={3} />}
   />
 ) 
 
