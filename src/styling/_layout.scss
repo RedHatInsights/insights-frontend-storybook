@@ -1,3 +1,5 @@
+@import '~@red-hat-insights/insights-frontend-components/Utilities/_variables';
+
 a {
     color: initial;
 }
@@ -60,7 +62,7 @@ a {
         right: 15px;
         button { background-color: #fff !important; }
         button.button-active { 
-            background-color: #00b9e4 !important;
+            background-color: $ins-color--blue !important;
             color: #fff !important;
         }
     }
@@ -93,9 +95,15 @@ ul li {
     ul li { list-style-type: circle; }
 }
 
+.markdown-body h1 { display: block; }
+
 // Dots
 .section-component-container {
     section[class^="ins-l-"], section[class^="ins-l-"] > * {
         border: 1px dashed;
     }
+}
+
+.css-kv47nt div:first-of-type {
+    margin-bottom: 0px !important;
 }
