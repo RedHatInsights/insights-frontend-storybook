@@ -30,7 +30,7 @@ setAddon(chaptersAddon);
 // addon-options
 setOptions({
   name: 'Red Hat Insights', // Name in top left Corner
-  url: 'https://access.redhat.com/insights/platform', // URL
+  url: 'https://access.redhat.com/insights/platform/', // URL
   addonPanelInRight: true,
   sortStoriesByKind: false
 });
