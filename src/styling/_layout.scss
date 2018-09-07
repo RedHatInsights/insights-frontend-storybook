@@ -108,8 +108,13 @@ ul li {
     margin-bottom: 0px !important;
 }
 
-// Chart Links
+// Charts
 .badge-wrapper > a {
     text-decoration: underline;
     color: rgb(0, 123, 186);
+}
+
+.ins-c-gauge {
+    display: flex;
+    justify-content: center;
 }

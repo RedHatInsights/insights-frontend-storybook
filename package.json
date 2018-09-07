@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@patternfly/react-core": "1.6.0",
-    "@red-hat-insights/insights-frontend-components": "^3.9.2",
+    "@patternfly/react-core": "1.11.1",
+    "@red-hat-insights/insights-frontend-components": "^3.11.1",
+    "@patternfly/patternfly-next": "1.0.41",
     "classnames": "^2.2.5",
     "create-react-class": "^15.6.3",
     "patternfly-react": "^2.5.1",
