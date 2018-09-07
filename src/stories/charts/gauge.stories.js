@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
-import { withKnobs, number } from '@storybook/addon-knobs';
+import { withKnobs, number, boolean } from '@storybook/addon-knobs';
 import { Router, Route, IndexRoute, BrowserRouter} from 'react-router-dom'
 
 // Styling
@@ -39,7 +39,7 @@ storiesOf('Charts', module)
                                  };
                                 
                                 return(
-                                    <Gauge identifier='sample-gauge' label='sample-gauge' width={250} height={250} value={number('Value', 10, options)}/>
+                                    <Gauge flipFullColors={boolean('Flip Colors', false)} identifier='sample-gauge' label='sample-gauge' height={250} value={number('Value', 10, options)}/>
                                 )
                             })
                         },
