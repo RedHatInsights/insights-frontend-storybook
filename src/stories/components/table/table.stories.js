@@ -5,20 +5,20 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text, button, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 // Styling
-import '../../stories.scss';
+import '../../../stories.scss';
 
 // Component
-import { Table, Pagination } from '@red-hat-insights/insights-frontend-components';
+import { Table, Pagination, TableVariant } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import TableReadme from '../../docs/components/table/README.md';
+import TableReadme from '../../../docs/components/table/README.md';
 import { withReadme }  from 'storybook-readme';
 
-storiesOf('Components', module)
+storiesOf('Components/Table', module)
     .addDecorator(withReadme(TableReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
-        'Table',
+        'Basic',
         {
             chapters: [
                 {
@@ -52,7 +52,37 @@ storiesOf('Components', module)
                                     />
                                 )
                             })
-                        }
+                        },
+                        {
+                          title: 'Large',
+                          sectionFn: ('', () => {
+                              return (
+                                  <Table
+                                      hasCheckbox
+                                      variant={TableVariant.large}
+                                      header={['First', 'Second', 'Third']}
+                                      sortBy={
+                                        {
+                                          index: select('Sort by', ['0', '1', '2'], '0'),
+                                          direction: select('Sort direction', ['up', 'down'], 'up')
+                                        }
+                                      }
+                                      rows={[
+                                        {cells: ['1-1', '1-2', '1-3']},
+                                        {cells: ['2-1', '2-2', '2-3']},
+                                        {cells: ['3-1', '3-2', '3-3']},
+                                        {cells: ['4-1', '4-2', '4-3']},
+                                        {cells: ['5-1', '5-2', '5-3']}
+                                      ]}
+                                      onItemSelect={action('on-select')}
+                                      onSort={action('on-sort')}
+                                      onItemSelect={action('on-item-select')}
+                                      onRowClick={action('on-row-click')}
+                                      footer={<Pagination numberOfItems={5} />}
+                                  />
+                              )
+                          })
+                      }
                     ],
                 },
                 {
