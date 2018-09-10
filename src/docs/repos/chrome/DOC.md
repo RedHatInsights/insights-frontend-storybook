@@ -15,17 +15,21 @@ Insights Chrome provides:
 You can include/use chrome in your development project by running the [insights-proxy](https://github.com/RedHatInsights/insights-proxy) in front of your application and using the following HTML template.
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <!-- your own HEAD tags -->
-    <esi:include src="/insightsbeta/static/chrome/snippets/head.html" />
-  </head>
-  <body>
-    <esi:include src="/insightsbeta/static/chrome/snippets/header.html" />
-    <esi:include src="/insightsbeta/static/chrome/snippets/footer.html" />
-    <!-- your own HTML -->
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Red Hat Insights | Advisor</title>
+        <esi:include src="/insights/static/chrome/snippets/head.html"/>
+    </head>
+    <body>
+        <div class="pf-c-background-image"></div>
+        <div class="pf-l-page" id="page">
+            <esi:include src="/insights/static/chrome/snippets/header.html"/>
+            <esi:include src="/insights/static/chrome/snippets/sidebar.html"/>
+            <main role="main" class="pf-l-page__main" id="root"/>
+        </div>
+    </body>
 </html>
 ```
 
@@ -40,31 +44,31 @@ To run each task you have to first install dependencies `npm install` and then y
 If you want to watch file changes for each build just pass `-- -w` to specific task (this is not applicable to
 `npm run build:js:watch` because it's somewhat specific).
 
-1.Building of styles
+1: Building of styles
 
 ```bash
 npm run build:sass
 ```
 
-2.Building of javascripts
+2: Building of javascripts
 
 ```bash
 npm run build:js
 ```
 
-3.Building of javascripts and watching files when they change
+3: Building of javascripts and watching files when they change
 
 ```bash
 npm run build:js:watch
 ```
 
-4.Building of HTML partials
+4: Building of HTML partials
 
 ```bash
 npm run build:pug
 ```
 
-5.Running tests
+5: Running tests
 
 ```bash
 npm run test
@@ -72,13 +76,13 @@ npm run test
 
 #### Specific tasks
 
-1.Run build of whole application just once
+1: Run build of whole application just once
 
 ```bash
 npm run build
 ```
 
-2.Watching file changes and trigger build every time something changes
+2: Watching file changes and trigger build every time something changes
 
 ```bash
 npm run start
