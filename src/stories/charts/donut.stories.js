@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
-import { withKnobs, number, text, boolean } from '@storybook/addon-knobs';
+import { withKnobs, number, text, boolean, select } from '@storybook/addon-knobs';
 import { Router, Route, IndexRoute, BrowserRouter} from 'react-router-dom'
 
 // Styling
@@ -44,8 +44,17 @@ storiesOf('Charts', module)
                                     [defaultNumLabel+4, number(defaultNumLabel+4, defaultNumValue)]
                                 ];
 
+                                const legendPositionLabel = 'Legend Position';
+                                const legendPositionOptions = {
+                                    right: 'right',
+                                    left: 'left',
+                                    top: 'top',
+                                    bottom: 'bottom'
+                                };
+                                const legendPositionValue = select(legendPositionLabel, legendPositionOptions, 'bottom');
+
                                 return(
-                                    <Donut values={ DonutValues } totalLabel={totalLabel} identifier='storybook-donut--withDemo' withLegend/>
+                                    <Donut values={ DonutValues } totalLabel={totalLabel} identifier='storybook-donut--withDemo' withLegend legendPosition={legendPositionValue}/>
                                 )
                             })
                         },
