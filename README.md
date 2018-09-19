@@ -12,15 +12,11 @@ This is documentation for:
 
 ## Dev Installation instructions
 
-1: `git clone git@github.com:RedHatInsights/insights-frontend-storybook.git`
-2: `npm install`
-3: (optional) set up [insights-proxy](https://github.com/RedHatInsights/insights-proxy)
-
-- only required for insights-chrome's stories to run
-
-4: Either
-
-- `npm run start` to develop storybook pages
-- `npm run build` to build the storybook, used for testing
-
-5: Naviage to `localhost:9001`
+1. `git clone git@github.com:RedHatInsights/insights-frontend-storybook.git`
+2. `npm install`
+3. (optional) set up [insights-proxy](https://github.com/RedHatInsights/insights-proxy)
+    - only required for insights-chrome's stories to run
+4. Run
+    - `npm run start` to develop storybook pages
+    - `npm run build` to build the storybook, used for testing
+5. Naviage to `localhost:9001`
