@@ -48,10 +48,10 @@ storiesOf('Charts', module)
                                     }
                                 }
                                 let matrixData = {
-                                    topRight: [{position: [number('topRight Y', 2, matrixValues), number('topRight X', 4, matrixValues)], label: 'First'}],
-                                    topLeft: [{position: [number('topLeft Y', 2, matrixValues), number('topLeft X', 4, matrixValues)], label: 'Second'}],
-                                    bottomRight: [{position: [number('bottomRight Y', 2, matrixValues), number('bottomRight X', 4, matrixValues)], label: 'Third'}],
-                                    bottomLeft: [{position: [number('bottomLeft Y', 2, matrixValues), number('bottomLeft X', 4, matrixValues)], label: 'Fourth'}]
+                                    topRight: [{position: [number('topRight Y', 2, matrixValues), number('topRight X', 2, matrixValues)], label: 'First'}],
+                                    topLeft: [{position: [number('topLeft Y', 2, matrixValues), number('topLeft X', 2, matrixValues)], label: 'Second'}],
+                                    bottomRight: [{position: [number('bottomRight Y', 2, matrixValues), number('bottomRight X', 2, matrixValues)], label: 'Third'}],
+                                    bottomLeft: [{position: [number('bottomLeft Y', 2, matrixValues), number('bottomLeft X', 2, matrixValues)], label: 'Fourth'}]
                                   }
                                 
                                 return(
