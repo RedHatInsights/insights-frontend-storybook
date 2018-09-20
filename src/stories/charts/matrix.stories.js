@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
-import { withKnobs, number, boolean } from '@storybook/addon-knobs';
+import { withKnobs, number, boolean, text } from '@storybook/addon-knobs';
 import { Router, Route, IndexRoute, BrowserRouter} from 'react-router-dom'
 
 // Styling
@@ -37,17 +37,25 @@ storiesOf('Charts', module)
                                     min: 0,
                                     max: 4,
                                     step: 1,
-                                 };
+                                };
 
+                                let matrixLabels = {
+                                    yLabel: text('Y Axis Main Label', 'Y main label'),
+                                    xLabel: text('X Axis Main Label', 'X main label'),
+                                    subLabels: {
+                                        xLabels: [text('X Axis Sub Label 1', 'x sub label 1'), text('X Axis Sub Label 2', 'x sub label 2')],
+                                        yLabels: [text('Y Axis Sub Label 1', 'y sub label 1'), text('Y Axis Sub Label 2', 'y sub label 2')],
+                                    }
+                                }
                                 let matrixData = {
                                     topRight: [{position: [number('topRight Y', 2, matrixValues), number('topRight X', 4, matrixValues)], label: 'First'}],
-                                    topLeft: [{position: [number('topLeft Y', 2, matrixValues), number('topRight X', 4, matrixValues)], label: 'Second'}],
+                                    topLeft: [{position: [number('topLeft Y', 2, matrixValues), number('topLeft X', 4, matrixValues)], label: 'Second'}],
                                     bottomRight: [{position: [number('bottomRight Y', 2, matrixValues), number('bottomRight X', 4, matrixValues)], label: 'Third'}],
                                     bottomLeft: [{position: [number('bottomLeft Y', 2, matrixValues), number('bottomLeft X', 4, matrixValues)], label: 'Fourth'}]
                                   }
                                 
                                 return(
-                                    <Matrix data={matrixData}/>
+                                    <Matrix data={matrixData} labels={matrixLabels}/>
                                 )
                             })
                         },
