@@ -1,0 +1,57 @@
+# Main
+
+This component will allow you to wrap the main content in appropriate tags
+
+## Usage
+
+```javascript
+
+import { Main } from '@redhat-insights/insights-frontend-components/components/Main';
+
+const MyCmp = () => (
+    <Main> {content} </Main>
+)
+```
+
+## Dark Body
+
+```javascript
+
+import { Main } from '@redhat-insights/insights-frontend-components/components/Main';
+
+const MyCmp = () => (
+    <Main dark> {content} </Main>
+)
+```
+
+## Use with PageHeader to make a page
+
+```javascript
+import { Main } from '@redhat-insights/insights-frontend-components/components/Main';
+import { PageHeader } from '@redhat-insights/insights-frontend-components/components/PageHeader';
+import { PageHeaderTitle } from '@redhat-insights/insights-frontend-components/components/PageHeader';
+
+const MyCmp = () => (
+    <React.Fragment>
+        <PageHeader>
+            <PageHeaderTitle title='Title'/>
+        </PageHeader>
+        <Main>
+            { content }
+        </Main>
+    </React.Fragment>
+)
+
+```
+
+## Props
+
+### Main
+
+```javascript
+{
+    className: propTypes.string,
+    children: propTypes.any.isRequired,
+    dark: propTypes.bool
+}
+```
