@@ -24,8 +24,6 @@ const MyCmp = () => (
 
 ## Props
 
-### Dark props
-
 ```javascript
 {
     className: propTypes.string,
