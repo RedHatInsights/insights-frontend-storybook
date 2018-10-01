@@ -13,11 +13,11 @@ import '../../stories.scss';
 import { PageHeader, PageHeaderTitle, Battery } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import PageHeaderReadme from '../../docs/components/battery/README.md';
+import BatteryReadme from '../../docs/components/battery/README.md';
 import { withReadme }  from 'storybook-readme';
 
 storiesOf('Components', module)
-    .addDecorator(withReadme(PageHeaderReadme))
+    .addDecorator(withReadme(BatteryReadme))
     .addDecorator(withKnobs)
     .addWithChapters(
         'Battery',

@@ -9,3 +9,16 @@ html, body {
 ul.navigation { background: #fff; }
 
 .pf-c-vertical-nav__item, .navigation-secondary li { list-style-type: none; }
+
+// Dark
+.pf-m-dark {
+    background: #1A1A1A;
+    color: white;
+    padding: 15px;
+}
+
+.pf-l-page__main-section.pf-m-dark:first-of-type{
+    background: #353535;
+
+    h1 { color: white; }
+}

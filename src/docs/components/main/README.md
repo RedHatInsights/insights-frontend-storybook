@@ -13,17 +13,6 @@ const MyCmp = () => (
 )
 ```
 
-## Dark Body
-
-```javascript
-
-import { Main } from '@redhat-insights/insights-frontend-components/components/Main';
-
-const MyCmp = () => (
-    <Main dark> {content} </Main>
-)
-```
-
 ## Use with PageHeader to make a page
 
 ```javascript
@@ -46,12 +35,11 @@ const MyCmp = () => (
 
 ## Props
 
-### Main
+### Main props
 
 ```javascript
 {
     className: propTypes.string,
     children: propTypes.any.isRequired,
-    dark: propTypes.bool
 }
 ```
