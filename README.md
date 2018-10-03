@@ -10,6 +10,10 @@ This is documentation for:
 - Redux examples
 - API examples
 
+## Tech Notes
+- In prod, pre prod, and on local dev environments (insights-proxy) all of the API is accessible via the same hostname that the frontend is served. You dont need to go to api.access* in prod to hit /r/insights/. You can safely call using the path "/r/insights" on the same hostname. So no need to use CORS in your frontend/api.
+- Insights Chrome will handle web frontend authentication challenge, and auth session management for you. If you app is chromed and you are logged in you can expect that a JWT is going back to 3scale automatically and 3scale is handling the validation of that JWT for you. (This is not yet implemented in Chrome, but it is coming soon)
+
 ## Dev Installation instructions
 
 1. `git clone git@github.com:RedHatInsights/insights-frontend-storybook.git`
