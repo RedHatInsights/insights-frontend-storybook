@@ -10,17 +10,17 @@ import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 import '../../stories.scss';
 
 // Component
-import { Ansible } from '@red-hat-insights/insights-frontend-components';
+import { Dark, PageHeader, PageHeaderTitle, Main } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import AnsibleReadMe from '../../docs/components/ansible/README.md';
+import DarkReadMe from '../../docs/components/dark/README.md';
 import { withReadme }  from 'storybook-readme';
 
 storiesOf('Components', module)
-    .addDecorator(withReadme(AnsibleReadMe))
+    .addDecorator(withReadme(DarkReadMe))
     .addDecorator(withKnobs)
     .addWithChapters(
-        'Ansible Icon',
+        'Dark Mode',
         {
             chapters: [
                 {
@@ -31,7 +31,14 @@ storiesOf('Components', module)
                             title: 'Interactive Preview',
                             sectionFn: ('', () => {
                                 return(
-                                    <Ansible unsupported={boolean('unsupported', false)}/>
+                                    <Dark>
+                                        <PageHeader>
+                                            <PageHeaderTitle title = 'dark title'/>
+                                        </PageHeader>
+                                        <Main>
+                                            <p> dark body text </p>
+                                        </Main>
+                                    </Dark>
                                 )
                             })
                         },

@@ -45,7 +45,7 @@ const MyCmp = () => (
 
 ## Props
 
-### PageHeader
+### PageHeader props
 
 ```javascript
 {
