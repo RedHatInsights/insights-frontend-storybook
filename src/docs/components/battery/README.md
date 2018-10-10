@@ -10,7 +10,7 @@ Import Battery, its font and styles from this package.
 
 ```JSX
 import React from 'react';
-import { Battery } from '@redhat-insights/insights-frontent-components/';
+import { Battery } from '@red-hat-insights/insights-frontent-components/';
 
 class YourCmp extends React.Component {
   render() {

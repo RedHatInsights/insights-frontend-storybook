@@ -8,7 +8,7 @@ This component uses React's context selector.
 
 ```javascript
 
-import { Dark, PageHeader, PageHeaderTitle, Main } from '@redhat-insights/insights-frontend-components';
+import { Dark, PageHeader, PageHeaderTitle, Main } from '@red-hat-insights/insights-frontend-components';
 
 const MyCmp = () => (
     <Dark>

@@ -18,8 +18,8 @@ Import Section component and its styles.
 
 ```javascript
 
-import { Section } from '@redhat-insights/insights-frontend-components/components/Section';
-import '@redhat-insights/insights-frontend-components/components/Section.css'
+import { Section } from '@red-hat-insights/insights-frontend-components/components/Section';
+import '@red-hat-insights/insights-frontend-components/components/Section.css'
 import React from 'react';
 
 const MyCmp = () => (
