@@ -6,7 +6,7 @@ This component will allow you to wrap the main content in appropriate tags
 
 ```javascript
 
-import { Main } from '@redhat-insights/insights-frontend-components/components/Main';
+import { Main } from '@red-hat-insights/insights-frontend-components/components/Main';
 
 const MyCmp = () => (
     <Main> {content} </Main>
@@ -16,9 +16,9 @@ const MyCmp = () => (
 ## Use with PageHeader to make a page
 
 ```javascript
-import { Main } from '@redhat-insights/insights-frontend-components/components/Main';
-import { PageHeader } from '@redhat-insights/insights-frontend-components/components/PageHeader';
-import { PageHeaderTitle } from '@redhat-insights/insights-frontend-components/components/PageHeader';
+import { Main } from '@red-hat-insights/insights-frontend-components/components/Main';
+import { PageHeader } from '@red-hat-insights/insights-frontend-components/components/PageHeader';
+import { PageHeaderTitle } from '@red-hat-insights/insights-frontend-components/components/PageHeader';
 
 const MyCmp = () => (
     <React.Fragment>
