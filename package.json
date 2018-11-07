@@ -35,5 +35,8 @@
     "react-storybook-addon-chapters": "^2.1.5",
     "sass-loader": "^7.0.2",
     "storybook-readme": "^3.3.0"
+  },
+  "insights": {
+    "appname": "storybook"
   }
 }
