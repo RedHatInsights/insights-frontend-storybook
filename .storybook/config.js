@@ -1,8 +1,11 @@
 // config.js
 import React from 'react';
+import { Provider } from 'react-redux';
+import { init } from '../src/store';
 import { configure, addDecorator, setAddon } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import { withInfo } from '@storybook/addon-info';
+import logger from 'redux-logger';
 
 import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
 
@@ -37,9 +40,11 @@ setOptions({
 
 //adding global decorators
 addDecorator(story => (
-  <div style={{padding: '15px'}}>
-    {story()}
-  </div>
+  <Provider store={ init().getStore() }>
+    <div style={{padding: '15px'}}>
+      {story()}
+    </div>
+  </Provider>
 ));
 
 function loadStories() {
