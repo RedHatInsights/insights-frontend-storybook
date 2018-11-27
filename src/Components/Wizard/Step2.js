@@ -15,12 +15,12 @@ class Step2 extends Component {
     constructor () {
         super();
         this.state = {
-            systemValue: 'Select One',
+            exampleValue: 'Select One',
         };
-        this.onChangeSystemOptions = this.onChangeSystemOptions.bind(this);
+        this.onChangeexampleOptions = this.onChangeexampleOptions.bind(this);
 
-        // TODO: Change these to actual system groups
-        this.systemOptions = [
+        // TODO: Change these to actual example groups
+        this.exampleOptions = [
             { value: 'Select One', label: 'Select One', disabled: true },
             { value: 'Value 1', label: 'Value 1', disabled: false },
             { value: 'Value 2', label: 'Value 2', disabled: false },
@@ -28,20 +28,20 @@ class Step2 extends Component {
         ];
     };
 
-    onChangeSystemOptions(systemValue) {
-        this.setState({ systemValue });
+    onChangeexampleOptions(exampleValue) {
+        this.setState({ exampleValue });
     };
 
 
     render() {
         return (
             <React.Fragment>
-                <h2> Select the system(s) for the plan </h2>
+                <h2> Select values for Example </h2>
                 <Form className='example-wizard example-wizard__step-2'>
-                    <FormGroup isRequired fieldId="select-systems">
-                        <Radio id="one-system" name="select-systems" label="Example Select" aria-label="Example Select" />
-                        <Select value= { this.state.systemValue } onChange={ this.onChangeSystemOptions } aria-label="Select Input">
-                            { this.systemOptions.map((option, index) => (
+                    <FormGroup isRequired fieldId="select-example">
+                        <Radio id="one-example" name="select-example" label="Example Select" aria-label="Example Select" />
+                        <Select value= { this.state.exampleValue } onChange={ this.onChangeexampleOptions } aria-label="Select Input">
+                            { this.exampleOptions.map((option, index) => (
                                 <SelectOption isDisabled={ option.disabled } key={ index } value={ option.value } label={ option.label } />
                             )) }
                         </Select>

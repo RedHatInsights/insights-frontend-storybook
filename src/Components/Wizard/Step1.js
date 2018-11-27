@@ -26,7 +26,7 @@ class Step1 extends Component {
 
         return (
             <React.Fragment>
-                <h2> Name your plan </h2>
+                <h2> This is the first step. Each step can be inline or imported.</h2>
                 <Form className='example-wizard example-wizard__step-1'>
                     <FormGroup
                         label="Example Name Input"
