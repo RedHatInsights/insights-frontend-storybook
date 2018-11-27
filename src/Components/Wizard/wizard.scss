@@ -1,0 +1,13 @@
+@import '@red-hat-insights/insights-frontend-components/Utilities/_mixins.scss';
+
+.ins-c-wizard-example {
+    .pf-c-form__group {
+        @include rem('margin-top', 15px);
+    }
+    .example-wizard__step-2 .pf-c-form__group{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        @include rem('grid-column-gap', 30px);
+        @include rem('grid-row-gap', 15px);
+    }
+}
