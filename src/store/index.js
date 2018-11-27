@@ -1,10 +1,10 @@
-import ReducerRegistry from '@red-hat-insights/insights-frontend-components/Utilities/ReducerRegistry';
+import { getRegistry } from '@red-hat-insights/insights-frontend-components';
 import promiseMiddleware from 'redux-promise-middleware';
 
 let registry;
 
 export function init (...middleware) {
-    registry = new ReducerRegistry({}, [
+    registry = getRegistry({}, [
         promiseMiddleware(),
         ...middleware
     ]);
