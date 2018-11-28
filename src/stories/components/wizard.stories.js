@@ -6,6 +6,7 @@ import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
 import { withInfo } from '@storybook/addon-info';
 import { StateDecorator, Store } from '@sambego/storybook-state';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 
 // Component
 import { Wizard } from '@red-hat-insights/insights-frontend-components';
@@ -27,6 +28,7 @@ const store = new Store({
 storiesOf('Components', module)
     .addDecorator(withReadme(WizardReadme))
     .addDecorator(StateDecorator(store))
+    .addDecorator(withKnobs)
     .addWithChapters(
         'Wizard',
         {
@@ -49,7 +51,7 @@ storiesOf('Components', module)
                                     <React.Fragment>
                                         <Button variant='primary' onClick={() => store.set({ isModalOpen: !store.get("isModalOpen") })}> Open Wizard </Button>
                                         <Wizard
-                                            isLarge
+                                            isLarge={boolean('Large', true)}
                                             title="Wizard Example"
                                             className='ins-c-wizard-example'
                                             handleModalToggle = { () => store.set({ isModalOpen: !store.get("isModalOpen") })}
