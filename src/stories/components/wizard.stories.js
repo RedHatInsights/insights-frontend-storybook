@@ -20,6 +20,7 @@ import { withReadme }  from 'storybook-readme';
 import Step1 from '../../Components/Wizard/Step1';
 import Step2 from '../../Components/Wizard/Step2';
 import Step3 from '../../Components/Wizard/Step3';
+import Step4 from '../../Components/Wizard/Step4';
 
 const store = new Store({
     isModalOpen: false
@@ -44,6 +45,7 @@ storiesOf('Components', module)
                                     <Step1/>,
                                     <Step2/>,
                                     <Step3/>,
+                                    <Step4/>
                                 ];
 
                                 return (
