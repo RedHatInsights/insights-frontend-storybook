@@ -6,6 +6,7 @@ import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
 import { withInfo } from '@storybook/addon-info';
 import { StateDecorator, Store } from '@sambego/storybook-state';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 
 // Component
 import { Wizard } from '@red-hat-insights/insights-frontend-components';
@@ -19,6 +20,7 @@ import { withReadme }  from 'storybook-readme';
 import Step1 from '../../Components/Wizard/Step1';
 import Step2 from '../../Components/Wizard/Step2';
 import Step3 from '../../Components/Wizard/Step3';
+import Step4 from '../../Components/Wizard/Step4';
 
 const store = new Store({
     isModalOpen: false
@@ -27,6 +29,7 @@ const store = new Store({
 storiesOf('Components', module)
     .addDecorator(withReadme(WizardReadme))
     .addDecorator(StateDecorator(store))
+    .addDecorator(withKnobs)
     .addWithChapters(
         'Wizard',
         {
@@ -42,6 +45,7 @@ storiesOf('Components', module)
                                     <Step1/>,
                                     <Step2/>,
                                     <Step3/>,
+                                    <Step4/>
                                 ];
 
                                 return (
@@ -49,7 +53,7 @@ storiesOf('Components', module)
                                     <React.Fragment>
                                         <Button variant='primary' onClick={() => store.set({ isModalOpen: !store.get("isModalOpen") })}> Open Wizard </Button>
                                         <Wizard
-                                            isLarge
+                                            isLarge={boolean('Large', true)}
                                             title="Wizard Example"
                                             className='ins-c-wizard-example'
                                             handleModalToggle = { () => store.set({ isModalOpen: !store.get("isModalOpen") })}
