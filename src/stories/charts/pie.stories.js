@@ -7,9 +7,6 @@ import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, number, text, boolean, select } from '@storybook/addon-knobs';
 import { Router, Route, IndexRoute, BrowserRouter} from 'react-router-dom'
 
-// Styling
-import '../../stories.scss';
-
 // Component
 import { Pie } from '@red-hat-insights/insights-frontend-components';
 

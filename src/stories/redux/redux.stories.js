@@ -7,8 +7,6 @@ import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { doc }  from 'storybook-readme';
 
-// Styling
-import '../../stories.scss';
 
 // README
 import ReduxDoc from '../../docs/redux/DOC.md';

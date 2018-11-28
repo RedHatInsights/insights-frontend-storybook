@@ -6,9 +6,6 @@ import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 
-// Styling
-import '../../stories.scss';
-
 // Component
 import { PageHeader, PageHeaderTitle } from '@red-hat-insights/insights-frontend-components';
 

@@ -4,8 +4,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { Provider, connect } from 'react-redux';
-// Styling
-import '../../../stories.scss';
 
 // Component
 import {

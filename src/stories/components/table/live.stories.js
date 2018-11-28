@@ -4,8 +4,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, button, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-// Styling
-import '../../../stories.scss';
 
 // Component
 import { Table, Pagination, TableVariant, SortDirection, dropDirection, SimpleTableFilter } from '@red-hat-insights/insights-frontend-components';
