@@ -7,9 +7,6 @@ import chaptersAddon from 'react-storybook-addon-chapters';
 import { withInfo } from '@storybook/addon-info';
 import { StateDecorator, Store } from '@sambego/storybook-state';
 
-// Styling
-import '../../stories.scss';
-
 // Component
 import { Wizard } from '@red-hat-insights/insights-frontend-components';
 import { Button } from '@patternfly/react-core';

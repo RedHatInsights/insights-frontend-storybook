@@ -5,9 +5,6 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import chaptersAddon from 'react-storybook-addon-chapters';
 
-// Styling
-import '../../stories.scss';
-
 // README
 import ChromeDoc from '../../docs/repos/chrome/DOC.md';
 import ProxyDoc from '../../docs/repos/proxy/DOC.md';

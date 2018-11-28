@@ -8,9 +8,6 @@ import chaptersAddon from 'react-storybook-addon-chapters';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { doc, withDocs, withReadme }  from 'storybook-readme';
 
-// Styling
-import '../../stories.scss';
-
 // README
 import WelcomeDoc from '../../docs/welcome/gettingStarted/DOC.md';
 import WelcomeReadme from '../../docs/welcome/gettingStarted/README.md';

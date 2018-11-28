@@ -13,28 +13,16 @@ Insights Chrome comes with a Javacript API that allows applications to control n
     // identify yourself (the application). This tells Chrome which global navigation element should be active
     insights.chrome.identifyApp('advisor');
 
-    // define application navigation (navigation submenu)
-    // at most one of the elements should be declared active
-    // the operation is idempotent
-    insights.chrome.navigation([{
-        id: 'stability',
-        title: 'Stability'
-    }, {
-        id: 'performance',
-        title: 'Performance',
-        active: true
-    }]);
+    // Build the navigation
+    insights.chrome.navigation(buildNavigation());
 
-    // register a listener for application navigation events
-    const unregister = insights.chrome.on('APP_NAVIGATION', event => {
-        // change application route in response to navigation event from Chrome
-        history.push(`/${event.navId}`);
-    });
+    // Lets chrome know what page the user is viewing
+    this.appNav = insights.chrome.on('APP_NAVIGATION', event => this.props.history.push(`/${event.navId}`));
 
-    // the listener can be unregistered if needed
-    unregister();
+    // Listen for navigation changes and build appropriately
+    this.buildNav = this.props.history.listen(() => insights.chrome.navigation(buildNavigation()));
 ```
 
-The following events can be observed:
+Insights Chrome relays a static navigation
 
-* `APP_NAVIGATION` - fired when the application navigation option is selected. `event.navId` can be used to access the id of the navigation option
+If you would like to add/remove sub navigation items that are present in the global nav, open a PR in [Insights Chrome](https://github.com/RedHatInsights/insights-chrome)

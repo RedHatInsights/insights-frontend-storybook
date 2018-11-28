@@ -16,18 +16,20 @@ You can include/use chrome in your development project by running the [insights-
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <title>Red Hat Insights | Advisor</title>
-        <esi:include src="/insights/static/chrome/snippets/head.html"/>
+        <title> Red Hat Insights | App Name </title>
+        <esi:include src="/@@insights/static/chrome/snippets/head.html"/>
     </head>
     <body>
         <div class="pf-c-background-image"></div>
         <div class="pf-l-page" id="page">
-            <esi:include src="/insights/static/chrome/snippets/header.html"/>
-            <esi:include src="/insights/static/chrome/snippets/sidebar.html"/>
-            <main role="main" class="pf-l-page__main" id="root"/>
+            <esi:include src="/@@insights/static/chrome/snippets/header.html"/>
+            <esi:include src="/@@insights/static/chrome/snippets/sidebar.html"/>
+            <main role="main" class="pf-l-page__main" id="root">
+                <esi:include src="/@@insights/static/chrome/snippets/footer.html"/>
+            </main>
         </div>
     </body>
 </html>

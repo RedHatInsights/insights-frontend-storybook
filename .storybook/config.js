@@ -11,6 +11,8 @@ import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
 
 import { Button } from '@patternfly/react-core';
 
+import '../src/stories.scss';
+
 const api = require.context('../src/stories/api', true, /stories\.js$/);
 const chrome = require.context('../src/stories/chrome', true, /stories\.js$/);
 const components = require.context('../src/stories/components', true, /stories\.js$/);
@@ -33,7 +35,7 @@ setAddon(chaptersAddon);
 // addon-options
 setOptions({
   name: 'Red Hat Insights', // Name in top left Corner
-  url: 'https://access.redhat.com/insights/platform/', // URL
+  url: 'https://github.com/RedHatInsights', // URL
   addonPanelInRight: true,
   sortStoriesByKind: false
 });

@@ -3,8 +3,6 @@ import React from 'react';
 // Libraries
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-// Styling
-import '../../../stories.scss';
 
 // Component
 import { Table, Pagination, TableVariant } from '@red-hat-insights/insights-frontend-components';
