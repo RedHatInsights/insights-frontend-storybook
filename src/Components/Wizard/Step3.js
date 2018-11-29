@@ -15,7 +15,7 @@ class Step3 extends Component {
     constructor () {
         super();
         this.state = {
-            exampleValue: 'Select One',
+            value: 'Select One',
         };
         this.onChangeexampleOptions = this.onChangeexampleOptions.bind(this);
 
@@ -28,10 +28,13 @@ class Step3 extends Component {
         ];
     };
 
-    onChangeexampleOptions(exampleValue) {
-        this.setState({ exampleValue });
+    onChangeexampleOptions(value) {
+        this.setState({ value });
     };
 
+    componentWillUnmount() {
+        console.log(`[WIZARD] Select value: ${this.state.value}`);
+    }
 
     render() {
         return (
@@ -40,7 +43,7 @@ class Step3 extends Component {
                 <Form className='example-wizard example-wizard__step-2'>
                     <FormGroup isRequired fieldId="select-example">
                         <Radio id="one-example" name="select-example" label="Example Select" aria-label="Example Select" />
-                        <Select value= { this.state.exampleValue } onChange={ this.onChangeexampleOptions } aria-label="Select Input">
+                        <Select value= { this.state.value } onChange={ this.onChangeexampleOptions } aria-label="Select Input">
                             { this.exampleOptions.map((option, index) => (
                                 <SelectOption isDisabled={ option.disabled } key={ index } value={ option.value } label={ option.label } />
                             )) }

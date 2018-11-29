@@ -20,6 +20,10 @@ class Step1 extends Component {
         this.setState({ value });
     };
 
+    componentWillUnmount() {
+        console.log(`[WIZARD] Input value: ${this.state.value}`);
+    }
+
     render() {
 
         const { value } = this.state;
