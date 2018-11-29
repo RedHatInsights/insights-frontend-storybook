@@ -34,6 +34,7 @@
     "@storybook/addons": "^4.0.8",
     "@storybook/react": "^4.0.8",
     "babel-loader": "^8.0.0-beta.6",
+    "babel-plugin-add-react-displayname": "0.0.5",
     "file-loader": "^2.0.0",
     "glob": "^7.1.2",
     "http-proxy-middleware": "^0.18.0",
