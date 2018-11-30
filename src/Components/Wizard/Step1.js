@@ -8,8 +8,6 @@ import {
 
 class Step1 extends Component {
 
-    static displayName = "Step1";
-
     constructor () {
         super();
         this.state = {
