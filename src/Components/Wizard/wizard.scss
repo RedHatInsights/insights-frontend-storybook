@@ -14,3 +14,5 @@
         @include rem('grid-row-gap', 15px);
     }
 }
+
+.sizedWizard { * + * { @include rem('margin-top', 15px); } }
