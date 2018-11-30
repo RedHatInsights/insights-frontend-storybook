@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Step4 = () => {
+class Step4 extends Component {
 
-    return (
-        <React.Fragment>
-            <h2> This is the last step </h2>
-            <p> Notice how the 'continue' button changes to 'confirm' </p>
-        </React.Fragment>
-    );
+    render() {
+        return (
+            <React.Fragment>
+                <h2> This is the last step </h2>
+                <p> Notice how the 'continue' button changes to 'confirm' </p>
+            </React.Fragment>
+        );
+    }
 };
 
 export default Step4;
