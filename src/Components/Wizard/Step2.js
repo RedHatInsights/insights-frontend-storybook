@@ -1,55 +1,15 @@
 import React, { Component } from 'react';
 
-import {
-    Form,
-    FormGroup,
-    Radio,
-    Select,
-    SelectOption
-} from '@patternfly/react-core';
-
-import './wizard.scss';
-
 class Step2 extends Component {
-
-    constructor () {
-        super();
-        this.state = {
-            exampleValue: 'Select One',
-        };
-        this.onChangeexampleOptions = this.onChangeexampleOptions.bind(this);
-
-        // TODO: Change these to actual example groups
-        this.exampleOptions = [
-            { value: 'Select One', label: 'Select One', disabled: true },
-            { value: 'Value 1', label: 'Value 1', disabled: false },
-            { value: 'Value 2', label: 'Value 2', disabled: false },
-            { value: 'Value 3 - Disabled', label: 'Value 3 - Disabled', disabled: true }
-        ];
-    };
-
-    onChangeexampleOptions(exampleValue) {
-        this.setState({ exampleValue });
-    };
-
 
     render() {
         return (
-            <React.Fragment>
-                <h2> Select values for Example </h2>
-                <Form className='example-wizard example-wizard__step-2'>
-                    <FormGroup isRequired fieldId="select-example">
-                        <Radio id="one-example" name="select-example" label="Example Select" aria-label="Example Select" />
-                        <Select value= { this.state.exampleValue } onChange={ this.onChangeexampleOptions } aria-label="Select Input">
-                            { this.exampleOptions.map((option, index) => (
-                                <SelectOption isDisabled={ option.disabled } key={ index } value={ option.value } label={ option.label } />
-                            )) }
-                        </Select>
-                    </FormGroup>
-                </Form>
-            </React.Fragment>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         );
-    };
+    }
 };
 
 export default Step2;
