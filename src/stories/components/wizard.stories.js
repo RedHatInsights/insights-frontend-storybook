@@ -56,7 +56,7 @@ storiesOf('Components', module)
                                             isLarge={boolean('Large', true)}
                                             title="Wizard Example"
                                             className='ins-c-wizard-example'
-                                            handleModalToggle = { () => store.set({ isModalOpen: !store.get("isModalOpen") })}
+                                            onClose = { () => store.set({ isModalOpen: !store.get("isModalOpen") })}
                                             isOpen= { store.get("isModalOpen") }
                                             content = { WizardStepContent }
                                         />

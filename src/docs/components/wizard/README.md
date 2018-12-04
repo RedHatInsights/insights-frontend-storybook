@@ -27,22 +27,33 @@ class YourCmp extends React.Component {
         this.state = {
             isModalOpen: false
         };
-        this.handleModalToggle = this.handleModalToggle.bind(this);
+        this.onClose = this.onClose.bind(this);
+        this.openWizard = this.openWizard.bind(this);
     };
 
     // Handle the open/close
-    handleModalToggle() {
-        this.setState(({ isModalOpen }) => ({
-            isModalOpen: !isModalOpen
-        }));
+    onClose(submitted) {
+        this.setState({
+            isModalOpen: false
+        });
+
+        if (submitted) {
+            // on-submit action goes here...
+        }
     };
+
+    openWizard() {
+        this.setState({
+            isModalOpen: true
+        });
+    }
 
     render() {
 
         const { isModalOpen } = this.state;
 
         // Wizard Content
-        const WizardStepContent = [
+        const ModalStepContent = [
             <Step1 key='step1'/>,
             <Foo key='Foo'/>
             <Bar key='Bar'/>
@@ -51,14 +62,14 @@ class YourCmp extends React.Component {
         return (
             <React.Fragment>
                 // Button to open the wizard
-                <Button variant='primary' onClick={ this.handleModalToggle }> Open Wizard </Button>
+                <Button variant='primary' onClick={ this.openWizard }> Open Wizard </Button>
                 <Wizard
                     isLarge
-                    title="Example Wizard"
-                    className='ins-c-wizard-example'
-                    handleModalToggle = { this.handleModalToggle }
+                    title="Create Plan"
+                    className='ins-c-plan-modal'
+                    onClose = { this.onClose }
                     isOpen= { isModalOpen }
-                    content = { WizardStepContent }
+                    content = { ModalStepContent }
                 />
             </React.Fragment>
         );
@@ -76,7 +87,7 @@ Wizard
     title: PropTypes.string,
     className: PropTypes.string,
     isOpen: PropTypes.any,
-    handleModalToggle: PropTypes.any,
+    onClose: PropTypes.func,
     content: PropTypes.array
 };
 ```
