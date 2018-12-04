@@ -65,8 +65,8 @@ class YourCmp extends React.Component {
                 <Button variant='primary' onClick={ this.openWizard }> Open Wizard </Button>
                 <Wizard
                     isLarge
-                    title="Create Plan"
-                    className='ins-c-plan-modal'
+                    title="Example Wizard"
+                    className='ins-c-wizard-example'
                     onClose = { this.onClose }
                     isOpen= { isModalOpen }
                     content = { ModalStepContent }
