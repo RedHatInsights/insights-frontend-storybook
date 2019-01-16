@@ -38,28 +38,6 @@ storiesOf('Components', module)
                             })
                         },
                     ],
-                },
-                {
-                    title: 'Combining to make one skeleton',
-                    sections: [
-                        {
-                            title: 'Interactive Preview',
-                            sectionFn: ('', () => {
-                                return(
-                                    <Card>
-                                        <CardHeader><Skeleton size='sm'/></CardHeader>
-                                        <CardBody>
-                                            <Stack gutter='sm'>
-                                                <StackItem><Skeleton size='lg'/></StackItem>
-                                                <StackItem><Skeleton size='md'/></StackItem>
-                                            </Stack>
-                                        </CardBody>
-                                        <CardFooter><Skeleton size='xs'/></CardFooter>
-                                    </Card>
-                                )
-                            })
-                        },
-                    ],
                 }
             ]
         }
