@@ -55,7 +55,6 @@ function loadStories() {
   repos.keys().forEach(repos);
   chrome.keys().forEach(chrome);
   deployments.keys().forEach(deployments);
-  api.keys().forEach(api);
   redux.keys().forEach(redux);
   components.keys().forEach(components);
   charts.keys().forEach(charts);

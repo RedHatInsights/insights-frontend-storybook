@@ -7,20 +7,42 @@ Insights Chrome provides a header, footer and primary navigation to all Insights
 Insights Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
 
 ```js
-    // initialize chrome
-    insights.chrome.init();
 
-    // identify yourself (the application). This tells Chrome which global navigation element should be active
-    insights.chrome.identifyApp('advisor');
+// If you want notifications
+import { NotificationsPortal, notifications } from '@red-hat-insights/insights-frontend-components/components/Notifications';
+import '@red-hat-insights/insights-frontend-components/components/Notifications.css';
+
+class App extends Component {
+
+    componentDidMount(){
+
+        // If you want notifications
+        register({ notifications });
+
+        // initialize chrome
+        insights.chrome.init();
+
+        // identify yourself (the application). This tells Chrome which global navigation element should be active
+        insights.chrome.identifyApp('advisor');
+    }
 
     // Build the navigation
-    insights.chrome.navigation(buildNavigation());
+    componentWillUnmount () {
+        this.appNav();
+        this.buildNav();
+    }
 
-    // Lets chrome know what page the user is viewing
-    this.appNav = insights.chrome.on('APP_NAVIGATION', event => this.props.history.push(`/${event.navId}`));
+    // Render your app
+    render () {
+        return (
+            <React.Fragment>
+                <NotificationsPortal /> //if you want notifications
+                <Routes childProps={ this.props } />
+            </React.Fragment>
+        );
+    }
+}
 
-    // Listen for navigation changes and build appropriately
-    this.buildNav = this.props.history.listen(() => insights.chrome.navigation(buildNavigation()));
 ```
 
 Insights Chrome relays a static navigation

@@ -2,10 +2,7 @@ import React from 'react';
 
 // Libraries
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import chaptersAddon from 'react-storybook-addon-chapters';
-import { withKnobs, number, boolean, text } from '@storybook/addon-knobs';
-import { Router, Route, IndexRoute, BrowserRouter} from 'react-router-dom'
+import { withKnobs, number, text } from '@storybook/addon-knobs';
 
 // Component
 import { Matrix } from '@red-hat-insights/insights-frontend-components';

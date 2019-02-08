@@ -1,4 +1,3 @@
-
 # Gauge Chart
 
 This component is usefull to display x number of values to compare them to 100

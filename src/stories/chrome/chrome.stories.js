@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Libraries
 import { storiesOf } from '@storybook/react';
 

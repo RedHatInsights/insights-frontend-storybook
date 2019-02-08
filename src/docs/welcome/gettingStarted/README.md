@@ -1,4 +1,4 @@
-This is the Addon Panel which supports markdown files, knobs, and action loggers. 
+# This is the Addon Panel which supports markdown files, knobs, and action loggers
 
 Keyboard Shortcuts
 

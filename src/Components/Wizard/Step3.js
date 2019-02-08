@@ -4,8 +4,8 @@ import {
     Form,
     FormGroup,
     Radio,
-    Select,
-    SelectOption
+    FormSelect,
+    FormSelectOption
 } from '@patternfly/react-core';
 
 import './wizard.scss';
@@ -43,11 +43,11 @@ class Step3 extends Component {
                 <Form className='example-wizard example-wizard__step-2'>
                     <FormGroup isRequired fieldId="select-example">
                         <Radio id="one-example" name="select-example" label="Example Select" aria-label="Example Select" />
-                        <Select value= { this.state.value } onChange={ this.onChangeexampleOptions } aria-label="Select Input">
+                        <FormSelect value= { this.state.value } onChange={ this.onChangeexampleOptions } aria-label="Select Input">
                             { this.exampleOptions.map((option, index) => (
-                                <SelectOption isDisabled={ option.disabled } key={ index } value={ option.value } label={ option.label } />
+                                <FormSelectOption isDisabled={ option.disabled } key={ index } value={ option.value } label={ option.label } />
                             )) }
-                        </Select>
+                        </FormSelect>
                     </FormGroup>
                 </Form>
             </React.Fragment>
