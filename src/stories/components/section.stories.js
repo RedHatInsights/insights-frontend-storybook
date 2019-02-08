@@ -2,10 +2,6 @@ import React from 'react';
 
 // Libraries
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import chaptersAddon from 'react-storybook-addon-chapters';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
-import { withInfo } from '@storybook/addon-info';
 
 // Component
 import { Section, Battery } from '@red-hat-insights/insights-frontend-components';
