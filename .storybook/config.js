@@ -13,7 +13,6 @@ import { Button } from '@patternfly/react-core';
 
 import '../src/stories.scss';
 
-const api = require.context('../src/stories/api', true, /stories\.js$/);
 const chrome = require.context('../src/stories/chrome', true, /stories\.js$/);
 const components = require.context('../src/stories/components', true, /stories\.js$/);
 const redux = require.context('../src/stories/redux', true, /stories\.js$/);
