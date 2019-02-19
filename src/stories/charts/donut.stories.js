@@ -2,10 +2,8 @@ import React from 'react';
 
 // Libraries
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import chaptersAddon from 'react-storybook-addon-chapters';
-import { withKnobs, number, text, boolean, select } from '@storybook/addon-knobs';
-import { Router, Route, IndexRoute, BrowserRouter} from 'react-router-dom'
+import { withKnobs, number, text, select } from '@storybook/addon-knobs';
+import { Route, BrowserRouter} from 'react-router-dom'
 
 // Component
 import { Donut } from '@red-hat-insights/insights-frontend-components';

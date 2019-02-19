@@ -15,10 +15,9 @@ If you cloned/used the starter-app before the new build branches were created, [
 
 The app build repo has 6 different branches that each deploy to a different environment. For prod-stable and prod-beta, each time a push event occurs on a branch, a Jenkins job is triggered that will rsync all of the contents of that branch to its respective environment within seconds. For the CI and QA environments each environment will pull from it’s respective branch every 60 seconds which means that if you push new files to a pre-prod branch, you can expect to see those files updated within a minute. Below is a list of the branches on each app build repo and the environments that they point to.
 
-prod-stable: https://access.redhat.com/insights/platform/
-prod-beta: https://access.redhat.com/insightsbeta/platform/
-qa-stable: https://access.qa.itop.redhat.com/insights/platform/
-qa-beta: https://access.qa.itop.redhat.com/insightsbeta/platform/
-ci-stable: https://access.ci.itop.redhat.com/insights/platform/
-ci-beta: https://access.ci.itop.redhat.com/insightsbeta/platform/
-
+* prod-stable: https://access.redhat.com/insights/platform/
+* prod-beta: https://access.redhat.com/insightsbeta/platform/
+* qa-stable: https://access.qa.itop.redhat.com/insights/platform/
+* qa-beta: https://access.qa.itop.redhat.com/insightsbeta/platform/
+* ci-stable: https://access.ci.itop.redhat.com/insights/platform/
+* ci-beta: https://access.ci.itop.redhat.com/insightsbeta/platform/

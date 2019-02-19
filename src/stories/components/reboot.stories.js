@@ -2,34 +2,31 @@ import React from 'react';
 
 // Libraries
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 // Component
-import { Main } from '@red-hat-insights/insights-frontend-components';
+import { Reboot } from '@red-hat-insights/insights-frontend-components';
 
 // README
-import MainReadme from '../../docs/components/main/README.md';
+import RebootReadMe from '../../docs/components/reboot/README.md';
 import { withReadme }  from 'storybook-readme';
 
 storiesOf('Components', module)
-    .addDecorator(withReadme(MainReadme))
+    .addDecorator(withReadme(RebootReadMe))
     .addDecorator(withKnobs)
     .addWithChapters(
-        'Main',
+        'Reboot Icon',
         {
             chapters: [
                 {
-                    title: 'Main',
+                    title: 'Demo',
+                    subtitle: 'Use the "Knobs" tab in the addon panel to use interactive preview',
                     sections: [
                         {
                             title: 'Interactive Preview',
                             sectionFn: ('', () => {
                                 return(
-                                    <Main>
-                                        <p>
-                                            This is the main content of the page
-                                        </p>
-                                    </Main>
+                                    <Reboot red={boolean('red', false)}/>
                                 )
                             })
                         },

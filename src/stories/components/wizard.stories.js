@@ -2,11 +2,8 @@ import React from 'react';
 
 // Libraries
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import chaptersAddon from 'react-storybook-addon-chapters';
-import { withInfo } from '@storybook/addon-info';
 import { StateDecorator, Store } from '@sambego/storybook-state';
-import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 // Component
 import { Wizard } from '@red-hat-insights/insights-frontend-components';

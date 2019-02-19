@@ -1,4 +1,3 @@
-
 # Donut Chart
 
 This component is usefull to display x number of values to compare them to an overall value

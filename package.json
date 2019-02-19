@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@patternfly/patternfly-next": "1.0.111",
-    "@patternfly/react-core": "1.44.3",
-    "@red-hat-insights/insights-frontend-components": "^3.33.0",
+    "@patternfly/patternfly-next": "1.0.175",
+    "@patternfly/react-core": "1.51.6",
+    "@patternfly/react-table": "^0.4.17",
+    "@red-hat-insights/insights-frontend-components": "^3.33.59",
     "@sambego/storybook-state": "^1.3.1",
     "classnames": "^2.2.5",
     "create-react-class": "^15.6.3",
