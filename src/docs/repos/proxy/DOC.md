@@ -38,13 +38,6 @@ bash scripts/run.sh
 LOCAL_API=true bash scripts/run.sh
 ```
 
-#### Run with local Insights Chrome
-
-```sh
-cd ~/path/to/insights-chrome/build
-LOCAL_CHROME=true bash ~/path/to/insights-proxy/scripts/run.sh
-```
-
 #### Run with production Insights Chrome
 
 ```sh

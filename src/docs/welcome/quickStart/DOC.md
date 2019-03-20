@@ -78,13 +78,7 @@ Bootstrapped application with essential tools for rapid development
 
 ### Proxy
 
-1. Using it with Chrome
-    ```sh
-    cd ~/path/to/insights-chrome/build
-    LOCAL_CHROME=true bash ~/path/to/insights-proxy/scripts/run.sh
-    ```
-
-#### Default Configuration without Chrome
+#### Default Configuration
 
 1. Run the container with default options
     ```sh
