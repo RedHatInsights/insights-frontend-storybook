@@ -1,11 +1,11 @@
-# UXD README :rocket:
+# UX README :rocket:
 
-This section is intended to share UXD standards and patterns that relate to Insights and Cloud Services. The audience is UXers and Devs on this project who are seeking to know the "standard" UX pattern for a feature or element.
+This section is intended to share UXD team standards and patterns that relate to Insights and Cloud Services. The audience is UXers and Devs on this project who are seeking to know the "standard" UX pattern for a feature or element.
 
 Got a question? Reach out on #insights-uxd on Slack.
 
 ## Editing and adding to these docs
-UXD can add more standards and docs, as well as edit the ones that are there.
+UXD team can and should add more standards and docs, as well as edit the ones that are there.
 
 ### Editing :pencil:
 If you are not familiar/comfortable with git, you can edit documents directly on github.

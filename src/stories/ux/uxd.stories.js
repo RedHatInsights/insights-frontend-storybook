@@ -5,12 +5,12 @@ import { doc, withDocs, withReadme }  from 'storybook-readme';
 // README
 //This is all the items that we want to add. Each item corresponds to something in the doc section.
 //So, if you're adding something, make a doc, and then reference it here
-import LoadingDoc from '../../docs/uxd/loading/DOC.md';
-import UXDReadme from '../../docs/uxd/README.md';
-import AlertsNotificationsDoc from '../../docs/uxd/alertsNotifications/DOC.md';
-import LanguageDoc from '../../docs/uxd/language/DOC.md';
-import ToolbarsDoc from '../../docs/uxd/toolbarsFilters/DOC.md';
-import EmptyStatesDoc from '../../docs/uxd/emptyStates/DOC.md';
+import LoadingDoc from '../../docs/ux/loading/DOC.md';
+import UXDReadme from '../../docs/ux/README.md';
+import AlertsNotificationsDoc from '../../docs/ux/alertsNotifications/DOC.md';
+import LanguageDoc from '../../docs/ux/language/DOC.md';
+import ToolbarsDoc from '../../docs/ux/toolbarsFilters/DOC.md';
+import EmptyStatesDoc from '../../docs/ux/emptyStates/DOC.md';
 
 
 
