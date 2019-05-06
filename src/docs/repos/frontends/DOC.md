@@ -1,34 +1,80 @@
-# A running list of all of the apps:
+# A running list of all of the apps by navigation groups
 
-## Dashboard
+## Landing
 
-* [Frontend](https://github.com/RedHatInsights/insights-dashboard)
+* [Frontend](https://github.com/RedHatInsights/landing-page-frontend)
 
-## Insights (Formerly Advisor/Configuration Assessment)
+## Red Hat Insights
+
+-----
+
+### Insights (Formerly Advisor/Configuration Assessment)
 
 * [Frontend](https://github.com/RedHatInsights/insights-advisor-frontend)
 
-## Vulnerability
+### Inventory
+
+* [Frontend](https://github.com/RedHatInsights/insights-inventory-frontend)
+
+## Remediations
+
+* [Frontend](https://github.com/RedHatInsights/insights-remediations-frontend)
+
+### Insights Settings
+
+#### Hooks
+
+* [Frontend](https://github.com/RedHatInsights/notifications-frontend)
+
+#### Sources
+
+* [Frontend](https://github.com/ManageIQ/sources-ui)
+
+-----
+
+## Cloud Management Services
+
+### Dashboard
+
+* [Frontend](https://github.com/RedHatInsights/insights-dashboard)
+
+### Vulnerability
 
 * [Frontend](https://github.com/RedHatInsights/vulnerability-ui)
 
-## Compliance
+### Compliance
 
 * [Frontend](https://github.com/RedHatInsights/compliance-frontend)
+
+### Drift
+
+* [Frontend](https://github.com/RedHatInsights/drift-frontend)
+
+### Inventory
+
+* [Frontend](https://github.com/RedHatInsights/insights-inventory-frontend)
+
+## Remediations
+
+* [Frontend](https://github.com/RedHatInsights/insights-remediations-frontend)
+
+-----
+
+## Hybrid Cloud Management Services
+
+### Catalog
 
 ## Cost Management / Project Koku
 
 * [Frontend](https://github.com/project-koku/koku-ui)
 * [Documentation](https://koku.readthedocs.io/en/latest/)
 
-## Inventory
+### HCM Settings
 
-* [Frontend](https://github.com/RedHatInsights/insights-inventory-frontend)
+#### Sources
 
-## Playbooks (Formerly Remediations)
+* [Frontend](https://github.com/ManageIQ/sources-ui)
 
-* [Frontend](https://github.com/RedHatInsights/insights-remediations-frontend)
+#### RBAC
 
-## Drift
-
-* [Frontend](https://github.com/RedHatInsights/drift-frontend)
+* [Frontend](https://github.com/RedHatInsights/insights-rbac-ui)
