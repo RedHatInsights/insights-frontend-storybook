@@ -8,41 +8,31 @@ Insights Chrome comes with a Javacript API that allows applications to control n
 
 ```js
 
-// If you want notifications
-import { NotificationsPortal, notifications } from '@red-hat-insights/insights-frontend-components/components/Notifications';
-import '@red-hat-insights/insights-frontend-components/components/Notifications.css';
-
 class App extends Component {
 
-    componentDidMount(){
-
-        // If you want notifications
-        register({ notifications });
-
-        // initialize chrome
+    componentDidMount () {
         insights.chrome.init();
-
-        // identify yourself (the application). This tells Chrome which global navigation element should be active
-        insights.chrome.identifyApp('advisor');
+        // TODO change this to your appname
+        insights.chrome.identifyApp('insights');
     }
 
-    // Build the navigation
-    componentWillUnmount () {
-        this.appNav();
-        this.buildNav();
-    }
-
-    // Render your app
     render () {
         return (
-            <React.Fragment>
-                <NotificationsPortal /> //if you want notifications
-                <Routes childProps={ this.props } />
-            </React.Fragment>
+            <Routes childProps={ this.props } />
         );
     }
 }
 
+App.propTypes = {
+    history: PropTypes.object
+};
+
+/**
+ * withRouter: https://reacttraining.com/react-router/web/api/withRouter
+ * connect: https://github.com/reactjs/react-redux/blob/master/docs/api.md
+ *          https://reactjs.org/docs/higher-order-components.html
+ */
+export default withRouter (connect()(App));
 ```
 
 Insights Chrome relays a static navigation
