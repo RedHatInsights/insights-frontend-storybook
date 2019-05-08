@@ -16,6 +16,7 @@ const repos = require.context('../src/stories/repos', true, /stories\.js$/);
 const welcome = require.context('../src/stories/welcome', true, /stories\.js$/);
 const charts = require.context('../src/stories/charts', true, /stories\.js$/);
 const deployments = require.context('../src/stories/deployments', true, /stories\.js$/);
+const uxd = require.context('../src/stories/uxd', true, /stories\.js$/);
 
 setDefaults({
   sectionOptions: {
@@ -53,6 +54,7 @@ function loadStories() {
   redux.keys().forEach(redux);
   components.keys().forEach(components);
   charts.keys().forEach(charts);
+  uxd.keys().forEach(uxd);
 }
 
 configure(loadStories, module);
