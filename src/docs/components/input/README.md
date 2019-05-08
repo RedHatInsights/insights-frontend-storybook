@@ -1,6 +1,6 @@
 # Input
 
-This component will help when using input with any type you want. You don't have to worry about applied classes, just 
+This component will help when using input with any type you want. You don't have to worry about applied classes, just
 pass prop `type` and this component will decide which classes to apply.
 
 ## Usage

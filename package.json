@@ -10,6 +10,7 @@
     "@sambego/storybook-state": "^1.3.1",
     "classnames": "^2.2.5",
     "create-react-class": "^15.6.3",
+    "markdownlint-cli": "^0.15.0",
     "patternfly-react": "^2.5.1",
     "react": "^16.4.0"
   },
@@ -17,7 +18,8 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "watch": "npm run storybook -- -w",
-    "build": "npm install && build-storybook -s .storybook -o dist/"
+    "build": "npm install && npm run lint && build-storybook -s .storybook -o dist/",
+    "lint": "markdownlint src/docs/*/* -c .markdownlint.json"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
