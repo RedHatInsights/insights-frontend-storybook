@@ -22,6 +22,13 @@ This is documentation for:
 3. (optional) set up [insights-proxy](https://github.com/RedHatInsights/insights-proxy)
     - only required for insights-chrome's stories to run
 4. Run
+    - 'npm run lint' to check linting
     - `npm run start` to develop storybook pages
     - `npm run build` to build the storybook, used for testing
 5. Naviage to `localhost:9001`
+
+## Markdown Rules
+
+- This project uses [Markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) for linting the src/docs/ files
+- Rules can be found at: https://github.com/DavidAnson/markdownlint#rules--aliases
+- Overrides are in the `.markdownlint.json` file
