@@ -5,9 +5,11 @@ This section is intended to share UXD team standards and patterns that relate to
 Got a question? Reach out on #insights-uxd on Slack.
 
 ## Editing and adding to these docs
+
 UXD team can and should add more standards and docs, as well as edit the ones that are there.
 
 ### Editing :pencil:
+
 If you are not familiar/comfortable with git, you can edit documents directly on github.
 Using the file structure on github, navigation to "src/docs/uxd"
 
@@ -33,14 +35,17 @@ When you're done, write some notes about what you changed, create a branch, and 
 To reference these images, copy the image address from github (there is absolutely a better way to do this, but TBD)
 
 ### Editing - with git
+
 Same deal, same locations, just use git commands.
 
 Follow the directions on the main readme for how to use Storybook.
 
 ### Adding new topics :star:
+
 You could do this without cloning etc, but it is probably easier to clone the repo and do this locally.
 
 To add a new topic, you need to do a couple things:
+
 1. Create a folder with the name of the topics in the "docs/uxd" directory (see editing instructions)
 2. Put a DOC.md file in it (duplicate another, or from scratch)
 3. Open the "stories/uxd/uxd.stories.js" file
