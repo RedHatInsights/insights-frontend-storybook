@@ -122,6 +122,7 @@ Redux actions should only have two properties, type and payload, as a best pract
       - look at [/src/api/System/getSystems.js](https://github.com/RedHatInsights/turbo-octo-couscous/tree/master/src/api/System/getSystems.js)
   - [redux-thunk](https://github.com/gaearon/redux-thunk)
     - A function that wraps an expression to delay its evaluation
+
     ```Javascript
     // gotSystems(Error) are action creators
     function getSystems() {
@@ -133,6 +134,7 @@ Redux actions should only have two properties, type and payload, as a best pract
           };
         }
     ```
+
   - [redux-saga](https://github.com/yelouafi/redux-saga/)
     - Uses [generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
     - Could be a lot to learn initially.
