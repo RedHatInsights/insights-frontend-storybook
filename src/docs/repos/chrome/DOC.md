@@ -1,39 +1,98 @@
 # Insights Chrome
 
-[Github](https://github.com/RedHatInsights/insights-chrome)
-
 The "wrapper" around your application!
 
 Insights Chrome provides:
+    - Standard header and navigation
+    - Base CSS/style
+    - A JavaScript library for interacting with Insights Chrome
 
-- Standard header, footer, navigation
-- Base CSS/style
-- A JavaScript library for interacting with Insights Chrome
-
-## Beta usage
+## Usage
 
 You can include/use chrome in your development project by running the [insights-proxy](https://github.com/RedHatInsights/insights-proxy) in front of your application and using the following HTML template.
 
 ```html
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <title> Red Hat Insights | App Name </title>
-        <esi:include src="/@@insights/static/chrome/snippets/head.html"/>
-    </head>
-    <body>
-        <div class="pf-c-background-image"></div>
-        <div class="pf-l-page" id="page">
-            <esi:include src="/@@insights/static/chrome/snippets/header.html"/>
-            <esi:include src="/@@insights/static/chrome/snippets/sidebar.html"/>
-            <main role="main" class="pf-l-page__main" id="root">
-                <esi:include src="/@@insights/static/chrome/snippets/footer.html"/>
-            </main>
-        </div>
-    </body>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>App Name</title>
+    <esi:include src="@@env/chrome/snippets/head.html" />
+  </head>
+  <body>
+    <esi:include src="@@env/chrome/snippets/landing.html" />
+  </body>
+
 </html>
 ```
+
+Then, render your application to the "root" element. With React, for instance:
+
+```js
+function getBaseName(pathname) {
+    let release = '/';
+    const pathName = pathname.split('/');
+
+    pathName.shift();
+
+    if (pathName[0] === 'beta') {
+        pathName.shift();
+        release = `/beta/`;
+    }
+
+    return `${release}${pathName[0]}/${pathName[1]}`;
+}
+
+ReactDOM.render(
+    <Provider store={ init().getStore() }>
+        <Router basename={ getBaseName(window.location.pathname) }>
+            <App />
+        </Router>
+    </Provider>,
+
+    document.getElementById('root')
+);
+
+```
+
+## Javascript API
+
+Insights Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
+
+```js
+    // initialize chrome
+    insights.chrome.init();
+
+    // identify yourself (the application). This tells Chrome which global navigation element should be active
+    insights.chrome.identifyApp('advisor');
+
+    // define application navigation (navigation submenu)
+    // at most one of the elements should be declared active
+    // the operation is idempotent
+    insights.chrome.navigation([{
+        id: 'stability',
+        title: 'Stability'
+    }, {
+        id: 'performance',
+        title: 'Performance',
+        active: true
+    }]);
+
+    // register a listener for application navigation events
+    const unregister = insights.chrome.on('APP_NAVIGATION', event => {
+        // change application route in response to navigation event from Chrome
+        history.push(`/${event.navId}`);
+    });
+
+    // the listener can be unregistered if needed
+    unregister();
+```
+
+The following events can be observed:
+    * `APP_NAVIGATION` - fired when the application navigation option is selected. `event.navId` can be used to access the id of the navigation option
+
+To activate certain app within your app (your app is using some kind of router and you want to activate certain part of navigation programatically) you can call function `insights.chrome.appNavClick({id: 'some-id'})` for first level nav and for second level navs you have to call `insights.chrome.appNavClick({id: 'ocp-on-aws', secondaryNav: true})`
 
 ## Running the build
 
@@ -46,46 +105,46 @@ To run each task you have to first install dependencies `npm install` and then y
 If you want to watch file changes for each build just pass `-- -w` to specific task (this is not applicable to
 `npm run build:js:watch` because it's somewhat specific).
 
-1: Building of styles
+1. Building of styles
 
-```bash
-npm run build:sass
-```
+    ```bash
+    > npm run build:sass
+    ```
 
-2: Building of javascripts
+2. Building of javascripts
 
-```bash
-npm run build:js
-```
+    ```bash
+    > npm run build:js
+    ```
 
-3: Building of javascripts and watching files when they change
+3. Building of javascripts and watching files when they change
 
-```bash
-npm run build:js:watch
-```
+    ```bash
+    > npm run watch:js
+    ```
 
-4: Building of HTML partials
+4. Building of HTML partials
 
-```bash
-npm run build:pug
-```
+    ```bash
+    > npm run build:pug
+    ```
 
-5: Running tests
+5. Running tests
 
-```bash
-npm run test
-```
+    ```bash
+    > npm run test
+    ```
 
 #### Specific tasks
 
-1: Run build of whole application just once
+1. Run build of whole application just once
+
+    ```bash
+    > npm run build
+    ``1
+
+2. Watching file changes and trigger build every time something changes
 
 ```bash
-npm run build
-```
-
-2: Watching file changes and trigger build every time something changes
-
-```bash
-npm run start
+> npm run start
 ```
