@@ -1,6 +1,6 @@
 {
-  "name": "storybook",
-  "version": "1.0.0",
+  "name": "insights-frontend-storybook",
+  "version": "2.0.0",
   "description": "storybook for cloud.redhat.com",
   "main": "index.js",
   "scripts": {
