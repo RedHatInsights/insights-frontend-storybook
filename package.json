@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RedHatInsights/storybook.git"
+    "url": "git+https://github.com/RedHatInsights/insights-frontend-storybook.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RedHatInsights/storybook/issues"
+    "url": "https://github.com/RedHatInsights/insights-frontend-storybook/issues"
   },
-  "homepage": "https://github.com/RedHatInsights/storybook#readme",
+  "homepage": "https://github.com/RedHatInsights/insights-frontend-storybook#readme",
   "dependencies": {
     "@patternfly/patternfly": "2.6.6",
     "@patternfly/react-core": "3.16.10",
