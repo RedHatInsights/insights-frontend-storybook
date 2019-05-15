@@ -17,6 +17,7 @@ const welcome = require.context('../src/stories/welcome', true, /stories\.js$/);
 const charts = require.context('../src/stories/charts', true, /stories\.js$/);
 const deployments = require.context('../src/stories/deployments', true, /stories\.js$/);
 const uxd = require.context('../src/stories/uxd', true, /stories\.js$/);
+const patternfly = require.context('../src/stories/patternfly', true, /stories\.js$/);
 
 setDefaults({
   sectionOptions: {
@@ -49,6 +50,7 @@ addDecorator(story => (
 function loadStories() {
   welcome.keys().forEach(welcome);
   repos.keys().forEach(repos);
+  patternfly.keys().forEach(patternfly);
   chrome.keys().forEach(chrome);
   deployments.keys().forEach(deployments);
   redux.keys().forEach(redux);

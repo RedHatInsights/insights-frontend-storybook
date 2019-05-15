@@ -18,6 +18,7 @@ import Step1 from '../../Components/Wizard/Step1';
 import Step2 from '../../Components/Wizard/Step2';
 import Step3 from '../../Components/Wizard/Step3';
 import Step4 from '../../Components/Wizard/Step4';
+import Deprecated from '../../Components/Deprecated/Deprecated';
 
 const store = new Store({
     isModalOpen: false
@@ -48,6 +49,7 @@ storiesOf('Components', module)
                                 return (
 
                                     <React.Fragment>
+                                        <Deprecated link='https://patternfly-react.surge.sh/patternfly-4/components/wizard/'/>
                                         <Button variant='primary' onClick={() => store.set({ isModalOpen: !store.get("isModalOpen") })}> Open Wizard </Button>
                                         <Wizard
                                             isLarge={boolean('Large', true)}
