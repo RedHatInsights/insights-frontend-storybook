@@ -11,7 +11,13 @@ import '../src/stories.scss';
 addParameters({
   options: {
     sortStoriesByKind: false,
-    panelPosition: 'right'
+    panelPosition: 'right',
+    theme: {
+      base: 'light',
+      brandTitle: 'https://cloud.redhat.com',
+      brandUrl: 'https://cloud.redhat.com',
+      brandImage: 'https://www.redhat.com/cms/managed-files/styles/xlarge/s3/Logo-redhat-color-375.png?itok=F0L-WyTE'
+    }
   }
 });
 
