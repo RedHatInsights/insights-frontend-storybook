@@ -16,14 +16,18 @@ a {
 .story {
     &-header {
         border-bottom: 1px solid #eaeaea;
-        padding-bottom: 15px;
         margin-bottom: 15px;
         div { 
             display: flex;
             flex-direction: column;
         }
     }
-    &-title { font-size: 35px; }
+    &-title {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 0 !important;
+        line-height: 1.25;
+    }
     &-subtitle { font-size: 20px; }
 }
 
@@ -35,7 +39,13 @@ a {
     &-subtitle {
         display: block;
         margin-bottom: 15px;
+        color: #a1a8ad;
+        font-size: 14px;
         & + hr { display: none; }
+    }
+    &-h3 {
+        font-size: 18px !important;
+        font-weight: 400;
     }
 }
 
@@ -43,18 +53,27 @@ a {
     &-container{
         display: inline-block;
         width: 100%;
-        padding: 20px 15px 15px 15px;
+        padding: 40px 15px 15px 15px;
         margin: 15px 0;
-        border: 1px solid #eaeaea;
+        margin-bottom: 50px !important;
+        border: 1px solid #ccd6dd;
+        border-radius: 10px;
         position: relative;
     }
     &-header {
         position: absolute;
-        top: -10px;
-        left: 5px;
+        top: -15px;
+        left: 13px;
         background: #fff;
         display: inline-block;
         padding: 0 10px;
+        border: 1px solid #ccd6dd;
+        border-radius: 3px;
+        .section-title {
+            color: #898d8d !important;
+            margin-bottom: 0 !important;
+            padding: 5px;
+        }
     }
     &-button-container {
         position: absolute;
@@ -62,7 +81,7 @@ a {
         right: 15px;
         button { background-color: #fff !important; }
         button.button-active { 
-            background-color: $ins-color--blue !important;
+            background-color: #1EA7FD !important;
             color: #fff !important;
         }
     }
@@ -87,6 +106,11 @@ a {
 
         }
     }
+}
+
+pre {
+    background: #f6f9fc !important;
+    border-radius: 10px;
 }
 
 // Markdown Styling

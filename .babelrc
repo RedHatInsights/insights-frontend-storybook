@@ -1,6 +1,0 @@
-{
-    "plugins": [
-        "@babel/plugin-transform-react-display-name",
-        "add-react-displayname"
-    ]
-}

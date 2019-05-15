@@ -1,17 +1,9 @@
-# This is the Addon Panel which supports markdown files, knobs, and action loggers
+# Addon Panel
 
-Keyboard Shortcuts
+## Readme
 
-⌘ ⇧ O/  ⌃ ⇧ O `Show Search Box`
+This section will be filled with additional info that will typically span across different sections of the storybook.
 
-⌘ ⇧ G/  ⌃ ⇧ G `Toggle Addon panel position`
+## Knobs
 
-⌘ ⇧ F/  ⌃ ⇧ F `Toggle Fullscreen Mode`
-
-⌘ ⇧ X/  ⌃ ⇧ X `Toggle Stories Panel`
-
-⌘ ⇧ C/  ⌃ ⇧ C `Toggle Addon panel`
-
-⌘ ⇧ →/  ⌃ ⇧ → `Next Story`
-
-⌘ ⇧ ←/  ⌃ ⇧ ← `Previous Story`
+For most components, the Knobs panel will have actions that will allow you to interact with the components in real time.
