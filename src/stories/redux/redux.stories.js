@@ -2,7 +2,6 @@
 import { storiesOf } from '@storybook/react';
 import { doc }  from 'storybook-readme';
 
-
 // README
 import ReduxDoc from '../../docs/redux/DOC.md';
 

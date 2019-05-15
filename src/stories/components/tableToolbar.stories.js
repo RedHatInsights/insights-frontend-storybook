@@ -12,6 +12,7 @@ import { Table, TableHeader, TableBody } from '@patternfly/react-table';
 import TableToolbarReadMe from '../../docs/components/tableToolbar/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(TableToolbarReadMe))
     .addDecorator(withKnobs)

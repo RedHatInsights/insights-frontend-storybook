@@ -2,12 +2,12 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { init } from '../src/store';
 import { addParameters, configure, addDecorator, setAddon } from '@storybook/react';
-
 import chaptersAddon, { setDefaults } from 'react-storybook-addon-chapters';
 
+// import styles
 import '../src/stories.scss';
 
-// addon-options
+// Set options for storybook
 addParameters({
   options: {
     sortStoriesByKind: false,
@@ -27,7 +27,7 @@ addDecorator(story => (
   </Provider>
 ));
 
-// Import stories
+// Import stories, this is the order that will be rendered in the Navigation
 const chrome = require.context('../src/stories/chrome', true, /stories\.js$/);
 const components = require.context('../src/stories/components', true, /stories\.js$/);
 const redux = require.context('../src/stories/redux', true, /stories\.js$/);
@@ -49,4 +49,5 @@ function loadStories() {
   uxd.keys().forEach(uxd);
 }
 
+// Config to set the stories in storybook
 configure(loadStories, module);

@@ -11,6 +11,7 @@ import { Matrix } from '@red-hat-insights/insights-frontend-components';
 import MatrixReadme from '../../docs/charts/matrix/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Charts', module)
     .addDecorator(withReadme(MatrixReadme))
     .addDecorator(withKnobs)

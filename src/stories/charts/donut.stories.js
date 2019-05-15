@@ -12,6 +12,7 @@ import { Donut } from '@red-hat-insights/insights-frontend-components';
 import DonutReadme from '../../docs/charts/donut/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Charts', module)
     .addDecorator(withReadme(DonutReadme))
     .addDecorator(withKnobs)

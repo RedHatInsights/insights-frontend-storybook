@@ -11,6 +11,7 @@ import { Main } from '@red-hat-insights/insights-frontend-components';
 import MainReadme from '../../docs/components/main/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(MainReadme))
     .addDecorator(withKnobs)

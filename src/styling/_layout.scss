@@ -1,15 +1,15 @@
 @import '~@red-hat-insights/insights-frontend-components/Utilities/_variables';
 
-a {
-    color: initial;
-}
+// Misc global styles
+a { color: initial; }
 
-.pf-c-button + .pf-c-button {
-    margin-left: 5px;
-}
+.pf-c-button + .pf-c-button { margin-left: 5px; }
 
-.wrapper {
-    display: none;
+.wrapper { display: none; }
+
+pre {
+    background: #f6f9fc !important;
+    border-radius: 10px;
 }
 
 // Storybook Styling
@@ -49,6 +49,7 @@ a {
     }
 }
 
+// Chapter styling
 .section {
     &-container{
         display: inline-block;
@@ -108,11 +109,6 @@ a {
     }
 }
 
-pre {
-    background: #f6f9fc !important;
-    border-radius: 10px;
-}
-
 // Markdown Styling
 ul li {
     list-style-type: disc;
@@ -121,14 +117,14 @@ ul li {
 
 .markdown-body h1 { display: block; }
 
-// Dots
+// Dashed borders
 .section-component-container {
     section[class^="ins-l-"], section[class^="ins-l-"] > * {
         border: 1px dashed;
     }
 }
 
-// Charts
+// Chart Styling
 .badge-wrapper > a {
     text-decoration: underline;
     color: rgb(0, 123, 186);

@@ -11,6 +11,7 @@ import { Button } from '@patternfly/react-core'
 import SectionReadme from '../../docs/components/section/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(SectionReadme))
     .addWithChapters(
