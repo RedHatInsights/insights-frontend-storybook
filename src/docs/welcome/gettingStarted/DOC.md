@@ -1,4 +1,4 @@
-# Red Hat Insights Storybook
+# cloud.redhat.com Storybook
 
 The Insights Storybook is a place for Insights documentaiton regarding front end development through the chroming, components, and any applications.
 
