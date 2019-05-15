@@ -11,6 +11,7 @@ import { Battery } from '@red-hat-insights/insights-frontend-components';
 import BatteryReadme from '../../docs/components/battery/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(BatteryReadme))
     .addDecorator(withKnobs)

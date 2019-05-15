@@ -1,5 +1,6 @@
 // Libraries
 import { storiesOf } from '@storybook/react';
+import { doc }  from 'storybook-readme';
 
 // README
 import ChromeDoc from '../../docs/repos/chrome/DOC.md';
@@ -8,8 +9,7 @@ import StarterAppDoc from '../../docs/repos/starterApp/DOC.md';
 import DeploymentDoc from '../../docs/repos/deployment/DOC.md';
 import FrontendsDoc from '../../docs/repos/frontends/DOC.md';
 
-import { doc }  from 'storybook-readme';
-
+// Story
 storiesOf('Repos', module)
     .add('Chrome', doc(ChromeDoc))
     .add('Proxy', doc(ProxyDoc))

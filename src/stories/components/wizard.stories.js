@@ -19,6 +19,7 @@ import Step2 from '../../Components/Wizard/Step2';
 import Step3 from '../../Components/Wizard/Step3';
 import Step4 from '../../Components/Wizard/Step4';
 
+// Store
 const store = new Store({
     isModalOpen: false
 });

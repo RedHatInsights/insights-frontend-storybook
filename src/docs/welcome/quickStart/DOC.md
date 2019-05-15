@@ -1,4 +1,4 @@
-# Creating a Red Hat Insights Application
+# Creating a cloud.redhat.com application
 
 ## Setup for development
 

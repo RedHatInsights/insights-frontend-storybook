@@ -17,7 +17,6 @@ Import Section component and its styles.
 `type='icon-group__with-major'` = `ins-l-icon-group__with-major`
 
 ```javascript
-
 import { Section } from '@red-hat-insights/insights-frontend-components/components/Section';
 import '@red-hat-insights/insights-frontend-components/components/Section.css'
 import React from 'react';
@@ -31,7 +30,6 @@ const MyCmp = () => (
 ## Props
 
 ```javascript
-
 {
   type: PropTypes.string,
   children: PropTypes.node

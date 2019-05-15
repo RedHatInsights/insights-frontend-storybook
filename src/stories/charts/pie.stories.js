@@ -12,6 +12,7 @@ import { Pie } from '@red-hat-insights/insights-frontend-components';
 import PieReadme from '../../docs/charts/pie/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Charts', module)
     .addDecorator(withReadme(PieReadme))
     .addDecorator(withKnobs)

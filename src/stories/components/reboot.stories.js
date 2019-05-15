@@ -11,6 +11,7 @@ import { Reboot } from '@red-hat-insights/insights-frontend-components';
 import RebootReadMe from '../../docs/components/reboot/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(RebootReadMe))
     .addDecorator(withKnobs)

@@ -10,6 +10,7 @@ import { Skeleton } from '@red-hat-insights/insights-frontend-components';
 import SkeletonReadMe from '../../docs/components/skeleton/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(SkeletonReadMe))
     .addWithChapters(
