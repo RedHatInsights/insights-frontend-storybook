@@ -7,9 +7,11 @@ a { color: initial; }
 
 .wrapper { display: none; }
 
-pre {
+pre, code {
     background: #f6f9fc !important;
     border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
 }
 
 // Storybook Styling
