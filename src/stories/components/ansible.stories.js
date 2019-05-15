@@ -11,6 +11,7 @@ import { Ansible } from '@red-hat-insights/insights-frontend-components';
 import AnsibleReadMe from '../../docs/components/ansible/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(AnsibleReadMe))
     .addDecorator(withKnobs)

@@ -1,29 +1,35 @@
 @import '~@red-hat-insights/insights-frontend-components/Utilities/_variables';
 
-a {
-    color: initial;
-}
+// Misc global styles
+a { color: initial; }
 
-.pf-c-button + .pf-c-button {
-    margin-left: 5px;
-}
+.pf-c-button + .pf-c-button { margin-left: 5px; }
 
-.wrapper {
-    display: none;
+.wrapper { display: none; }
+
+pre, code {
+    background: #f6f9fc !important;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
 }
 
 // Storybook Styling
 .story {
     &-header {
         border-bottom: 1px solid #eaeaea;
-        padding-bottom: 15px;
         margin-bottom: 15px;
         div { 
             display: flex;
             flex-direction: column;
         }
     }
-    &-title { font-size: 35px; }
+    &-title {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 0 !important;
+        line-height: 1.25;
+    }
     &-subtitle { font-size: 20px; }
 }
 
@@ -35,26 +41,42 @@ a {
     &-subtitle {
         display: block;
         margin-bottom: 15px;
+        color: #a1a8ad;
+        font-size: 14px;
         & + hr { display: none; }
+    }
+    &-h3 {
+        font-size: 18px !important;
+        font-weight: 400;
     }
 }
 
+// Chapter styling
 .section {
     &-container{
         display: inline-block;
         width: 100%;
-        padding: 20px 15px 15px 15px;
+        padding: 40px 15px 15px 15px;
         margin: 15px 0;
-        border: 1px solid #eaeaea;
+        margin-bottom: 50px !important;
+        border: 1px solid #ccd6dd;
+        border-radius: 10px;
         position: relative;
     }
     &-header {
         position: absolute;
-        top: -10px;
-        left: 5px;
+        top: -15px;
+        left: 13px;
         background: #fff;
         display: inline-block;
         padding: 0 10px;
+        border: 1px solid #ccd6dd;
+        border-radius: 3px;
+        .section-title {
+            color: #898d8d !important;
+            margin-bottom: 0 !important;
+            padding: 5px;
+        }
     }
     &-button-container {
         position: absolute;
@@ -62,7 +84,7 @@ a {
         right: 15px;
         button { background-color: #fff !important; }
         button.button-active { 
-            background-color: $ins-color--blue !important;
+            background-color: #1EA7FD !important;
             color: #fff !important;
         }
     }
@@ -97,14 +119,14 @@ ul li {
 
 .markdown-body h1 { display: block; }
 
-// Dots
+// Dashed borders
 .section-component-container {
     section[class^="ins-l-"], section[class^="ins-l-"] > * {
         border: 1px dashed;
     }
 }
 
-// Charts
+// Chart Styling
 .badge-wrapper > a {
     text-decoration: underline;
     color: rgb(0, 123, 186);

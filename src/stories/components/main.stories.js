@@ -8,5 +8,6 @@ import MainReadme from '../../docs/components/main/README.md';
 
 import { doc }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .add('Main', doc(MainReadme))

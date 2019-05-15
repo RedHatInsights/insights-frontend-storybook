@@ -11,6 +11,7 @@ import { Spinner } from '@red-hat-insights/insights-frontend-components';
 import SpinnerReadMe from '../../docs/components/spinner/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Components', module)
     .addDecorator(withReadme(SpinnerReadMe))
     .addDecorator(withKnobs)

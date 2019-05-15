@@ -20,6 +20,7 @@ import Step3 from '../../Components/Wizard/Step3';
 import Step4 from '../../Components/Wizard/Step4';
 import Deprecated from '../../Components/Deprecated/Deprecated';
 
+// Store
 const store = new Store({
     isModalOpen: false
 });

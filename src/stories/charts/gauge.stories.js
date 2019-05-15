@@ -11,6 +11,7 @@ import { Gauge } from '@red-hat-insights/insights-frontend-components';
 import GaugeReadme from '../../docs/charts/gauge/README.md';
 import { withReadme }  from 'storybook-readme';
 
+// Story
 storiesOf('Charts', module)
     .addDecorator(withReadme(GaugeReadme))
     .addDecorator(withKnobs)
