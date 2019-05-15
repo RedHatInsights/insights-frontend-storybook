@@ -46,5 +46,8 @@
     "redux-logger": "^3.0.6",
     "sass-loader": "^7.1.0",
     "storybook-readme": "^5.0.3"
+  },
+  "insights": {
+    "appname": "storybook"
   }
 }
