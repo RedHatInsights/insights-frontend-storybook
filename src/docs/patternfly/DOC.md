@@ -33,4 +33,4 @@ If you're looking for cloud.redhat.com specific guidelines, please visit the UX 
   * [npm package](https://www.npmjs.com/package/@patternfly/react-table)
   * [Documentation](https://v2.patternfly.org/documentation/react/components/table)
 
-Connect with Patternfly for further questions on [Patternfly Slack](patternfly.slack.com)
+Connect with Patternfly for further questions on [Patternfly Slack](https://patternfly.slack.com)

@@ -6,8 +6,6 @@
 
 ## Red Hat Insights
 
------
-
 ### Insights (Formerly Advisor/Configuration Assessment)
 
 * [Frontend](https://github.com/RedHatInsights/insights-advisor-frontend)
@@ -16,7 +14,7 @@
 
 * [Frontend](https://github.com/RedHatInsights/insights-inventory-frontend)
 
-## Remediations
+### Remediations
 
 * [Frontend](https://github.com/RedHatInsights/insights-remediations-frontend)
 
@@ -29,8 +27,6 @@
 #### Sources
 
 * [Frontend](https://github.com/ManageIQ/sources-ui)
-
------
 
 ## Cloud Management Services
 
@@ -54,17 +50,15 @@
 
 * [Frontend](https://github.com/RedHatInsights/insights-inventory-frontend)
 
-## Remediations
+### Remediations
 
 * [Frontend](https://github.com/RedHatInsights/insights-remediations-frontend)
-
------
 
 ## Hybrid Cloud Management Services
 
 ### Catalog
 
-## Cost Management / Project Koku
+### Cost Management / Project Koku
 
 * [Frontend](https://github.com/project-koku/koku-ui)
 * [Documentation](https://koku.readthedocs.io/en/latest/)
