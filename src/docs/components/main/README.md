@@ -1,6 +1,7 @@
 # Main
 
-This component will allow you to wrap the main content in appropriate tags
+This component is a shim of [Patternfly PageSection component](https://v2.patternfly.org/documentation/react/components/page).
+This will wrap the main content of your page and provide the appropriate spacing.
 
 ## Usage
 

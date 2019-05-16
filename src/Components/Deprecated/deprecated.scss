@@ -1,0 +1,16 @@
+$dep-red: #d10411;
+
+.ins-c-deprecated {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: $dep-red;
+    font-weight: 500;
+    border: 1px solid $dep-red;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    a {
+        color: #0066cc;
+    }
+}
