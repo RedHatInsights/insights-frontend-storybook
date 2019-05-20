@@ -3,9 +3,10 @@
 The "wrapper" around your application!
 
 Insights Chrome provides:
-    - Standard header and navigation
-    - Base CSS/style
-    - A JavaScript library for interacting with Insights Chrome
+
+* Standard header and navigation
+* Base CSS/style
+* A JavaScript library for interacting with Insights Chrome
 
 ## Usage
 
