@@ -2,6 +2,11 @@
 
 ## Setup for development
 
+### For new employees
+
+1. Make sure you have node, npm, and git installed on your machine
+2. If you haven't yet, set up an ssh key for Github. [Docs](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 ### Docker
 
 This project uses [Docker](https://www.docker.com/get-docker) for development. You will need to [download](https://www.docker.com/get-docker) it in order to run the proxy container.
@@ -89,31 +94,31 @@ Bootstrapped application with essential tools for rapid development
 1. Run the container with default options
 
     ```sh
-    bash scripts/run.sh
+    SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh
     ```
 
-#### More options for running
+##### More options for running
 
 * Run with the local Legacy Insighs API
 
     ```sh
-    LOCAL_API=true bash scripts/run.sh
+    SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh LOCAL_API=true
     ```
 
-### Chrome
-
-1. Build Chrome and watch it for changes
+* Run with the local insights-chrome
 
     ```sh
-    npm run build
+    SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh LOCAL_CHROME=true
     ```
 
 ### Starter App
 
-1. Build
+1. Build from `insights-chrome/build`
 
     ```sh
-    SPANDX_CONFIG=./config/spandx.config.js && npm run start
+    SPANDX_CONFIG=../../insights-frontend-starter-app/config/spandx.config.js sh ../../insights-proxy/scripts/run.sh
     ```
 
-2. Navigate to `https://prod.foo.redhat.com:1337/insights/samplepage`
+2. In another terminal tab/window inside of the `insights-frontend-starter-app` repo, run `npm run start`
+
+3. Navigate to `https://ci.foo.redhat.com:1337/insights/samplepage`
