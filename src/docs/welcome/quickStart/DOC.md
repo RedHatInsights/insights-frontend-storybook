@@ -97,20 +97,6 @@ Bootstrapped application with essential tools for rapid development
     SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh
     ```
 
-##### More options for running
-
-* Run with the local Legacy Insighs API
-
-    ```sh
-    SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh LOCAL_API=true
-    ```
-
-* Run with the local insights-chrome
-
-    ```sh
-    SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh LOCAL_CHROME=true
-    ```
-
 ### Starter App
 
 1. Build from `insights-chrome/build`
