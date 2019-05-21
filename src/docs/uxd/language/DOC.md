@@ -1,8 +1,8 @@
-# Language
+# Language & Terms
 
 ## Terminology
 
-[Google sheet](https://docs.google.com/spreadsheets/d/11ldkJhVT_m1ApFoJ2_kfX8NfLOQfTGGiL-rdh0bDER0/edit?usp=sharing)
+[Cross product terminology Google sheet](https://docs.google.com/spreadsheets/d/11ldkJhVT_m1ApFoJ2_kfX8NfLOQfTGGiL-rdh0bDER0/edit?usp=sharing)
 
 ## Date and time standards
 
