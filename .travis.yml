@@ -14,6 +14,8 @@ script:
 - npm run build
 jobs:
   include:
+  - stage: Lint
+    script: npm run lint
   - stage: Snapshot
     if: type = pull_request
     script: npm run snapshot
