@@ -6,11 +6,14 @@ node_js:
 - '10'
 install:
 - npm ci
-script:
-- npm run build
-- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then npm run snapshot; fi'
-after_success:
-- curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
+jobs:
+    include:
+        - stage: "Build"
+          script: npm run build
+        - stage: "Snapshot"
+          script: 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then npm run build && npm run snapshot; fi'
+        - stage: "Deploy"
+          script: curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
 env:
     global:
     - REPO="git@github.com:RedHatInsights/insights-frontend-storybook-build"
