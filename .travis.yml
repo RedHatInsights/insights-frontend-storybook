@@ -15,7 +15,8 @@ script:
 jobs:
   include:
   - stage: Snapshot
-    script: if [ "$TRAVIS_PULL_REQUEST" != "false" ]; npm run snapshot; fi
+    if: type = pull_request
+    script: npm run snapshot
   - stage: Deploy
     script: curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
 env:
