@@ -4,8 +4,8 @@ notifications:
   email: false
   slack:
     rooms:
-      - secure: $SLACK_TOKEN#insights-storybook
-      - secure: $SLACK_TOKEN#insights-bots
+      - $SLACK_TOKEN#insights-storybook
+      - $SLACK_TOKEN#insights-bots
     on_success: always
     on_failure: always
 node_js:
