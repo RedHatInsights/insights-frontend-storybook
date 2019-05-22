@@ -3,28 +3,24 @@ sudo: required
 notifications:
   email: false
   slack:
-    rooms:
-      - $SLACK_TOKEN#insights-storybook
-      - $SLACK_TOKEN#insights-bots
-    on_success: always
-    on_failure: always
+      rooms:
+      - secure: "MznEn3PSSKNqf+H8qWPYXSHF5KJnwvoc1BZ+rGDL2gQtubafiLLib79s8u0UxCW3tVMT6fI8wNlO5V2WMaBZTxa8TdojHTIQDfw45IiFai6GQ1U3oFuv+Um5hXgnvsEWXp8aExK+/7GItJUtxo5SsbggRv9+ZGEbJ4NSmLDM2xqlCiyzVfO2aaDgQ/qxsTQq5ppnNZDy4xaS6jFYbPvf6lau6XD/Fi2toFY6lzovoRcbWP+NUtJ6+uWQrPAg9Ac6QqXJpVArV1xhzfhwYEi7OeSStkGWMgPudoLVxk7W8DkOR+cYqPzxcegJWc9+PGA65lq3AiT5GboGttokomNj3jZE58a//tHZAARHhx0YP4UVB+Y7k8NKCaDW8gE3vIaO7a60bBXd7hdyjjKyyHoxt2B/O0x61t5sjnV+//FD1vP1QncpvhcxQbS20+QJy9vEBVtn2aGw+ugBGmjFDW698vw6bKSsdmgCiO7Bft+9outhhX0XptqfZ6Im3ARmnj2mUMzrSceJxqFWwjbr7BlT+TEylijbp7ZMWGKmXxnte15UIk/UmCx5OQb2Sh7xnzLpy8vzd00HfnpBzRnyrQI9PugefbTyzD1ZqVLHV2nKIpYnHkAZPEjtZEZ8PAO4vxSJ916hYFas3OtUJyJ8fLGCKuIcBi+vJiVcmcNYIM66jZE="
 node_js:
 - '10'
 install:
 - npm ci
 jobs:
   include:
+  - stage: Fail
+    script: curl -sSL  https://gist.githubusercontent.com/ryelo/b4d46d149acbc52f1ae9f7566f8d810d/raw/1624ff144154b287e2288dc1ce3584291a7face3/fail.sh | bash -s
   - stage: Build
     script: npm run build
   - stage: Snapshot
     script: if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then npm run build && npm run
       snapshot; fi
   - stage: Deploy
-    script: 
-      - curl -sSL  https://gist.githubusercontent.com/ryelo/b4d46d149acbc52f1ae9f7566f8d810d/raw/1624ff144154b287e2288dc1ce3584291a7face3/fail.sh | bash -s
-      - npm run build && curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s 
+    script: npm run build && curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
 env:
   global:
   - REPO="git@github.com:RedHatInsights/insights-frontend-storybook-build"
   - REPO_DIR="insights-frontend-storybook-build"
-  - secure: SLACK_TOKEN="1QqFau+ztaMcq1lhgUgxezJVOdhy32xEBvUtxF0SVoBm+cnMLXuVCrLvRwEWWick1qKq+cwkDP8+a70I3bSt4q1k1ZtcNXCqxQxBG1pyN0geC4xQPimKUWPt7StrdYWDX6RKnYYH9CjKlkKZkeXhS1ot7jOlDeXW6efAPT45sK9nWknbvSvm33SPggcT/ow6dGuKy7Ya6j5/hDyv0apyuqp5vIdgH+7G6LCnjFlmVKsNfcpo/PkNVMwvscc4uSfe3OBoC+AhQROsCJ4EWA/L3wkGhWWhBnPbuX5GhORPNNfQC4d/QOV+n07yqXjacR3Wptr3r6ZqkSGhU7tGmPSamvZqaMza/gs2UiFYfDtvmLtq4uJpZpWsDUZO0csn+AlzKqTacquHgEsubBT12YVyOtZ2URxztrVyL/TCsEIKGXfIXruY/D6zjWeSO/9uWUSuj/mfTzLvU2zJPy/fdWfT95K9+RAmwoCFxiDOQcqCGXBrTgTXjj7Pl4NbIhjQkVwJCp/f2VoCsTkLsGlxoH9ArHi+LR4GlqrcYLEkU4KPyOmY+F3AgWK9/WFm+9zUcX0LLlxGG6dLKH19GJUj5uJUIkd3z031JEKhj3r8vDVEbDaXhvVYyVHItNrmeYWA5IzGj6Ied9nQKSDjCJxJy6hgWzN/OVds+mkPkoIVmWOp4uM="
