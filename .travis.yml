@@ -8,7 +8,7 @@ install:
 - npm ci
 script:
 - npm run build
-- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; PERCY_TOKEN=PERCY_TOKEN percy-storybook --widths=320,1280 --build_dir=dist; fi'
+- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; PERCY_TOKEN=$PERCY_TOKEN percy-storybook --widths=320,1280 --build_dir=dist; fi'
 after_success:
 - curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
 env:
