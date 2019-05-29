@@ -14,7 +14,7 @@ jobs:
   - stage: Lint
     script: npm run lint
   - stage: Snapshot
-    if: type = pull_request
+    if: type = pull_request && fork = false
     script: npm run build && npm run snapshot
   - stage: Deploy
     script: npm run build && curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
