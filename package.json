@@ -6,7 +6,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "watch": "npm run storybook -- -w",
-    "build": "npm install && npm run lint && build-storybook -s .storybook -o dist/",
+    "build": "build-storybook -s .storybook -o dist/",
     "lint": "markdownlint src/docs/*/* -c .markdownlint.json",
     "start": "npm run storybook",
     "snapshot": "percy-storybook --widths=320,1280 --build_dir=dist"
