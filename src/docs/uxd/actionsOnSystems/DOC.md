@@ -31,4 +31,4 @@ _**Why?** Inventory is global. It is the comprehensive view of a system & everyt
 - Actions button would be there if ANY of the services have actions.
 - Entitlements & the actions button - what if they don't have access to a service that has actions (Solution: hid action button unless there are valid actions).
 - Need a reliable way to get from a system to the inventory view of a system (to manage the global actions). (Link?)
-    - Tabs would force the global actions to be in the current "Actions" dropdown and app specific actions would live inside their respective tab area
+  - Tabs would force the global actions to be in the current "Actions" dropdown and app specific actions would live inside their respective tab area
