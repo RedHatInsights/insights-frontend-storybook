@@ -1,10 +1,12 @@
 # Actions on systems
+
 For a system, there are 2 primary types of actions:
 
 - Service-specific actions: e.g. "Opt-out of vulnerability reporting"
 - Global system actions: e.g. "Update host name"
 
 ## Service view of a system
+
 Service-specific actions should be available from the view of the system from that service.
 Global system actions are not available.
 Service-specific actions can be inline, or in the header, or related to the table. (Anything that is related to the service!)
@@ -13,6 +15,7 @@ _**Why?** Keep the actions in context of what the user is doing._
 *Service view of a system, showing 2 service-specific actions (Remediate with Ansible, Opt-out of vulnerability reporting)*
 
 ## Inventory view of a system
+
 Global system actions should be available from the inventory. (Not on service pages).
 Service-specific actions should also be available in the inventory.
 _**Why?** Inventory is global. It is the comprehensive view of a system & everything that is related to it. Therefore, should have all the actions available to that system._
