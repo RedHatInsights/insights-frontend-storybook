@@ -11,7 +11,7 @@ After completing an action or process in a modal dialog, the user should get an 
 
 ### Exiting modals
 
-Modals that have only 1 step, and are fairly simple can be cancelled in a few ways:
+Modals that have only 1 step, and are fairly simple, can be cancelled in a few ways:
 
 - Clicking outside of the modal
 - Clicking the "X" in the upper right corner
@@ -29,11 +29,11 @@ In some cases, you can use a cancellation alert to inform the user that they wil
 
 ## Wizards
 
-Wizards are multiple step processes. In RHCS, these mostly occur in modal dialogs. At the end of a wizard, show a confirmation screen.
+Wizards are multiple-step processes. In RHCS, these mostly occur in modal dialogs. At the end of a wizard, show a confirmation screen.
 ![Wizard with confirmation screen](https://github.com/RedHatInsights/insights-frontend-storybook/blob/master/src/docs/uxd/img/wizardConfirmation.png?raw=true)
 *Wizard with confirmation screen*
 
-After the confirmation screen. there are a few different options:
+After the confirmation screen, there are a few different options:
 
 **A process that does not take significant time**
 Close modal and show results. Show inline notification (see below for more details)
@@ -41,7 +41,7 @@ If failure, see error state below.
 
 **A process that takes time, and must complete before proceeding**
 Show progress indicator as an additional screen in the modal.
-At the end of the progress, close the modal automatically and show an inline notification (see below for more information)
+At the end of the progress indicator, close the modal automatically and show an inline notification (see below for more information)
 If failure, see error state below.
 ![Progress indicator in modal wizard](https://github.com/RedHatInsights/insights-frontend-storybook/blob/master/src/docs/uxd/img/progressIndicatorWizard.png?raw=true)
 *Progress indicator in modal wizard*
