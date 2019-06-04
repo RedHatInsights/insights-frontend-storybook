@@ -5,7 +5,7 @@
 1. **Filtering**: Filtering should be on the left-most side of the toolbar. All lists should have some filtering. (See filtering section for more details)
 2. **Action buttons**: Arrange action buttons to the right of the filtering. There can be 1 primary action (an action is not required), 1 secondary action, and any overflow goes into the kebab.
 3. **Kebab & Export**: Export should always go into the kebab, even if it is the only action on the table or list.
-4. **Pagination**: Use pagination on top and bottom of table. [PF4 pagination](https://www.patternfly.org/v4/documentation/react/components/pagination/) will responsively react to show only the results count when in smaller spaces. This is the only results count shown. (See filtering section for more details about how the results count works with filtering)
+4. **Pagination**: Use pagination on the top and bottom of the table. [PF4 pagination](https://www.patternfly.org/v4/documentation/react/components/pagination/) will responsively react to show only the results count when in smaller spaces. This is the only results count shown. (See filtering section for more details about how the results count works with filtering)
 5. **Export**: Export and additional icons go into the kebob icon.
 
 ![Export from toolbar kebab](https://github.com/RedHatInsights/insights-frontend-storybook/blob/master/src/docs/uxd/img/toolbarExport.png?raw=true)
