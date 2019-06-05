@@ -20,7 +20,7 @@ import ActionsOnSystemsDoc from '../../docs/uxd/actionsOnSystems/DOC.md'
 storiesOf('UX', module)
     .addDecorator(withReadme(UXDReadme))
     .add('Get started', doc(GetStarted))
-    .add('Actions on systems', doc([ActionsOnSystemsDoc]))
+    .add('Actions on systems', doc(ActionsOnSystemsDoc))
     .add('Alerts & notifications', doc(AlertsNotificationsDoc))
     .add('Empty states', doc(EmptyStatesDoc))
     .add('Language & terminology', doc(LanguageDoc))
