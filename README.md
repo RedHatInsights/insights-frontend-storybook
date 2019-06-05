@@ -1,6 +1,6 @@
 # insights-frontend-storybook
 
-[Live Version](https://cloud.redhat.com/docs/storybook/)
+[Live Version](https://cloud.redhat.com/docs/storybook)
 
 This is documentation for:
 
