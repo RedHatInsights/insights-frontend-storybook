@@ -43,6 +43,11 @@ const charts = require.context('../src/stories/charts', true, /stories\.js$/);
 const deployments = require.context('../src/stories/deployments', true, /stories\.js$/);
 const uxd = require.context('../src/stories/uxd', true, /stories\.js$/);
 const patternfly = require.context('../src/stories/patternfly', true, /stories\.js$/);
+// Add a localStorage flag for team FMS
+let teamFMS;
+if(window.localStorage && window.localStorage.getItem('storybook:teamFMS') === 'true') {
+  teamFMS = require.context('../src/stories/teamFMS', true, /stories\.js$/);
+}
 
 // Actually Load the stories
 function loadStories() {
@@ -55,6 +60,7 @@ function loadStories() {
   components.keys().forEach(components);
   charts.keys().forEach(charts);
   uxd.keys().forEach(uxd);
+  if(teamFMS) { teamFMS.keys().forEach(teamFMS); }
 }
 
 // Config to set the stories in storybook
