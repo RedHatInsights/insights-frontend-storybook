@@ -63,4 +63,4 @@ Travis-CI should be enabled for your dev repo
 ## Configuring Your App in cloud-services-config
 We've added a new [global configuration](https://github.com/RedHatInsights/cloud-services-config/blob/master/main.yml) that acts as the main source of truth.
 This file controls the routing for prod (Akamai), the file management and routing for non-prod (fakamai, assets-puller, assets-server), smoke tests, chrome navigation, and more.
-To add your app and enable it on all environments, please create a PR with the changes described [here](https://github.com/RedHatInsights/cloud-services-config/tree/enhancements/doc#adding-config-for-new-apps).
+To add your app and enable it on all environments, please create a PR with the changes described [here](https://github.com/RedHatInsights/cloud-services-config#adding-config-for-new-apps).
