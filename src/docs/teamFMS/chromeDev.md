@@ -10,7 +10,8 @@
 ## Building Chrome
 
 To build chrome, you can run `npm run build` to build the entire project once or `npm run watch` to watch changes across all files and rebuild after every save.
-Proxy Flag
+
+## Proxy Flag
 
 The `LOCAL_CHROME=true` flag lets developers set insights-proxy to use a local version of insights-chrome instead of the version that is on ci-beta.
 
