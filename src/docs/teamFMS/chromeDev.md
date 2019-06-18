@@ -9,10 +9,10 @@
 
 ## Building Chrome
 
-To build chrome, you can run `npm run build` to build the entire project once or `npm run watch` to watch changes across all files and rebuild after every save
+To build chrome, you can run `npm run build` to build the entire project once or `npm run watch` to watch changes across all files and rebuild after every save.
 Proxy Flag
 
-The `LOCAL_CHROME=true` flag lets developers set insights-proxy to use a local version of insights-chrome instead of the version that is on ci-beta
+The `LOCAL_CHROME=true` flag lets developers set insights-proxy to use a local version of insights-chrome instead of the version that is on ci-beta.
 
 Your full command should look something like:
 
@@ -20,7 +20,7 @@ Your full command should look something like:
 SPANDX_CONFIG=../../insights-frontend-starter-app/profiles/local-frontend.js sh ../../insights-proxy/scripts/run.sh
 ```
 
-Note: Different apps use different profiles. Because of this, your spandx_config file might be different than local-frontend.js
+Note: Different apps use different profiles. Because of this, your spandx_config file might be different than `local-frontend.js`.
 
 ## Local Storage
 
@@ -32,7 +32,7 @@ When you input the command, you will get an undefined message. Ignore this and r
 
 ### Keycloak Short Session
 
-There is also a short-session for Keycloak that will time out your session in 2 minutes instead of 15 minutes. To activate it, set localStorage.setItem('chrome:jwt:shortSession, true);
+There is also a short-session for Keycloak that will time out your session in 2 minutes instead of 15 minutes. To activate it, set `localStorage.setItem('chrome:jwt:shortSession, true);` in your browser console.
 
 ## Build Everything
 
