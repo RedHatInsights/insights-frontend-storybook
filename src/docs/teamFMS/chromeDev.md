@@ -18,7 +18,7 @@ The `LOCAL_CHROME=true` flag lets developers set insights-proxy to use a local v
 Your full command should look something like:
 
 ```sh
-SPANDX_CONFIG=../../insights-frontend-starter-app/profiles/local-frontend.js sh ../../insights-proxy/scripts/run.sh
+SPANDX_CONFIG=../../insights-frontend-starter-app/profiles/local-frontend.js LOCAL_CHROME=true sh ../../insights-proxy/scripts/run.sh
 ```
 
 Note: Different apps use different profiles. Because of this, your spandx_config file might be different than `local-frontend.js`.
