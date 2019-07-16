@@ -43,6 +43,7 @@ const charts = require.context('../src/stories/charts', true, /stories\.js$/);
 const deployments = require.context('../src/stories/deployments', true, /stories\.js$/);
 const uxd = require.context('../src/stories/uxd', true, /stories\.js$/);
 const patternfly = require.context('../src/stories/patternfly', true, /stories\.js$/);
+const nightly = require.context('../src/stories/nightly', true, /stories\.js$/);
 // Add a localStorage flag for team FMS
 let teamFMS;
 if(window.localStorage && window.localStorage.getItem('storybook:teamFMS') === 'true') {
@@ -55,6 +56,7 @@ function loadStories() {
   repos.keys().forEach(repos);
   patternfly.keys().forEach(patternfly);
   chrome.keys().forEach(chrome);
+  nightly.keys().forEach(nightly);
   deployments.keys().forEach(deployments);
   redux.keys().forEach(redux);
   components.keys().forEach(components);
