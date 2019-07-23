@@ -2,7 +2,7 @@
 
 The deployment process for the applications on the Insights Platform uses an Akamai NetStorage instance to store all of the files that are used to render the pages for production and a similar setup for CI and QA. To get the files there we use a travis-ci script to push the build files to a build Github repo whenever master or a deployment branch is pushed. Jenkins watches the build repo and kicks off a job that will then sync the build files with our NetStorage or pre-prod environments.
 
-## Setting up with Travis-CI:
+## Setting up Continuous Integration with Travis-CI:
 
 ### Prerequisite:
 
@@ -10,7 +10,7 @@ Your project repo should be public
 Travis CLI: `gem install travis` or `brew install travis`
 Travis-CI should be enabled for your dev repo
 
-## Steps
+### Steps
 
 1. Copy the travis.yml file, the .travis directory, and the config directory from the Insights Frontend Starter App and place in the root of your project
     * Make sure the files inside the .travis folder are executables (chmod +x foo.sh)
@@ -59,3 +59,9 @@ Travis-CI should be enabled for your dev repo
 13. Confirm the build completed successfully on Travis-CI and verify that the files were pushed to your build repo’s ci-beta branch.
 
 14. For a description of which branches route to which environments, please see the [insights-frontend-starter-app README.md](https://github.com/RedHatInsights/insights-frontend-starter-app/)
+
+## Configuring Your App in cloud-services-config
+
+We've added a new [global configuration](https://github.com/RedHatInsights/cloud-services-config/blob/master/main.yml) that acts as the main source of truth.
+This file controls the routing for prod (Akamai), the file management and routing for non-prod (fakamai, assets-puller, assets-server), smoke tests, chrome navigation, and more.
+To add your app and enable it on all environments, please create a PR with the changes described [here](https://github.com/RedHatInsights/cloud-services-config#adding-config-for-new-apps).
