@@ -22,5 +22,3 @@ const MyCmp = () => (
 )
 
 ```
-
-## Props

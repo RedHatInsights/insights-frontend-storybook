@@ -1,14 +1,10 @@
-# Insights Deployments Test
+# Insights Frontend Builder Common
 
-Master: [![Master](https://img.shields.io/travis/RedHatInsights/insights-deployment-test.svg)](https://travis-ci.org/RedHatInsights/insights-deployment-test)
+https://github.com/RedHatInsights/insights-frontend-builder-common
 
-Stable: ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/RedHatInsights/insights-deployment-test-build/stable.svg)
+The deployment process for the applications on the Cloud Services Platform uses an Akamai NetStorage instance to store all of the files that are used to render the pages.
 
-[Github](https://github.com/RedHatInsights/insights-deployments-test)
-
-Testing repo for travis deployments
-
-The deployment process for the applications on the Insights Platform uses an Akamai NetStorage instance to store all of the files that are used to render the pages. To get the files there we use a travis-ci script to push the build files to a build Github repo whenever master or a stable branch is pushed. Jenkins watches the build repo and kicks off a job that will then sync the build files with our NetStorage.
+To get the files there we use a travis-ci script to push the build files to a build Github repo whenever master or a stable branch is pushed. Jenkins watches the build repo and kicks off a job that will then sync the build files with our NetStorage.
 
 ## Build
 
@@ -47,3 +43,7 @@ Anytime a build of the master branch happens, Travis builds and pushes a new com
 ### Pushing to stable
 
 If you want to push to stable, make a branch `stable/foo`, `stable/bar`, etc. Any build of a stable branch in the repo will deploy to `stable` branch in the build repo.
+
+## Custom Releases
+
+Apps can use a [custom release](https://github.com/RedHatInsights/landing-page-frontend/blob/master/.travis/custom_release.sh). This allows your app to release to multiple environments with only one push. These are created independently and will vary from app to app.

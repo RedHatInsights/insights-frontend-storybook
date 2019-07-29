@@ -35,6 +35,6 @@ App.propTypes = {
 export default withRouter (connect()(App));
 ```
 
-Insights Chrome relays a static navigation
+Insights Chrome relays a static navigation from the "Source of Truth"
 
-If you would like to add/remove sub navigation items that are present in the global nav, open a PR in [Insights Chrome](https://github.com/RedHatInsights/insights-chrome)
+If you would like to add/remove navigation items, open a PR in [Cloud Services Config](https://github.com/RedHatInsights/cloud-services-config)

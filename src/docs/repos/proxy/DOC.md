@@ -1,6 +1,6 @@
 # insights-proxy
 
-Proxy for the insightsfrontend container
+Proxy for the Cloud Services frontend container
 
 This container uses [spandx](https://github.com/redhataccess/spandx) which provides ESI and some nifty routing tools.
 

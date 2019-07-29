@@ -19,5 +19,6 @@
 
 ### Uses QA auth
 
-* https://ci.cloud.paas.upshift.redhat.com/
-* https://qa.cloud.paas.upshift.redhat.com/
+* https://ci.cloud.paas.psi.redhat.com/
+* https://qa.cloud.paas.psi.redhat.com/
+* https://nightly.cloud.paas.psi.redhat.com/
