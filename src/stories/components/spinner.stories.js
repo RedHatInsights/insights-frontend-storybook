@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 // Component
-import { Spinner } from '@red-hat-insights/insights-frontend-components';
+import { Spinner } from '@redhat-cloud-services/frontend-components';
 
 // README
 import SpinnerReadMe from '../../docs/components/spinner/README.md';

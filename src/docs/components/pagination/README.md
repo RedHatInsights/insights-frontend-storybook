@@ -7,7 +7,7 @@ Currently this repository works as a proxy to expose [pf3@paginationRow](https:/
 Just import this component wherever you want to use it and pass `numberOfItems` as props.
 
 ```javascript
-import { Pagination } from '@red-hat-insights/insights-frontend-components/components/Pagination';
+import { Pagination } from '@redhat-cloud-services/frontend-components';
 
 export default () => (
   <Pagination numberOfItems={100} />

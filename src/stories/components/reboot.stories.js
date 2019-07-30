@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 // Component
-import { Reboot } from '@red-hat-insights/insights-frontend-components';
+import { Reboot } from '@redhat-cloud-services/frontend-components';
 
 // README
 import RebootReadMe from '../../docs/components/reboot/README.md';

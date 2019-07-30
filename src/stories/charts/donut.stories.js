@@ -6,7 +6,7 @@ import { withKnobs, number, text, select } from '@storybook/addon-knobs';
 import { Route, BrowserRouter} from 'react-router-dom'
 
 // Component
-import { Donut } from '@red-hat-insights/insights-frontend-components';
+import { Donut } from '@redhat-cloud-services/frontend-components-charts';
 
 // README
 import DonutReadme from '../../docs/charts/donut/README.md';

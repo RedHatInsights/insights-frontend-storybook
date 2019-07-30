@@ -8,7 +8,7 @@ Import TableToolbar and styles from this package.
 
 ```JSX
 import React from 'react';
-import { TableToolbar } from '@redhat-insights/insights-frontent-components/';
+import { TableToolbar } from '@redhat-cloud-services/frontend-components';
 
 class YourCmp extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class YourCmp extends React.Component {
 
 ```JSX
 import React from 'react';
-import { TableToolbar } from '@redhat-insights/insights-frontent-components/';
+import { TableToolbar } from '@redhat-cloud-services/frontend-components';
 
 class YourCmp extends React.Component {
   render() {

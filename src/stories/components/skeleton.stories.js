@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 // Component
-import { Skeleton } from '@red-hat-insights/insights-frontend-components';
+import { Skeleton } from '@redhat-cloud-services/frontend-components';
 
 // README
 import SkeletonReadMe from '../../docs/components/skeleton/README.md';

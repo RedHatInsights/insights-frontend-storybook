@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, number, text } from '@storybook/addon-knobs';
 
 // Component
-import { Matrix } from '@red-hat-insights/insights-frontend-components';
+import { Matrix } from '@redhat-cloud-services/frontend-components-charts';
 
 // README
 import MatrixReadme from '../../docs/charts/matrix/README.md';

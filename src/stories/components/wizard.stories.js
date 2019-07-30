@@ -6,7 +6,7 @@ import { StateDecorator, Store } from '@sambego/storybook-state';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 // Component
-import { Wizard } from '@red-hat-insights/insights-frontend-components';
+import { Wizard } from '@redhat-cloud-services/frontend-components';
 import { Button } from '@patternfly/react-core';
 
 // README

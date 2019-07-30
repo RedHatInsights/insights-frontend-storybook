@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 // Component
-import { Ansible } from '@red-hat-insights/insights-frontend-components';
+import { Ansible } from '@redhat-cloud-services/frontend-components';
 
 // README
 import AnsibleReadMe from '../../docs/components/ansible/README.md';

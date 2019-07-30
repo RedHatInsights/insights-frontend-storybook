@@ -5,7 +5,7 @@ You can change size of chart and it's axis scales (0 - 6 instead of 0 - 10 for i
 
 ```jsx
 import React from 'react'
-import { Matrix } from '@red-hat-isnights/insights-frontend-components';
+import { Matrix } from '@redhat-cloud-services/frontend-components-charts';
 
 export default () => <Matrix data={
   {

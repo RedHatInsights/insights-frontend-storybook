@@ -4,7 +4,7 @@ This component is usefull to display x number of values to compare them to 100
 
 ```jsx
 import React from 'react'
-import { Gauge } from '@red-hat-isnights/insights-frontend-components';
+import { Gauge } from '@redhat-cloud-services/frontend-components-charts';
 
 <Gauge value={10} identifier='gauge-identifier' label='sample-gauge'/>
 

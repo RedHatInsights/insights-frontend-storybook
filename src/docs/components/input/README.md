@@ -9,8 +9,8 @@ Import Input component and its styles, pass which type you want to use (defaults
 HTML `input`.
 
 ```javascript
-import { Input } from '@red-hat-insights/insights-frontend-components/components/Input';
-import '@red-hat-insights/insights-frontend-components/components/Input.css'
+import { Input } from '@redhat-cloud-services/frontend-components';
+
 import React from 'react';
 
 const MyCmp = () => (

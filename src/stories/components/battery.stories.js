@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 // Component
-import { Battery } from '@red-hat-insights/insights-frontend-components';
+import { Battery } from '@redhat-cloud-services/frontend-components';
 
 // README
 import BatteryReadme from '../../docs/components/battery/README.md';

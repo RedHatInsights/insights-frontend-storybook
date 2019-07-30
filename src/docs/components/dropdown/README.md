@@ -10,10 +10,7 @@ Import Dropdown, its item and styles from this package. Then use them wherever y
 
 ```JSX
 import React from 'react';
-import { Dropdown, DropdownItem } from '@red-hat-insights/insights-frontent-components/components/Dropdown';
-
-import '@red-hat-insights/insights-frontent-components/components/Dropdown.css';
-// in scss file @import '~@red-hat-insights/insights-frontent-components/components/Dropdown.css';
+import { Dropdown, DropdownItem } from '@redhat-cloud-services/frontend-components';
 
 class YourCmp extends React.Component {
   constructor(props) {
