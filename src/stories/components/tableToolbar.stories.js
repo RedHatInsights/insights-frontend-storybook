@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, number } from '@storybook/addon-knobs';
 
 // Component
-import { TableToolbar } from '@red-hat-insights/insights-frontend-components';
+import { TableToolbar } from '@redhat-cloud-services/frontend-components';
 import { Table, TableHeader, TableBody } from '@patternfly/react-table';
 
 // README

@@ -14,7 +14,7 @@ Import Skeleton from this package in a file where you load your component. In th
 import React, { Component } from 'react';
 
 import { Card, CardHeader, CardBody, CardFooter } from '@patternfly/react-core';
-import { Skeleton } from '@red-hat-insights/insights-frontend-components';
+import { Skeleton } from '@redhat-cloud-services/frontend-components';
 
 export default function CardSkeletonExample(importComponent) {
     class CardSkeletonExample extends Component {

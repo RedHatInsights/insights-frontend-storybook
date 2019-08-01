@@ -4,7 +4,7 @@ This component is usefull to display x number of values to compare them to an ov
 
 ```jsx
 import React from 'react'
-import { Donut } from '@red-hat-isnights/insights-frontend-components';
+import { Donut } from '@redhat-cloud-services/frontend-components-charts';
 
 let DonutValues = [
     ['value1', 5],

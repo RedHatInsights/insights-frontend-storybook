@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, number, boolean } from '@storybook/addon-knobs';
 
 // Component
-import { Gauge } from '@red-hat-insights/insights-frontend-components';
+import { Gauge } from '@redhat-cloud-services/frontend-components-charts';
 
 // README
 import GaugeReadme from '../../docs/charts/gauge/README.md';

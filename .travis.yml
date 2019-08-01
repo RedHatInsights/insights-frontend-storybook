@@ -22,3 +22,4 @@ env:
   global:
   - REPO="git@github.com:RedHatInsights/insights-frontend-storybook-build"
   - REPO_DIR="insights-frontend-storybook-build"
+  - NODE_OPTIONS="--max-old-space-size=4096 --max_old_space_size=4096"

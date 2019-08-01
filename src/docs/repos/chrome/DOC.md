@@ -19,10 +19,10 @@ You can include/use chrome in your development project by running the [insights-
   <head>
     <meta charset="UTF-8">
     <title>App Name</title>
-    <esi:include src="@@env/chrome/snippets/head.html" />
+    <esi:include src="/@@env/chrome/snippets/head.html" />
   </head>
   <body>
-    <esi:include src="@@env/chrome/snippets/landing.html" />
+    <esi:include src="/@@env/chrome/snippets/landing.html" />
   </body>
 
 </html>
@@ -66,7 +66,7 @@ Insights Chrome comes with a Javacript API that allows applications to control n
     insights.chrome.init();
 
     // identify yourself (the application). This tells Chrome which global navigation element should be active
-    insights.chrome.identifyApp('advisor');
+    insights.chrome.identifyApp('insights');
 
     // define application navigation (navigation submenu)
     // at most one of the elements should be declared active

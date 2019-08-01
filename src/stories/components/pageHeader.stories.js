@@ -2,10 +2,10 @@ import React from 'react';
 
 // Libraries
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 // Component
-import { PageHeader, PageHeaderTitle } from '@red-hat-insights/insights-frontend-components';
+import { PageHeader, PageHeaderTitle } from '@redhat-cloud-services/frontend-components';
 
 // README
 import PageHeaderReadme from '../../docs/components/pageHeader/README.md';

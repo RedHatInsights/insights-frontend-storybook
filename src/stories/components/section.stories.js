@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 // Component
-import { Section, Battery } from '@red-hat-insights/insights-frontend-components';
+import { Section, Battery } from '@redhat-cloud-services/frontend-components';
 import { Button } from '@patternfly/react-core'
 
 // README

@@ -1,10 +1,12 @@
-# Insights Platform Deployments
+# Cloud Services Deployments
 
-Insights front-end apps can be deployed very simply by pushing the build files of your React app to the environment branch of your choosing in your app’s build repo. For example, to deploy the stable version of your app to production, build your app so that the basepath is `/insights/platform/[app-name]/` and then push your files to the prod-stable branch on your build repo.
+Cloud Services front-end apps can be deployed very simply by pushing the build files of your React app to the environment branch of your choosing in your app’s build repo. For example, to deploy the stable version of your app to production, build your app so that the basepath is `/[bundle]/[app-name]/` and then push your files to the prod-stable branch on your build repo.
 
-If you wish to deploy the beta version of your app to prod, build your app so that the basepath routes to `/insightsbeta/platform/[app-name]/` and push those files to prod-beta.
-Stable versus Beta
-Insights Platform provides a beta and stable version in CI, QA, and Prod environments so that users can try out the latest features as soon as possible. When releasing to stable, the basepath of the app should point to `/insights/platform/[app-name]/` whereas when releasing to beta, the basepath should point to `/insights/platform/[app-name]/`. The insights-frontend-starter-app is setup to release this way for all of the available environments.
+## Stable versus Beta
+
+Cloud Services Platform provides a beta and stable version in CI, QA, and Prod environments so that users can try out the latest features as soon as possible. When releasing to stable, the basepath of the app should point to `/[bundle]/[app-name]/` whereas when releasing to beta, the basepath should point to `/[bundle]/[app-name]/`.
+
+The insights-frontend-starter-app is setup to release this way for all of the available environments.
 
 ## Starter App Updates
 
@@ -19,9 +21,16 @@ For the CI and QA environments each environment will pull from it’s respective
 
 Below is a list of the branches on each app build repo and the environments that they point to.
 
-* prod-stable: https://access.redhat.com/insights/platform/
-* prod-beta: https://access.redhat.com/insightsbeta/platform/
-* qa-stable: https://access.qa.itop.redhat.com/insights/platform/
-* qa-beta: https://access.qa.itop.redhat.com/insightsbeta/platform/
-* ci-stable: https://access.ci.itop.redhat.com/insights/platform/
-* ci-beta: https://access.ci.itop.redhat.com/insightsbeta/platform/
+* prod-stable: https://cloud.redhat.com/
+* prod-beta: https://cloud.redhat.com/beta/
+* qa-stable: https://qa.cloud.paas.psi.redhat.com/
+* qa-beta: https://qa.cloud.paas.psi.redhat.com/beta
+* ci-stable: https://ci.cloud.paas.psi.redhat.com/
+* ci-beta: https://ci.cloud.paas.psi.redhat.com/beta
+
+## Nightly Environment
+
+Applications are also built daily with a cron job to a separate environment. These environments should not be pushed manually.
+
+* nightly-stable: https://nightly.cloud.paas.psi.redhat.com/
+* nightly-beta: https://nightly.cloud.paas.psi.redhat.com/beta
