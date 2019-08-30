@@ -1,6 +1,6 @@
-# Spinner
+# Invalid Object
 
-This component is used to show when the requested object does not exits
+This component is used to show when the requested object does not exist
 
 ## Usage
 
