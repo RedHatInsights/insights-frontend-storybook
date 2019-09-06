@@ -22,7 +22,6 @@ storiesOf('Components', module)
             chapters: [
                 {
                     title: 'Demo',
-                    subtitle: 'Use the "Knobs" tab in the addon panel to use interactive preview',
                     sections: [
                         {
                             title: 'Interactive Preview',
