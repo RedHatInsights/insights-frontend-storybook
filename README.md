@@ -25,7 +25,7 @@ This is documentation for:
     - 'npm run lint' to check linting
     - `npm run start` to develop storybook pages
     - `npm run build` to build the storybook, used for testing
-5. Naviage to `localhost:6006`
+5. Navigate to `localhost:6006`
 
 ## Markdown Rules
 
