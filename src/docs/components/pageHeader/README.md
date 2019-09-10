@@ -9,8 +9,8 @@ HTML `input`.
 
 ```javascript
 
-import { PageHeader } from '@red-hat-insights/insights-frontend-components/components/PageHeader';
-import '@red-hat-insights/insights-frontend-components/components/PageHeader.css'
+import { PageHeader } from '@redhat-cloud-services/frontend-components';
+
 import React from 'react';
 
 const MyCmp = () => (
@@ -28,11 +28,8 @@ HTML `input`.
 
 ```javascript
 
-import { PageHeader } from '@red-hat-insights/insights-frontend-components/components/PageHeader';
-import { PageHeaderTitle } from '@red-hat-insights/insights-frontend-components/components/PageHeader';
+import { PageHeader, PageHeaderTitle } from '@redhat-cloud-services/frontend-components';
 
-// PageHeaderTitle styles are located in PageHeader.css
-import '@red-hat-insights/insights-frontend-components/components/PageHeader.css'
 import React from 'react';
 
 const MyCmp = () => (

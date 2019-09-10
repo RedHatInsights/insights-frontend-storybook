@@ -6,7 +6,7 @@ import { withKnobs, number, select } from '@storybook/addon-knobs';
 import { Route, BrowserRouter} from 'react-router-dom'
 
 // Component
-import { Pie } from '@red-hat-insights/insights-frontend-components';
+import { Pie } from '@redhat-cloud-services/frontend-components-charts';
 
 // README
 import PieReadme from '../../docs/charts/pie/README.md';

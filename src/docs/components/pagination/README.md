@@ -7,7 +7,7 @@ Currently this repository works as a proxy to expose [pf3@paginationRow](https:/
 Just import this component wherever you want to use it and pass `numberOfItems` as props.
 
 ```javascript
-import { Pagination } from '@red-hat-insights/insights-frontend-components/components/Pagination';
+import { Pagination } from '@redhat-cloud-services/frontend-components';
 
 export default () => (
   <Pagination numberOfItems={100} />
@@ -30,3 +30,4 @@ This component is using paginationRow props and adds these on top of them
   onSetPage: PropTypes.func // function callback when page change, argument will be new number of page
   onPerPageSelect: PropTypes.func // function which is invoked on dropdown select for number of items per page
 }
+```

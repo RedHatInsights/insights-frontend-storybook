@@ -12,6 +12,7 @@ import LanguageDoc from '../../docs/uxd/language/DOC.md';
 import ToolbarsDoc from '../../docs/uxd/toolbarsFilters/DOC.md';
 import EmptyStatesDoc from '../../docs/uxd/emptyStates/DOC.md';
 import GetStarted from '../../docs/uxd/getStarted/DOC.md';
+import ActionsOnSystemsDoc from '../../docs/uxd/actionsOnSystems/DOC.md';
 import Breadcrumbs from '../../docs/uxd/breadcrumbs/DOC.md';
 
 // This part loads in everything that is actually going to be there. All these are the items under the menu
@@ -20,6 +21,7 @@ import Breadcrumbs from '../../docs/uxd/breadcrumbs/DOC.md';
 storiesOf('UX', module)
     .addDecorator(withReadme(UXDReadme))
     .add('Get started', doc(GetStarted))
+    .add('Actions on systems', doc(ActionsOnSystemsDoc))
     .add('Alerts & notifications', doc(AlertsNotificationsDoc))
     .add('Breadcrumbs', doc(Breadcrumbs))
     .add('Empty states', doc(EmptyStatesDoc))

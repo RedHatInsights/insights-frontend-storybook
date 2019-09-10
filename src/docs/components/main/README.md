@@ -7,7 +7,7 @@ This will wrap the main content of your page and provide the appropriate spacing
 
 ```javascript
 
-import { Main } from '@red-hat-insights/insights-frontend-components/components/Main';
+import { Main } from '@redhat-cloud-services/frontend-components';
 
 const MyCmp = () => (
     <Main> {content} </Main>
@@ -17,9 +17,7 @@ const MyCmp = () => (
 ## Use with PageHeader to make a page
 
 ```javascript
-import { Main } from '@red-hat-insights/insights-frontend-components/components/Main';
-import { PageHeader } from '@red-hat-insights/insights-frontend-components/components/PageHeader';
-import { PageHeaderTitle } from '@red-hat-insights/insights-frontend-components/components/PageHeader';
+import { Main, PageHeader, PageHeaderTitle } from '@redhat-cloud-services/frontend-components';
 
 const MyCmp = () => (
     <React.Fragment>
