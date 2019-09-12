@@ -10,7 +10,7 @@ Because there are places where creating new reducer is too robust and might lead
 
 ```javascript
 import { applyMiddleware } from 'redux';
-import { MiddlewareListener } from '@red-hat-insights/insights-frontend-components';
+import { MiddlewareListener } from '@redhat-cloud-services/frontend-components-utilities';
 const listenerMiddleware = new MiddlewareListener();
 this.store = createStore(
     reducers,
@@ -53,7 +53,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { getStoreFromRegistry } from '@red-hat-insights/insights-frontend-components';
+import { getStoreFromRegistry } from '@redhat-cloud-services/frontend-components-utilities';
 import promiseMiddleware from 'redux-promise-middleware';
 import App from './App';
 
@@ -73,7 +73,7 @@ ReactDOM.render(
  ```JSX
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { registry as registryDecorator } from '@red-hat-insights/insights-frontend-components';
+import { registry as registryDecorator } from '@redhat-cloud-services/frontend-components-utilities';
 
 //We'll bind registry to this class
 @registryDecorator()
@@ -110,7 +110,7 @@ Parameters:
 - `composeEnhancers` - default to `compose` from redux library
 
 ```javascript
-import { ReducerRegistry } from '@red-hat-insights/insights-frontend-components';
+import { ReducerRegistry } from '@redhat-cloud-services/frontend-components-utilities';
 import { middlewares } from './middlewareSettings';
 
 const reduxRegistry = new ReducerRegistry(initState, middlewares);
@@ -154,7 +154,7 @@ It's as easy as calling dispatchActionsToStore with multiple actions (either tro
 
 import * as actions from './actions';
 import store from './singleton-store';
-import { dispatchActionsToStore } from '@red-hat-insights/insights-frontend-components';
+import { dispatchActionsToStore } from '@redhat-cloud-services/frontend-components-utilities';
 
 export default dispatchActionsToStore(actions, store);
 ```

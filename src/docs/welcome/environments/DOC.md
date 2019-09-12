@@ -15,10 +15,11 @@
 
 ### Uses PROD auth:
 
-* https://cloud.redhat.com
+* https://cloud.redhat.com/
+* https://qaprodauth.redhat.com/{beta}
 
 ### Uses QA auth
 
-* https://ci.cloud.paas.psi.redhat.com/
-* https://qa.cloud.paas.psi.redhat.com/
-* https://nightly.cloud.paas.psi.redhat.com/
+* https://ci.cloud.redhat.com/{beta}
+* https://qa.cloud.redhat.com/{beta}
+* https://nightly.cloud.redhat.com/
