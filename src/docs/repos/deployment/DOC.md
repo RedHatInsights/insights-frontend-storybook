@@ -32,7 +32,7 @@ Should build to the [build repo](https://github.com/RedHatInsights/insights-depl
     * `travis encrypt-file deploy_key`
         * do not add the `openssl` command to the `.travis` file.
 6. You should now have a `deploy_key.enc` file. Delete `deploy_key` and `deploy_key.pub`.
-7. Commit your deploy_key.enc file, .travis.yml, and .travis directory
+7. Commit your `deploy_key.enc` file, `.travis.yml`, and `.travis` directory
 8. Verify that the Travis env variables have been added.
 9. Confirm the build completed successfully on Travis-CI and verify that the files were pushed to your build repo.
 
