@@ -16,10 +16,13 @@
 ### Uses PROD auth:
 
 * https://cloud.redhat.com/
-* https://qaprodauth.redhat.com/{beta}
+* https://qaprodauth.redhat.com/
+* https://qaprodauth.redhat.com/beta
 
 ### Uses QA auth
 
-* https://ci.cloud.redhat.com/{beta}
-* https://qa.cloud.redhat.com/{beta}
+* https://ci.cloud.redhat.com/
+* https://ci.cloud.redhat.com/beta
+* https://qa.cloud.redhat.com/
+* https://qa.cloud.redhat.com/beta
 * https://nightly.cloud.redhat.com/
