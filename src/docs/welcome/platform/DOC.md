@@ -30,3 +30,22 @@ The Proxy (or Insights Proxy) is a container that uses [Spandx](https://github.c
 
 Developers can pass custom spanx config files
 
+## Frontend Components
+
+The frontend component repository is a monorepo with separate packages that are distributed as npm packages.
+
+- charts: d3.js charts. These are not recommended if you can use Patternfly (PF) charts.
+- components: components that are PF component shims, combination of PF components, or cloud-services specific components
+- config: shared webpack config files
+- inventory: the "inventory" application that is also embedded in many applications
+- inventory-compliance: the compliance tab in inventory
+- inventory-general-info: the general information page in inventory
+- inventory-insights: the insights tab in inventory
+- notifications: the notifications and alerts "portal"
+- remediations: the remediations client
+- translations: package to have translated text across the platform
+- utils: common utilities needed across the platform
+
+## Starter Application
+
+The starter application is a repository that is complete with routing, a spandx config, and a sample page with components imported from the component library. This is a great place to start for new applications.
