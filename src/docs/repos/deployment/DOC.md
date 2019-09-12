@@ -1,4 +1,4 @@
-# Insights Frontend Builder Common
+# Frontend Builder Common
 
 https://github.com/RedHatInsights/insights-frontend-builder-common
 
@@ -18,21 +18,23 @@ Should build to the [build repo](https://github.com/RedHatInsights/insights-depl
 
 ### Steps
 
-1. Copy the [travis.yml](https://github.com/RedHatInsights/insights-deployment-test/blob/master/.travis.yml) file and [.travis directory](https://github.com/RedHatInsights/insights-deployment-test/tree/master/.travis) and place in the root of your project
+1. Copy the [travis.yml](https://github.com/RedHatInsights/insights-frontend-starter-app/blob/master/.travis.yml) file and [.travis directory](https://github.com/RedHatInsights/insights-frontend-starter-app/tree/master/.travis) and place in the root of your project. Remove the deploy_key.
 2. Create a build repo on Github. Usually this will be named `[dev-repo-name]-build`
 3. Generate a private key for pushing from dev repo to build repo
-    * `ssh-keygen -t rsa -b 4096 -C`
+    * `ssh-keygen -t rsa -b 4096`
     * Save the key without a passphrase
-4. Copy the public key to the build repo under Settings -> Deploy Keys and check the box for allowing write access.
+    * Save the key as `deploy_key` in `your-repo/.travis`
+4. [team FMS] Copy the public key to the build repo under Settings -> Deploy Keys and check the box for allowing write access.
 5. Encrypt the deploy key with Travis CLI
-    * Login to Travis CLI
+    * Login to Travis CLI with the `--org` flag
     * Make sure you have Travis CI CLI tools and can login to [Travis CLI](https://github.com/travis-ci/travis.rb#installation)
     * Verify that you are inside of your development repo and then encrypt the key with Travis CLI
-6. You should now have a deploy_key.enc file. Delete deploy_key and deploy_key.pub.
-7. Replace the deploy_key decryption statement in .travis.yml with your newly generated one from the encryption step 5.b but replace ~\/.ssh/deploy_key with just deploy_key
-8. Commit your deploy_key.enc file, .travis.yml, and .travis directory
-9. Verify that the Travis env variables have been added.
-10. Confirm the build completed successfully on Travis-CI and verify that the files were pushed to your build repo.
+    * `travis encrypt-file deploy_key`
+        * do not add the `openssl` command to the `.travis` file.
+6. You should now have a `deploy_key.enc` file. Delete `deploy_key` and `deploy_key.pub`.
+7. Commit your deploy_key.enc file, .travis.yml, and .travis directory
+8. Verify that the Travis env variables have been added.
+9. Confirm the build completed successfully on Travis-CI and verify that the files were pushed to your build repo.
 
 ## How to Use
 

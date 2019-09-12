@@ -1,4 +1,4 @@
-# insights-proxy
+# Proxy
 
 Proxy for the Cloud Services frontend container
 

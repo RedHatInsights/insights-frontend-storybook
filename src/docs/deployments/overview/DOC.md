@@ -23,14 +23,14 @@ Below is a list of the branches on each app build repo and the environments that
 
 * prod-stable: https://cloud.redhat.com/
 * prod-beta: https://cloud.redhat.com/beta/
-* qa-stable: https://qa.cloud.paas.psi.redhat.com/
-* qa-beta: https://qa.cloud.paas.psi.redhat.com/beta
-* ci-stable: https://ci.cloud.paas.psi.redhat.com/
-* ci-beta: https://ci.cloud.paas.psi.redhat.com/beta
+* qa-stable: https://qa.cloud.redhat.com/
+* qa-beta: https://qa.cloud.redhat.com/beta
+* ci-stable: https://ci.redhat.com/
+* ci-beta: https://ci.cloud.redhat.com/beta
 
 ## Nightly Environment
 
 Applications are also built daily with a cron job to a separate environment. These environments should not be pushed manually.
 
-* nightly-stable: https://nightly.cloud.paas.psi.redhat.com/
-* nightly-beta: https://nightly.cloud.paas.psi.redhat.com/beta
+* nightly-stable: https://nightly.cloud.redhat.com/
+* nightly-beta: https://nightly.cloud.redhat.com/beta

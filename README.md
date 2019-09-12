@@ -5,7 +5,7 @@
 This is documentation for:
 
 - Insights environments
-- [Red Hat Insights Frontend Components](https://github.com/RedHatInsights/insights-frontend-components)
+- [Cloud Services Frontend Components](https://github.com/RedHatInsights/frontend-components)
 - [Insights Chroming](https://github.com/RedHatInsights/insights-chrome)
 - Redux examples
 - API examples
