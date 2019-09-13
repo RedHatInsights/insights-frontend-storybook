@@ -1,10 +1,10 @@
-# Insights Chrome
+# Chrome
 
-Insights Chrome provides a header, footer and primary navigation to all Insights Platform applications.
+Chrome (insights-chrome) provides a header, footer and primary navigation to all Insights Platform applications.
 
 ## Javascript API
 
-Insights Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
+Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
 
 ```js
 
@@ -37,7 +37,7 @@ export default withRouter (connect()(App));
 
 ## Navigation
 
-Insights Chrome relays a static navigation from the "Source of Truth"
+Chrome relays a static navigation from the "Source of Truth"
 
 If you would like to add/remove navigation items, open a PR in [Cloud Services Config](https://github.com/RedHatInsights/cloud-services-config)
 

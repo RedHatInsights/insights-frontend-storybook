@@ -6,7 +6,7 @@ Chrome provides:
 
 * Standard header and navigation
 * Base CSS/style
-* A JavaScript library for interacting with Insights Chrome
+* A JavaScript library for interacting with Chrome
 
 ## Usage
 
@@ -59,7 +59,7 @@ ReactDOM.render(
 
 ## Javascript API
 
-Insights Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
+Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
 
 ```js
     // initialize chrome

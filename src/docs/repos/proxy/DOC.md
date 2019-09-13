@@ -36,7 +36,7 @@ bash scripts/run.sh
 SPANDX_CONFIG=/path/to/custom/config.js bash ~/path/to/insights-proxy/scripts/run.sh
 ```
 
-### Run with local Insights Chrome (for chrome developers only)
+### Run with local Chrome (for chrome developers only)
 
 This is for Chrome developers only.
 If you are developing an application on the platform you need not do this!

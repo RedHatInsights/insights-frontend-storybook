@@ -10,8 +10,8 @@ React.js starter app for cloud.redhat.com products that includes Patternfly 3 an
 
 - Insights Frontend Starter App
 
-- [Insights Chroming](https://github.com/RedHatInsights/insights-chrome)
-- [Insights Proxy](https://github.com/RedHatInsights/insights-proxy)
+- [Chroming](https://github.com/RedHatInsights/insights-chrome)
+- [Proxy](https://github.com/RedHatInsights/insights-proxy)
 
 Note: You will need to set up the Insights environment if you want to develop with the starter app due to the consumption of the chroming service as well as setting up your global/app navigation through the API.
 
