@@ -44,6 +44,7 @@ const deployments = require.context('../src/stories/deployments', true, /stories
 const uxd = require.context('../src/stories/uxd', true, /stories\.js$/);
 const patternfly = require.context('../src/stories/patternfly', true, /stories\.js$/);
 const nightly = require.context('../src/stories/nightly', true, /stories\.js$/);
+
 // Add a localStorage flag for team FMS
 let teamFMS;
 if(window.localStorage && window.localStorage.getItem('storybook:teamFMS') === 'true') {

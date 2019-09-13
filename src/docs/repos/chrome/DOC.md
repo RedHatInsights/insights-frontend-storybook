@@ -1,12 +1,12 @@
-# Insights Chrome
+# Chrome
 
 The "wrapper" around your application!
 
-Insights Chrome provides:
+Chrome provides:
 
 * Standard header and navigation
 * Base CSS/style
-* A JavaScript library for interacting with Insights Chrome
+* A JavaScript library for interacting with Chrome
 
 ## Usage
 
@@ -59,7 +59,7 @@ ReactDOM.render(
 
 ## Javascript API
 
-Insights Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
+Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
 
 ```js
     // initialize chrome
@@ -109,31 +109,31 @@ If you want to watch file changes for each build just pass `-- -w` to specific t
 1. Building of styles
 
     ```bash
-    > npm run build:sass
+    npm run build:sass
     ```
 
 2. Building of javascripts
 
     ```bash
-    > npm run build:js
+    npm run build:js
     ```
 
 3. Building of javascripts and watching files when they change
 
     ```bash
-    > npm run watch:js
+    npm run watch:js
     ```
 
 4. Building of HTML partials
 
     ```bash
-    > npm run build:pug
+    npm run build:pug
     ```
 
 5. Running tests
 
     ```bash
-    > npm run test
+    npm run test
     ```
 
 #### Specific tasks
@@ -141,11 +141,11 @@ If you want to watch file changes for each build just pass `-- -w` to specific t
 1. Run build of whole application just once
 
     ```bash
-    > npm run build
-    ``1
+    npm run build
+    ```
 
 2. Watching file changes and trigger build every time something changes
 
-```bash
-> npm run start
-```
+    ```bash
+    npm run start
+    ```

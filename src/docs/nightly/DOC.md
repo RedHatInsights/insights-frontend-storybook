@@ -17,7 +17,7 @@ cloud.redhat.com's common builder is already set up to look for certain things a
 1. Create an `npm or yarn` script called `nightly` and have it build out your UI.
 2. Have a `nightly` branch in your repository.
 3. Set up a cron job in Travis-CI to build that repository every day.
-4. Wait until the build finishes and then access (vpn) https://nightly.cloud.paas.psi.redhat.com/bundle/app to see your application.
+4. Wait until the build finishes and then access (vpn) https://nightly.cloud.redhat.com/bundle/app to see your application.
 
 ## Build Status
 

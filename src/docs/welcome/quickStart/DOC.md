@@ -108,3 +108,19 @@ Bootstrapped application with essential tools for rapid development
 2. In another terminal tab/window inside of the `insights-frontend-starter-app` repo, run `npm run start`
 
 3. Navigate to `https://ci.foo.redhat.com:1337/insights/samplepage`
+
+## New applications
+
+If you are a new application in the platform, you will need to update some fields if you cloned the starter application
+
+* `package.json`
+  * `insights.appname` <- this should match your appName from cloud-services-config
+* `.travis.yml`
+  * `env.global`
+    * `REPO`
+    * `REPO_DIR`
+* `local-frontend.js` & `local-frontend-and-api.js`
+  * `SECTION` <- this should match your bundle
+  * `APP_ID` <- this should match your appName from cloud-services-config
+* `App.js`
+  * `insights.chrome.identifyApp('yourAppName')` <- this should match your appName from cloud-services-config

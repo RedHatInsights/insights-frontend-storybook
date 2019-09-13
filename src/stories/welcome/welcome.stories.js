@@ -8,6 +8,8 @@ import WelcomeReadme from '../../docs/welcome/gettingStarted/README.md';
 import QuickStartDoc from '../../docs/welcome/quickStart/DOC.md';
 import ContributingDoc from '../../docs/welcome/contributing/DOC.md';
 import EnvironmentsDoc from '../../docs/welcome/environments/DOC.md';
+import ExplainPlatform from '../../docs/welcome/platform/DOC.md';
+import usageGuidelines from '../../docs/welcome/usageGuidelines/DOC.md';
 
 // Story
 storiesOf('Welcome', module)
@@ -15,4 +17,6 @@ storiesOf('Welcome', module)
     .add('Getting Started', doc(WelcomeDoc))
     .add('Quick Start Guide', doc(QuickStartDoc))
     .add('Environments', doc(EnvironmentsDoc))
+    .add('Explaning the Platform', doc(ExplainPlatform))
+    .add('Usage Guidelines', doc(usageGuidelines))
     .add('Contributing', doc(ContributingDoc))
