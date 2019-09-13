@@ -25,7 +25,7 @@ Below is a list of the branches on each app build repo and the environments that
 * prod-beta: https://cloud.redhat.com/beta/
 * qa-stable: https://qa.cloud.redhat.com/
 * qa-beta: https://qa.cloud.redhat.com/beta
-* ci-stable: https://ci.redhat.com/
+* ci-stable: https://ci.cloud.redhat.com/
 * ci-beta: https://ci.cloud.redhat.com/beta
 
 ## Nightly Environment

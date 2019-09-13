@@ -40,11 +40,15 @@ Should build to the [build repo](https://github.com/RedHatInsights/insights-depl
 
 ### Pushing to beta/master
 
-Anytime a build of the master branch happens, Travis builds and pushes a new commit to the master branch in your build repo. Pull requests on master will not be deployed until they are merged, but they will be built to assure linting, snapshots, etc. are working as expected.
+Anytime a build of the master branch happens, Travis builds and pushes a new commit to the ci-beta branch in your build repo. Pull requests on master will not be deployed until they are merged, but they will be built to assure linting, snapshots, etc. are working as expected.
 
 ### Pushing to stable
 
-If you want to push to stable, make a branch `stable/foo`, `stable/bar`, etc. Any build of a stable branch in the repo will deploy to `stable` branch in the build repo.
+If you want to push to stable, make a branch that corresponds with the environment you want to push to.
+
+Example:
+
+`qi-beta` in your development repo will build to `qi-beta` in your build repo: qi.cloud.redhat.com/beta
 
 ## Custom Releases
 
