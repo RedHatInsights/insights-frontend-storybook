@@ -6,6 +6,7 @@
 
 1. Make sure you have node, npm, and git installed on your machine
 2. If you haven't yet, set up an ssh key for Github. [Docs](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+3. **OSX users only** Should you encounter an error during exe of a `run.sh` script stating `python2: command not found`, then you'll need to create a symlink back to python2.7 like so: `sudo ln -s /usr/bin/python2.7 /usr/local/bin/python2`
 
 ### Docker
 
@@ -96,6 +97,8 @@ Bootstrapped application with essential tools for rapid development
     ```sh
     SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh
     ```
+
+   * NOTE: if you get a `python2: command not found` error here, then you'll need to create a symlink back to python2.7 like so: `sudo ln -s /usr/bin/python2.7 /usr/local/bin/python2`
 
 ### Starter App
 
