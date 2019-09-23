@@ -97,7 +97,8 @@ Bootstrapped application with essential tools for rapid development
     ```sh
     SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh
     ```
-   - NOTE: if you get a `python2: command not found` error here, then you'll need to create a symlink back to python2.7 like so: `sudo ln -s /usr/bin/python2.7 /usr/local/bin/python2`
+
+   * NOTE: if you get a `python2: command not found` error here, then you'll need to create a symlink back to python2.7 like so: `sudo ln -s /usr/bin/python2.7 /usr/local/bin/python2`
 
 ### Starter App
 
