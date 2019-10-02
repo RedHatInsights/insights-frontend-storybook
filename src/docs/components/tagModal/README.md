@@ -8,7 +8,7 @@ Import TagCount from this package.
 
 ```JSX
 import React from 'react';
-import { TagCount } from '@redhat-cloud-services/frontend-components';
+import { TagCount, TagModal } from '@redhat-cloud-services/frontend-components';
 
 class YourCmp extends React.Component {
     constructor(props) {
