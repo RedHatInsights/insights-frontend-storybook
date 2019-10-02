@@ -13,7 +13,7 @@ import { TagCount } from '@redhat-cloud-services/frontend-components';
 class YourCmp extends React.Component {
   render() {
     return (
-      <TagCount count={10} onTagClick={funcionName}>
+      <TagCount count={10} onTagClick={funcionName} />
     )
   }
 }
