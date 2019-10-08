@@ -10,6 +10,7 @@ import { ConditionalFilter, conditionalFilterType } from '@redhat-cloud-services
 // README
 import Readme from '../../docs/components/conditional-filter/README.md';
 import { withReadme } from 'storybook-readme';
+import '@patternfly/patternfly/components/Select/select.css';
 
 storiesOf('Components', module)
     .addDecorator(withReadme(Readme))
@@ -76,8 +77,6 @@ storiesOf('Components', module)
                                     value: 'custom',
                                     label: text('Custom filter label', 'Custom', customGroup)
                                 };
-
-                                console.log(ConditionalFilter);
 
                                 return (
                                     <ConditionalFilter items={[ textFilter, checkboxFilter, radioFilter, customFilter ]}/>
