@@ -1,6 +1,6 @@
 # Main
 
-This component is a shim of [Patternfly PageSection component](https://www.patternfly.org/v4/documentation/react/overview/notes/#components).
+This component is a shim of [Patternfly PageSection component](https://www.patternfly.org/v4/documentation/react/components/page/#page-title).
 This will wrap the main content of your page and provide the appropriate spacing.
 
 ## Usage
