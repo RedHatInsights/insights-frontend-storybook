@@ -4,8 +4,8 @@ Many of the cloud.redhat.com apps rely heavily on styles and components provided
 
 ## Design Guidelines
 
-Patternfly has guidelines that cover [styling](https://v2.patternfly.org/design-guidelines/styles/typography),
-[usages, behavior](https://v2.patternfly.org/design-guidelines/usage-and-behavior/about-modal), and [writing content](https://v2.patternfly.org/design-guidelines/content/writing).
+Patternfly has guidelines that cover [styling](https://www.patternfly.org/v4/design-guidelines/styles/colors),
+[usages, behavior](https://www.patternfly.org/v4/design-guidelines/usage-and-behavior/about-modal), and [writing content](https://www.patternfly.org/v4/design-guidelines/content/writing).
 Please consult these for all things Patternfly.
 
 If you're looking for cloud.redhat.com specific guidelines, please visit the UX section of the Storybook.
