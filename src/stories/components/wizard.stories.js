@@ -50,7 +50,7 @@ storiesOf('Components', module)
                                 return (
 
                                     <React.Fragment>
-                                        <Deprecated link='https://patternfly-react.surge.sh/patternfly-4/components/wizard/'/>
+                                        <Deprecated link='https://www.patternfly.org/v4/documentation/react/components/wizard/'/>
                                         <Button variant='primary' onClick={() => store.set({ isModalOpen: !store.get("isModalOpen") })}> Open Wizard </Button>
                                         <Wizard
                                             isLarge={boolean('Large', true)}
