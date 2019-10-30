@@ -1,6 +1,6 @@
 # cloud.redhat.com Storybook
 
-The Insights Storybook is a place for Insights documentaiton regarding front end development through the chroming, components, and any applications.
+The Insights Storybook is a place for Insights documentation regarding front end development through the chroming, components, and any applications.
 
 ## [Storybook](https://github.com/storybooks/storybook)
 
