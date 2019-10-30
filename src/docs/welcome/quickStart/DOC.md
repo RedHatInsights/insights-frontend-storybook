@@ -110,7 +110,11 @@ Bootstrapped application with essential tools for rapid development
 
 2. In another terminal tab/window inside of the `insights-frontend-starter-app` repo, run `npm run start`
 
-3. Navigate to `https://ci.foo.redhat.com:1337/insights/samplepage`
+3. Navigate to `https://ci.foo.redhat.com:1337/insights/starter`
+
+   If you are on Firefox, then first head to `https://sso.qa.redhat.com/` and accept the self-signed certificate.
+
+   Credentials are your rhn-engineering username / redhat
 
 ## New applications
 
