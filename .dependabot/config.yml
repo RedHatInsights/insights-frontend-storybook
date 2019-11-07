@@ -4,7 +4,7 @@ update_configs:
     directory: "/"
     update_schedule: "live"
     default_reviewers:
-      - "karelhala"
+      - "ryelo"
     allowed_updates:
       - match:
           dependency_name: "@redhat-cloud-services/frontend*"
