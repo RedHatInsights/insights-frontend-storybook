@@ -4,14 +4,9 @@ Cloud Services front-end apps can be deployed very simply by pushing the build f
 
 ## Stable versus Beta
 
-Cloud Services Platform provides a beta and stable version in CI, QA, and Prod environments so that users can try out the latest features as soon as possible. When releasing to stable, the basepath of the app should point to `/[bundle]/[app-name]/` whereas when releasing to beta, the basepath should point to `/[bundle]/[app-name]/`.
+Cloud Services Platform provides a beta and stable version in CI, QA, and Prod environments so that users can try out the latest features as soon as possible. When releasing to stable, the basepath of the app should point to `/[bundle]/[app-name]/` whereas when releasing to beta, the basepath should point to `beta/[bundle]/[app-name]/`.
 
 The insights-frontend-starter-app is setup to release this way for all of the available environments.
-
-## Starter App Updates
-
-If you cloned/used the starter-app before the new build branches were created, [this commit](https://github.com/RedHatInsights/insights-frontend-starter-app/commit/9eb79919a334f7974cbcfdf0d8c5cac79f9791b6)
- updates the starter app to support the 6 different deployment branches in the build repo. You will also want to use [this commit](https://github.com/RedHatInsights/insights-frontend-starter-app/commit/ec39d89702e5d26eae146b3cf07577135ae921bb) for fixing beta deployments and [this commit](https://github.com/RedHatInsights/insights-frontend-starter-app/commit/daafec7f9d818ccf5722a6fb7b32ac3b4d3cf320) for adding dev commit messages to your build messages for easier debugging.
 
 ## Build Branches and Deployment Environments
 
