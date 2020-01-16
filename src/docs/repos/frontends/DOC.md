@@ -12,6 +12,7 @@
 * [RBAC](https://github.com/RedHatInsights/insights-rbac-ui)
 * [Hooks](https://github.com/RedHatInsights/notifications-frontend)
 * [Sources](https://github.com/ManageIQ/sources-ui)
+* [Catalog](https://github.com/RedHatInsights/catalog-ui)
 
 ### Red Hat Insights
 
@@ -48,6 +49,10 @@
 ### Subscription Watch
 
 * [Subscription Watch](https://github.com/RedHatInsights/curiosity-frontend)
+
+### API Docs
+
+* [API Docs](https://github.com/RedHatInsights/api-frontend)
 
 ## Utilities
 
