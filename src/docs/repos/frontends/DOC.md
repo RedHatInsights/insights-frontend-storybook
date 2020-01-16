@@ -1,74 +1,56 @@
 # A running list of all of the apps by navigation groups
 
-## Landing
+## Applications
 
-* [Frontend](https://github.com/RedHatInsights/landing-page-frontend)
+### Landing Page
 
-## Red Hat Insights
+* [Landing Page](https://github.com/RedHatInsights/landing-page-frontend)
 
-### Insights (Formerly Advisor/Configuration Assessment)
+### Settings
 
-* [Frontend](https://github.com/RedHatInsights/insights-advisor-frontend)
+* [Settings](https://github.com/RedHatInsights/settings-frontend)
+* [RBAC](https://github.com/RedHatInsights/insights-rbac-ui)
+* [Hooks](https://github.com/RedHatInsights/notifications-frontend)
+* [Sources](https://github.com/ManageIQ/sources-ui)
 
-### Inventory
+### Red Hat Insights
 
-* [Frontend](https://github.com/RedHatInsights/insights-inventory-frontend)
+* [Insights (Formerly Advisor/Configuration Assessment)](https://github.com/RedHatInsights/insights-advisor-frontend)
+* [Inventory](https://github.com/RedHatInsights/insights-inventory-frontend)
+* [Remediations](https://github.com/RedHatInsights/insights-remediations-frontend)
 
-### Remediations
+### Cloud Management Services for Red Hat Enterprise Linux
 
-* [Frontend](https://github.com/RedHatInsights/insights-remediations-frontend)
+* [Dashboard](https://github.com/RedHatInsights/insights-dashboard)
+* [Vulnerability](https://github.com/RedHatInsights/vulnerability-ui)
+* [Compliance](https://github.com/RedHatInsights/compliance-frontend)
+* [Drift](https://github.com/RedHatInsights/drift-frontend)
+* [Inventory](https://github.com/RedHatInsights/insights-inventory-frontend)
+* [Remediations](https://github.com/RedHatInsights/insights-remediations-frontend)
 
-### Insights Settings
+### Red Hat Ansible Automation Platform
 
-#### Hooks
+* [Automation Analytics](https://github.com/RedHatInsights/tower-analytics-frontend)
+* [Automation Hub](https://github.com/ansible/ansible-hub-ui)
 
-* [Frontend](https://github.com/RedHatInsights/notifications-frontend)
+### Red Hat OpenShift Cluster Manager
 
-#### Sources
+* UHC
 
-* [Frontend](https://github.com/ManageIQ/sources-ui)
+### Cost Management
 
-## Cloud Management Services
+* [Cost Management](https://github.com/project-koku/koku-ui)
 
-### Dashboard
+### Migration Services
 
-* [Frontend](https://github.com/RedHatInsights/insights-dashboard)
+* [Migration Analytics](https://github.com/project-xavier/xavier-ui)
 
-### Vulnerability
+### Subscription Watch
 
-* [Frontend](https://github.com/RedHatInsights/vulnerability-ui)
+* [Subscription Watch](https://github.com/RedHatInsights/curiosity-frontend)
 
-### Compliance
+## Utilities
 
-* [Frontend](https://github.com/RedHatInsights/compliance-frontend)
-
-### Drift
-
-* [Frontend](https://github.com/RedHatInsights/drift-frontend)
-
-### Inventory
-
-* [Frontend](https://github.com/RedHatInsights/insights-inventory-frontend)
-
-### Remediations
-
-* [Frontend](https://github.com/RedHatInsights/insights-remediations-frontend)
-
-## Hybrid Cloud Management Services
-
-### Catalog
-
-### Cost Management / Project Koku
-
-* [Frontend](https://github.com/project-koku/koku-ui)
-* [Documentation](https://koku.readthedocs.io/en/latest/)
-
-### HCM Settings
-
-#### Sources
-
-* [Frontend](https://github.com/ManageIQ/sources-ui)
-
-#### RBAC
-
-* [Frontend](https://github.com/RedHatInsights/insights-rbac-ui)
+* [Frontend Components - Shared components/utils/configs](https://github.com/RedHatInsights/frontend-components)
+* [Storybook - documentation](https://github.com/RedHatInsights/insights-frontend-storybook)
+* [Starter App](https://github.com/RedHatInsights/insights-frontend-starter-app)
