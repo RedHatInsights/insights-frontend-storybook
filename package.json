@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/RedHatInsights/insights-frontend-storybook#readme",
   "dependencies": {
-    "@patternfly/patternfly": "2.43.4",
+    "@patternfly/patternfly": "2.51.0",
     "@patternfly/react-core": "3.124.1",
     "@patternfly/react-table": "^2.24.41",
     "@red-hat-insights/insights-frontend-components": "^3.41.56",
