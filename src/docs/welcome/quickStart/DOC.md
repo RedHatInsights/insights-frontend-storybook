@@ -95,7 +95,7 @@ Bootstrapped application with essential tools for rapid development
 1. Run the container with default options
 
     ```sh
-    SPANDX_CONFIG=path/to/insights-frontend-starter-app/config/spandx.config.js sh path/to/insights-proxy/scripts/run.sh
+    SPANDX_CONFIG=path/to/insights-frontend-starter-app/profiles/local-frontend.js sh path/to/insights-proxy/scripts/run.sh
     ```
 
    * NOTE: if you get a `python2: command not found` error here, then you'll need to create a symlink back to python2.7 like so: `sudo ln -s /usr/bin/python2.7 /usr/local/bin/python2`
@@ -105,7 +105,7 @@ Bootstrapped application with essential tools for rapid development
 1. Build from `insights-chrome/build`
 
     ```sh
-    SPANDX_CONFIG=../../insights-frontend-starter-app/config/spandx.config.js sh ../../insights-proxy/scripts/run.sh
+    SPANDX_CONFIG=../../insights-frontend-starter-app/profiles/local-frontend.js sh ../../insights-proxy/scripts/run.sh
     ```
 
 2. In another terminal tab/window inside of the `insights-frontend-starter-app` repo, run `npm run start`
