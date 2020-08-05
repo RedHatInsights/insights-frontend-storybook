@@ -11,8 +11,7 @@
 * [Settings](https://github.com/RedHatInsights/settings-frontend)
 * [RBAC](https://github.com/RedHatInsights/insights-rbac-ui)
 * [Hooks](https://github.com/RedHatInsights/notifications-frontend)
-* [Sources](https://github.com/ManageIQ/sources-ui)
-* [Catalog](https://github.com/RedHatInsights/catalog-ui)
+* [Sources](https://github.com/RedHatInsights/sources-ui)
 
 ### Red Hat Insights
 
@@ -33,6 +32,8 @@
 
 * [Automation Analytics](https://github.com/RedHatInsights/tower-analytics-frontend)
 * [Automation Hub](https://github.com/ansible/ansible-hub-ui)
+* [Automation Services Catalog](https://github.com/RedHatInsights/catalog-ui)
+  * [Approval](https://github.com/RedHatInsights/approval-ui)
 
 ### Red Hat OpenShift Cluster Manager
 
