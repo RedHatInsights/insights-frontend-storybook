@@ -1,19 +1,19 @@
 # cloud.redhat.com Storybook
 
-The Insights Storybook is a place for Insights documentation regarding front end development through the chroming, components, and any applications.
+The Insights Storybook is the home of Insights documentation for front-end development, using "chroming," components and applications.
 
 ## [Storybook](https://github.com/storybooks/storybook)
 
-Storybook is a development environment for UI components. It allows you to browse a component library, view the different states of each component, and interactively develop and test components.
+Storybook is a development environment for UI components. It allows you to browse a component library, view the various states of each component, and interactively develop and test components.
 
 ### Addons
 
-Addons are essentially plugins for Storybook that allow a deeper configuration.
+Addons are essentially plugins for Storybook that enable more extensive configurations.
 
-These are the addons that are currently supported in this storybook:
+The Addons currently supported in this storybook are:
 
 * [ReadMe](https://github.com/tuchk4/storybook-readme) -
-    Storybook Community Addon ReadMe gives the ability to import markdown docs in the main story and in the Addon Panel.
+    Storybook Community Addon ReadMe allows you to import markdown docs in the main story and in the Addon Panel.
 
 * [Knobs](https://github.com/storybooks/storybook/tree/release/3.4/addons/knobs) -
     Allows you to edit React props dynamically using the Storybook UI. You can also use Knobs as a dynamic variable inside stories in Storybook.
@@ -23,17 +23,17 @@ These are the addons that are currently supported in this storybook:
 
 ### Navigating Storybook & Terms
 
-There is a search box at the top left hand corner which will allow you to search doc names
+There is a search box at the top left-hand corner that will allow you to perform a text search.
 
 #### Stories
 
-Stories are published in the main board. This is where all components will be rendered along with any other necessary text
+Stories are published in the main board. This is where all components will be rendered along with any other necessary text.
 
 #### Addon Panel
 
-The addon panel is where you will find additional ReadMe files, knobs to edit React props in real time, and an Action Logger to display data.
+The Addon Panel is where you will find additional ReadMe files, knobs to edit React props in real time, and an Action Logger to display data.
 
-##### All components should have an associated ReadMe file
+##### Each component should have an associated ReadMe file
 
 ## Contributing Documentation
 
