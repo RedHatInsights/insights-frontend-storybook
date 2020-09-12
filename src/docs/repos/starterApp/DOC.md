@@ -19,7 +19,7 @@ Note: You will need to set up the Insights environment if you want to develop wi
 
 1. ```npm install```
 
-2. ```SPANDX_CONFIG=./config/spandx.config.js && npm run start```
+2. ```SPANDX_CONFIG=./profiles/local-frontend.js && npm run start```
     - starts webpack bundler and serves the files with webpack dev server
 
 ### Testing

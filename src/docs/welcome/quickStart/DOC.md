@@ -105,7 +105,7 @@ Bootstrapped application with essential tools for rapid development
 1. Build from `insights-chrome/build`
 
     ```sh
-    SPANDX_CONFIG=../../insights-frontend-starter-app/config/spandx.config.js sh ../../insights-proxy/scripts/run.sh
+    SPANDX_CONFIG=../../insights-frontend-starter-app/profiles/local-frontend.js sh ../../insights-proxy/scripts/run.sh
     ```
 
 2. In another terminal tab/window inside of the `insights-frontend-starter-app` repo, run `npm run start`
