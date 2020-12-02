@@ -27,7 +27,7 @@
     "@patternfly/react-table": "^4.12.1",
     "@red-hat-insights/insights-frontend-components": "^3.41.70",
     "@redhat-cloud-services/frontend-components": "2.3.13",
-    "@redhat-cloud-services/frontend-components-charts": "2.3.1",
+    "@redhat-cloud-services/frontend-components-charts": "2.4.3",
     "@redhat-cloud-services/frontend-components-utilities": "2.1.3",
     "@sambego/storybook-state": "^1.3.1",
     "classnames": "^2.2.5",
